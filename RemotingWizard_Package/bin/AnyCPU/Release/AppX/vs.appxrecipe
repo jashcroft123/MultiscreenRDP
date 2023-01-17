@@ -1,0 +1,451 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>UKNML12395</Machine>
+    <WindowsUser>ja151016</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>9217cdbf-8624-44b1-836e-1800bdca9325</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Renishaw plc, O=Renishaw plc, L=Wotton-under-Edge, C=GB</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>
+    </WindowsSdkPath>
+    <LayoutDir>C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>5A2F290ED17A804ED6205400B83E0DE74EED7AF86755087DC3F77764C810037C</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>9217cdbf-8624-44b1-836e-1800bdca9325_1.1.0.0_neutral__vvqbde2369dpr</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>9217cdbf-8624-44b1-836e-1800bdca9325_vvqbde2369dpr!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>9217cdbf-8624-44b1-836e-1800bdca9325</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Renishaw plc, O=Renishaw plc, L=Wotton-under-Edge, C=GB</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-26T07:36:52.895</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LargeTile.scale-100.png">
+      <PackagePath>Images\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LargeTile.scale-125.png">
+      <PackagePath>Images\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.680</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LargeTile.scale-150.png">
+      <PackagePath>Images\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.719</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LargeTile.scale-200.png">
+      <PackagePath>Images\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.775</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LargeTile.scale-400.png">
+      <PackagePath>Images\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.989</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SmallTile.scale-100.png">
+      <PackagePath>Images\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SmallTile.scale-125.png">
+      <PackagePath>Images\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.280</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SmallTile.scale-150.png">
+      <PackagePath>Images\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.293</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SmallTile.scale-200.png">
+      <PackagePath>Images\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.306</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SmallTile.scale-400.png">
+      <PackagePath>Images\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.326</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SplashScreen.scale-100.png">
+      <PackagePath>Images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.271</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SplashScreen.scale-125.png">
+      <PackagePath>Images\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SplashScreen.scale-150.png">
+      <PackagePath>Images\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.358</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.439</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2022-02-24T14:56:41.467</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SplashScreen.scale-400.png">
+      <PackagePath>Images\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.718</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square150x150Logo.scale-100.png">
+      <PackagePath>Images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.344</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square150x150Logo.scale-125.png">
+      <PackagePath>Images\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.359</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square150x150Logo.scale-150.png">
+      <PackagePath>Images\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.376</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.405</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square150x150Logo.scale-400.png">
+      <PackagePath>Images\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.189</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.198</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.243</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.209</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.220</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.128</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.179</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.148</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.160</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.scale-100.png">
+      <PackagePath>Images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.scale-125.png">
+      <PackagePath>Images\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.011</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.scale-150.png">
+      <PackagePath>Images\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.022</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.035</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.scale-400.png">
+      <PackagePath>Images\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.050</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.061</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.073</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.138</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.118</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.087</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.099</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\StoreLogo.scale-100.png">
+      <PackagePath>Images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.728</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\StoreLogo.scale-125.png">
+      <PackagePath>Images\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.738</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\StoreLogo.scale-150.png">
+      <PackagePath>Images\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.750</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\StoreLogo.scale-200.png">
+      <PackagePath>Images\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.761</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\StoreLogo.scale-400.png">
+      <PackagePath>Images\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:25.776</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Wide310x150Logo.scale-100.png">
+      <PackagePath>Images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.479</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Wide310x150Logo.scale-125.png">
+      <PackagePath>Images\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.496</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Wide310x150Logo.scale-150.png">
+      <PackagePath>Images\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.516</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.543</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Wide310x150Logo.scale-400.png">
+      <PackagePath>Images\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2022-07-21T13:38:24.624</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2022-07-26T07:36:52.799</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient\2.1.1\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Data.SqlClient.dll</PackagePath>
+      <Modified>2020-12-18T23:10:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.identity.client\4.21.1\lib\netcoreapp2.1\Microsoft.Identity.Client.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Identity.Client.dll</PackagePath>
+      <Modified>2020-10-19T21:51:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.identitymodel.jsonwebtokens\6.8.0\lib\netstandard2.0\Microsoft.IdentityModel.JsonWebTokens.dll">
+      <PackagePath>Remoting Wizard\Microsoft.IdentityModel.JsonWebTokens.dll</PackagePath>
+      <Modified>2020-10-13T00:21:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.identitymodel.logging\6.8.0\lib\netstandard2.0\Microsoft.IdentityModel.Logging.dll">
+      <PackagePath>Remoting Wizard\Microsoft.IdentityModel.Logging.dll</PackagePath>
+      <Modified>2020-10-13T00:23:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.identitymodel.protocols\6.8.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.dll">
+      <PackagePath>Remoting Wizard\Microsoft.IdentityModel.Protocols.dll</PackagePath>
+      <Modified>2020-10-13T00:25:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.identitymodel.protocols.openidconnect\6.8.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <PackagePath>Remoting Wizard\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</PackagePath>
+      <Modified>2020-10-13T00:31:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.identitymodel.tokens\6.8.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.dll">
+      <PackagePath>Remoting Wizard\Microsoft.IdentityModel.Tokens.dll</PackagePath>
+      <Modified>2020-10-13T00:27:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.xaml.behaviors.wpf\1.1.19\lib\netcoreapp3.0\Microsoft.Xaml.Behaviors.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Xaml.Behaviors.dll</PackagePath>
+      <Modified>2020-01-16T00:50:40.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\msl.connectivity\2.0.0\lib\netstandard2.1\MSL.Connectivity.dll">
+      <PackagePath>Remoting Wizard\MSL.Connectivity.dll</PackagePath>
+      <Modified>2021-05-08T19:13:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\msl.core\2.0.0\lib\netstandard2.1\MSL.Core.dll">
+      <PackagePath>Remoting Wizard\MSL.Core.dll</PackagePath>
+      <Modified>2021-05-08T18:48:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\msl.core.wpf\2.0.0\lib\netcoreapp3.1\MSL.Core.Wpf.dll">
+      <PackagePath>Remoting Wizard\MSL.Core.Wpf.dll</PackagePath>
+      <Modified>2021-05-08T18:48:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\msl.media.wpf\2.0.0\lib\netcoreapp3.1\MSL.Media.Wpf.dll">
+      <PackagePath>Remoting Wizard\MSL.Media.Wpf.dll</PackagePath>
+      <Modified>2021-05-08T19:32:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\msl.process\2.0.0\lib\netstandard2.1\MSL.Process.dll">
+      <PackagePath>Remoting Wizard\MSL.Process.dll</PackagePath>
+      <Modified>2021-05-11T08:03:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\msl.process.wpf\2.0.0\lib\netcoreapp3.1\MSL.Process.Wpf.dll">
+      <PackagePath>Remoting Wizard\MSL.Process.Wpf.dll</PackagePath>
+      <Modified>2021-05-11T08:03:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\msl.ui\2.0.0\lib\netstandard2.1\MSL.UI.dll">
+      <PackagePath>Remoting Wizard\MSL.UI.dll</PackagePath>
+      <Modified>2021-05-10T17:52:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\msl.ui.wpf\2.0.0\lib\netcoreapp3.1\MSL.UI.Wpf.dll">
+      <PackagePath>Remoting Wizard\MSL.UI.Wpf.dll</PackagePath>
+      <Modified>2021-05-10T17:52:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\prism.core\8.0.0.1909\lib\netstandard2.0\Prism.dll">
+      <PackagePath>Remoting Wizard\Prism.dll</PackagePath>
+      <Modified>2020-10-21T17:48:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\prism.unity\8.0.0.1909\lib\netcoreapp3.1\Prism.Unity.Wpf.dll">
+      <PackagePath>Remoting Wizard\Prism.Unity.Wpf.dll</PackagePath>
+      <Modified>2020-10-21T17:49:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\prism.wpf\8.0.0.1909\lib\netcoreapp3.1\Prism.Wpf.dll">
+      <PackagePath>Remoting Wizard\Prism.Wpf.dll</PackagePath>
+      <Modified>2020-10-21T17:49:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\system.identitymodel.tokens.jwt\6.8.0\lib\netstandard2.0\System.IdentityModel.Tokens.Jwt.dll">
+      <PackagePath>Remoting Wizard\System.IdentityModel.Tokens.Jwt.dll</PackagePath>
+      <Modified>2020-10-13T00:20:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\system.runtime.caching\4.7.0\lib\netstandard2.0\System.Runtime.Caching.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Caching.dll</PackagePath>
+      <Modified>2019-11-15T08:37:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\unity.abstractions\5.11.6\lib\netcoreapp3.0\Unity.Abstractions.dll">
+      <PackagePath>Remoting Wizard\Unity.Abstractions.dll</PackagePath>
+      <Modified>2020-05-25T00:30:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\unity.container\5.11.8\lib\netcoreapp3.0\Unity.Container.dll">
+      <PackagePath>Remoting Wizard\Unity.Container.dll</PackagePath>
+      <Modified>2020-05-25T01:26:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\wpfanimatedgif\2.0.0\lib\netcoreapp3.0\WpfAnimatedGif.dll">
+      <PackagePath>Remoting Wizard\WpfAnimatedGif.dll</PackagePath>
+      <Modified>2020-03-28T18:57:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient\2.1.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll">
+      <PackagePath>Remoting Wizard\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll</PackagePath>
+      <Modified>2020-12-18T23:10:56.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient\2.1.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll">
+      <PackagePath>Remoting Wizard\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll</PackagePath>
+      <Modified>2020-12-18T23:10:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient.sni.runtime\2.1.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll">
+      <PackagePath>Remoting Wizard\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll</PackagePath>
+      <Modified>2020-10-20T18:13:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient.sni.runtime\2.1.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll">
+      <PackagePath>Remoting Wizard\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll</PackagePath>
+      <Modified>2020-10-20T18:13:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient.sni.runtime\2.1.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll">
+      <PackagePath>Remoting Wizard\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll</PackagePath>
+      <Modified>2020-10-20T18:13:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient.sni.runtime\2.1.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll">
+      <PackagePath>Remoting Wizard\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll</PackagePath>
+      <Modified>2020-10-20T18:13:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ja151016\.nuget\packages\system.runtime.caching\4.7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll">
+      <PackagePath>Remoting Wizard\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll</PackagePath>
+      <Modified>2019-11-15T08:53:44.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\Remoting Wizard.deps.json">
+      <PackagePath>Remoting Wizard\Remoting Wizard.deps.json</PackagePath>
+      <Modified>2022-07-25T18:32:21.745</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\Data\PCs.csv">
+      <PackagePath>Remoting Wizard\Data\PCs.csv</PackagePath>
+      <Modified>2022-04-01T10:55:08.359</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\Data\RemoteConnectionTemplate.txt">
+      <PackagePath>Remoting Wizard\Data\RemoteConnectionTemplate.txt</PackagePath>
+      <Modified>2022-04-29T09:37:27.667</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Release\net6.0-windows\apphost.exe">
+      <PackagePath>Remoting Wizard\Remoting Wizard.exe</PackagePath>
+      <Modified>2022-07-26T07:36:50.941</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\Remoting Wizard.runtimeconfig.json">
+      <PackagePath>Remoting Wizard\Remoting Wizard.runtimeconfig.json</PackagePath>
+      <Modified>2022-07-25T18:32:21.747</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\Remoting Wizard.dll">
+      <PackagePath>Remoting Wizard\Remoting Wizard.dll</PackagePath>
+      <Modified>2022-07-26T07:36:50.903</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\Remoting Wizard.dll.config">
+      <PackagePath>Remoting Wizard\Remoting Wizard.dll.config</PackagePath>
+      <Modified>2022-07-21T14:08:00.766</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

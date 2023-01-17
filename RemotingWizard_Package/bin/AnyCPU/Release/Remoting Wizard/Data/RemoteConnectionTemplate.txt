@@ -1,0 +1,5 @@
+session bpp:i:32
+rdgiskdcproxy:i:0
+kdcproxyname:s:
+drivestoredirect:s:
+screen mode id:i:2

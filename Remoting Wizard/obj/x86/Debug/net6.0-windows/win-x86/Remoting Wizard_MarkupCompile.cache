@@ -1,0 +1,20 @@
+﻿Remoting Wizard
+
+
+winexe
+C#
+.cs
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\x86\Debug\net6.0-windows\win-x86\
+Remoting_Wizard
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\App.xaml
+556240393
+3340989222
+211645987902
+2172045455344
+EngineeringPanel\CSV Manager\Views\CSVManager.xaml;Process\ObjectInheritence\Views\Inheritence.xaml;Process\RemoteFileManager\Views\RemoteFiles.xaml;Process\Selection\Views\SelectApp.xaml;Process\Wizard\Views\RemotingWizard.xaml;
+
+False
+

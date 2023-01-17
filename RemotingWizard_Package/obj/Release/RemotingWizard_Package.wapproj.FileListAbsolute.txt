@@ -1,0 +1,61 @@
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Microsoft.Identity.Client.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Microsoft.IdentityModel.Logging.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Microsoft.IdentityModel.Protocols.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Microsoft.IdentityModel.Tokens.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Microsoft.Xaml.Behaviors.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\MSL.Connectivity.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\MSL.Core.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\MSL.Core.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\MSL.Media.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\MSL.Process.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\MSL.Process.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\MSL.UI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\MSL.UI.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Prism.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Prism.Unity.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Prism.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\System.IdentityModel.Tokens.Jwt.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\System.Runtime.Caching.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Unity.Abstractions.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Unity.Container.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\WpfAnimatedGif.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Data\PCs.csv
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Data\RemoteConnectionTemplate.txt
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.exe
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\resources.pri
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\AppxManifest.xml
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\RemotingWizard_Package.build.appxrecipe
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\RemotingWizard_Package.wapproj.CoreCompileInputs.cache
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\priconfig.xml
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\priconfig.xml.intermediate
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\unfiltered.layout.resfiles
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\unfiltered.layout.resfiles.intermediate
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\filtered.layout.resfiles
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\filtered.layout.resfiles.intermediate
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\excluded.layout.resfiles
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\excluded.layout.resfiles.intermediate
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\resources.resfiles
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\resources.resfiles.intermediate
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\pri.resfiles
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\pri.resfiles.intermediate
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\qualifiers.txt
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\qualifiers.txt.intermediate
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\MultipleQualifiersPerDimensionFound.txt
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\ProjectArchitectures.txt
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\RemotingWizard_Package.wapproj.LastBuild.txt
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.deps.json
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.runtimeconfig.json
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.pdb
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\obj\Release\RemotingWizard_Package.wapproj.AssemblyReference.cache
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.dll.config
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\Remoting Wizard\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll

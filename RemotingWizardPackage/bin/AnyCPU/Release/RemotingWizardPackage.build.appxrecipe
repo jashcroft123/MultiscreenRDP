@@ -1,0 +1,1833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>UKNML12395</Machine>
+    <WindowsUser>ja151016</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>e3f27202-d180-4e51-9603-ec3c57fe71e2</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Renishaw plc, O=Renishaw plc, L=Wotton-under-Edge, C=GB</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\obj\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath></WindowsSdkPath>
+    <LayoutDir>C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\bin\AnyCPU\Release\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\bin\AnyCPU\Release\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\LargeTile.scale-100.png">
+      <PackagePath>Images\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\LargeTile.scale-125.png">
+      <PackagePath>Images\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\LargeTile.scale-150.png">
+      <PackagePath>Images\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\LargeTile.scale-200.png">
+      <PackagePath>Images\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\LargeTile.scale-400.png">
+      <PackagePath>Images\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\SmallTile.scale-100.png">
+      <PackagePath>Images\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\SmallTile.scale-125.png">
+      <PackagePath>Images\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\SmallTile.scale-150.png">
+      <PackagePath>Images\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\SmallTile.scale-200.png">
+      <PackagePath>Images\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\SmallTile.scale-400.png">
+      <PackagePath>Images\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\SplashScreen.scale-100.png">
+      <PackagePath>Images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\SplashScreen.scale-125.png">
+      <PackagePath>Images\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\SplashScreen.scale-150.png">
+      <PackagePath>Images\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\SplashScreen.scale-200.png">
+      <PackagePath>Images\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\LockScreenLogo.scale-200.png">
+      <PackagePath>Images\LockScreenLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\SplashScreen.scale-400.png">
+      <PackagePath>Images\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square150x150Logo.scale-100.png">
+      <PackagePath>Images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square150x150Logo.scale-125.png">
+      <PackagePath>Images\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square150x150Logo.scale-150.png">
+      <PackagePath>Images\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square150x150Logo.scale-200.png">
+      <PackagePath>Images\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square150x150Logo.scale-400.png">
+      <PackagePath>Images\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-lightunplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.scale-100.png">
+      <PackagePath>Images\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.scale-125.png">
+      <PackagePath>Images\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.scale-150.png">
+      <PackagePath>Images\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.scale-200.png">
+      <PackagePath>Images\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.scale-400.png">
+      <PackagePath>Images\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Images\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\StoreLogo.scale-100.png">
+      <PackagePath>Images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\StoreLogo.scale-125.png">
+      <PackagePath>Images\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\StoreLogo.scale-150.png">
+      <PackagePath>Images\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\StoreLogo.scale-200.png">
+      <PackagePath>Images\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\StoreLogo.scale-400.png">
+      <PackagePath>Images\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Wide310x150Logo.scale-100.png">
+      <PackagePath>Images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Wide310x150Logo.scale-125.png">
+      <PackagePath>Images\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Wide310x150Logo.scale-150.png">
+      <PackagePath>Images\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Wide310x150Logo.scale-200.png">
+      <PackagePath>Images\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\Images\Wide310x150Logo.scale-400.png">
+      <PackagePath>Images\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\bin\AnyCPU\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\App.config">
+      <PackagePath>Remoting Wizard\App.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Data\PCs.csv">
+      <PackagePath>Remoting Wizard\Data\PCs.csv</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Data\RemoteConnectionTemplate.txt">
+      <PackagePath>Remoting Wizard\Data\RemoteConnectionTemplate.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.exe">
+      <PackagePath>Remoting Wizard\Remoting Wizard.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.dll">
+      <PackagePath>Remoting Wizard\Remoting Wizard.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.deps.json">
+      <PackagePath>Remoting Wizard\Remoting Wizard.deps.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.runtimeconfig.json">
+      <PackagePath>Remoting Wizard\Remoting Wizard.runtimeconfig.json</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.dll.config">
+      <PackagePath>Remoting Wizard\Remoting Wizard.dll.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.CSharp.dll">
+      <PackagePath>Remoting Wizard\Microsoft.CSharp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.VisualBasic.Core.dll">
+      <PackagePath>Remoting Wizard\Microsoft.VisualBasic.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.Win32.Primitives.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Win32.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.Win32.Registry.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Win32.Registry.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.AppContext.dll">
+      <PackagePath>Remoting Wizard\System.AppContext.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Buffers.dll">
+      <PackagePath>Remoting Wizard\System.Buffers.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Collections.Concurrent.dll">
+      <PackagePath>Remoting Wizard\System.Collections.Concurrent.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Collections.Immutable.dll">
+      <PackagePath>Remoting Wizard\System.Collections.Immutable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Collections.NonGeneric.dll">
+      <PackagePath>Remoting Wizard\System.Collections.NonGeneric.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Collections.Specialized.dll">
+      <PackagePath>Remoting Wizard\System.Collections.Specialized.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Collections.dll">
+      <PackagePath>Remoting Wizard\System.Collections.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.ComponentModel.Annotations.dll">
+      <PackagePath>Remoting Wizard\System.ComponentModel.Annotations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.ComponentModel.DataAnnotations.dll">
+      <PackagePath>Remoting Wizard\System.ComponentModel.DataAnnotations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.ComponentModel.EventBasedAsync.dll">
+      <PackagePath>Remoting Wizard\System.ComponentModel.EventBasedAsync.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.ComponentModel.Primitives.dll">
+      <PackagePath>Remoting Wizard\System.ComponentModel.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.ComponentModel.TypeConverter.dll">
+      <PackagePath>Remoting Wizard\System.ComponentModel.TypeConverter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.ComponentModel.dll">
+      <PackagePath>Remoting Wizard\System.ComponentModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Configuration.dll">
+      <PackagePath>Remoting Wizard\System.Configuration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Console.dll">
+      <PackagePath>Remoting Wizard\System.Console.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Core.dll">
+      <PackagePath>Remoting Wizard\System.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Data.Common.dll">
+      <PackagePath>Remoting Wizard\System.Data.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Data.DataSetExtensions.dll">
+      <PackagePath>Remoting Wizard\System.Data.DataSetExtensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Data.dll">
+      <PackagePath>Remoting Wizard\System.Data.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.Contracts.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.Contracts.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.Debug.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.Debug.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.DiagnosticSource.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.DiagnosticSource.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.FileVersionInfo.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.FileVersionInfo.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.Process.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.Process.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.StackTrace.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.StackTrace.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.TextWriterTraceListener.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.TextWriterTraceListener.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.Tools.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.Tools.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.TraceSource.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.TraceSource.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.Tracing.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.Tracing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Drawing.Primitives.dll">
+      <PackagePath>Remoting Wizard\System.Drawing.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Dynamic.Runtime.dll">
+      <PackagePath>Remoting Wizard\System.Dynamic.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Formats.Asn1.dll">
+      <PackagePath>Remoting Wizard\System.Formats.Asn1.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Globalization.Calendars.dll">
+      <PackagePath>Remoting Wizard\System.Globalization.Calendars.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Globalization.Extensions.dll">
+      <PackagePath>Remoting Wizard\System.Globalization.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Globalization.dll">
+      <PackagePath>Remoting Wizard\System.Globalization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.Compression.Brotli.dll">
+      <PackagePath>Remoting Wizard\System.IO.Compression.Brotli.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.Compression.FileSystem.dll">
+      <PackagePath>Remoting Wizard\System.IO.Compression.FileSystem.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.Compression.ZipFile.dll">
+      <PackagePath>Remoting Wizard\System.IO.Compression.ZipFile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.Compression.dll">
+      <PackagePath>Remoting Wizard\System.IO.Compression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.FileSystem.AccessControl.dll">
+      <PackagePath>Remoting Wizard\System.IO.FileSystem.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.FileSystem.DriveInfo.dll">
+      <PackagePath>Remoting Wizard\System.IO.FileSystem.DriveInfo.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.FileSystem.Primitives.dll">
+      <PackagePath>Remoting Wizard\System.IO.FileSystem.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.FileSystem.Watcher.dll">
+      <PackagePath>Remoting Wizard\System.IO.FileSystem.Watcher.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.FileSystem.dll">
+      <PackagePath>Remoting Wizard\System.IO.FileSystem.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.IsolatedStorage.dll">
+      <PackagePath>Remoting Wizard\System.IO.IsolatedStorage.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.MemoryMappedFiles.dll">
+      <PackagePath>Remoting Wizard\System.IO.MemoryMappedFiles.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.Pipes.AccessControl.dll">
+      <PackagePath>Remoting Wizard\System.IO.Pipes.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.Pipes.dll">
+      <PackagePath>Remoting Wizard\System.IO.Pipes.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.UnmanagedMemoryStream.dll">
+      <PackagePath>Remoting Wizard\System.IO.UnmanagedMemoryStream.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.dll">
+      <PackagePath>Remoting Wizard\System.IO.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Linq.Expressions.dll">
+      <PackagePath>Remoting Wizard\System.Linq.Expressions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Linq.Parallel.dll">
+      <PackagePath>Remoting Wizard\System.Linq.Parallel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Linq.Queryable.dll">
+      <PackagePath>Remoting Wizard\System.Linq.Queryable.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Linq.dll">
+      <PackagePath>Remoting Wizard\System.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Memory.dll">
+      <PackagePath>Remoting Wizard\System.Memory.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.Http.Json.dll">
+      <PackagePath>Remoting Wizard\System.Net.Http.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.Http.dll">
+      <PackagePath>Remoting Wizard\System.Net.Http.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.HttpListener.dll">
+      <PackagePath>Remoting Wizard\System.Net.HttpListener.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.Mail.dll">
+      <PackagePath>Remoting Wizard\System.Net.Mail.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.NameResolution.dll">
+      <PackagePath>Remoting Wizard\System.Net.NameResolution.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.NetworkInformation.dll">
+      <PackagePath>Remoting Wizard\System.Net.NetworkInformation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.Ping.dll">
+      <PackagePath>Remoting Wizard\System.Net.Ping.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.Primitives.dll">
+      <PackagePath>Remoting Wizard\System.Net.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.Quic.dll">
+      <PackagePath>Remoting Wizard\System.Net.Quic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.Requests.dll">
+      <PackagePath>Remoting Wizard\System.Net.Requests.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.Security.dll">
+      <PackagePath>Remoting Wizard\System.Net.Security.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.ServicePoint.dll">
+      <PackagePath>Remoting Wizard\System.Net.ServicePoint.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.Sockets.dll">
+      <PackagePath>Remoting Wizard\System.Net.Sockets.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.WebClient.dll">
+      <PackagePath>Remoting Wizard\System.Net.WebClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.WebHeaderCollection.dll">
+      <PackagePath>Remoting Wizard\System.Net.WebHeaderCollection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.WebProxy.dll">
+      <PackagePath>Remoting Wizard\System.Net.WebProxy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.WebSockets.Client.dll">
+      <PackagePath>Remoting Wizard\System.Net.WebSockets.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.WebSockets.dll">
+      <PackagePath>Remoting Wizard\System.Net.WebSockets.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Net.dll">
+      <PackagePath>Remoting Wizard\System.Net.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Numerics.Vectors.dll">
+      <PackagePath>Remoting Wizard\System.Numerics.Vectors.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Numerics.dll">
+      <PackagePath>Remoting Wizard\System.Numerics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.ObjectModel.dll">
+      <PackagePath>Remoting Wizard\System.ObjectModel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Private.CoreLib.dll">
+      <PackagePath>Remoting Wizard\System.Private.CoreLib.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Private.DataContractSerialization.dll">
+      <PackagePath>Remoting Wizard\System.Private.DataContractSerialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Private.Uri.dll">
+      <PackagePath>Remoting Wizard\System.Private.Uri.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Private.Xml.Linq.dll">
+      <PackagePath>Remoting Wizard\System.Private.Xml.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Private.Xml.dll">
+      <PackagePath>Remoting Wizard\System.Private.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Reflection.DispatchProxy.dll">
+      <PackagePath>Remoting Wizard\System.Reflection.DispatchProxy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Reflection.Emit.ILGeneration.dll">
+      <PackagePath>Remoting Wizard\System.Reflection.Emit.ILGeneration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Reflection.Emit.Lightweight.dll">
+      <PackagePath>Remoting Wizard\System.Reflection.Emit.Lightweight.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Reflection.Emit.dll">
+      <PackagePath>Remoting Wizard\System.Reflection.Emit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Reflection.Extensions.dll">
+      <PackagePath>Remoting Wizard\System.Reflection.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Reflection.Metadata.dll">
+      <PackagePath>Remoting Wizard\System.Reflection.Metadata.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Reflection.Primitives.dll">
+      <PackagePath>Remoting Wizard\System.Reflection.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Reflection.TypeExtensions.dll">
+      <PackagePath>Remoting Wizard\System.Reflection.TypeExtensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Reflection.dll">
+      <PackagePath>Remoting Wizard\System.Reflection.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Resources.Reader.dll">
+      <PackagePath>Remoting Wizard\System.Resources.Reader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Resources.ResourceManager.dll">
+      <PackagePath>Remoting Wizard\System.Resources.ResourceManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Resources.Writer.dll">
+      <PackagePath>Remoting Wizard\System.Resources.Writer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.CompilerServices.Unsafe.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.CompilerServices.Unsafe.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.CompilerServices.VisualC.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.CompilerServices.VisualC.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Extensions.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Handles.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Handles.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.InteropServices.RuntimeInformation.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.InteropServices.RuntimeInformation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.InteropServices.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.InteropServices.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Intrinsics.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Intrinsics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Loader.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Loader.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Numerics.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Numerics.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Serialization.Formatters.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Serialization.Formatters.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Serialization.Json.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Serialization.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Serialization.Primitives.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Serialization.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Serialization.Xml.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Serialization.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Serialization.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Serialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.AccessControl.dll">
+      <PackagePath>Remoting Wizard\System.Security.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Claims.dll">
+      <PackagePath>Remoting Wizard\System.Security.Claims.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Cryptography.Algorithms.dll">
+      <PackagePath>Remoting Wizard\System.Security.Cryptography.Algorithms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Cryptography.Cng.dll">
+      <PackagePath>Remoting Wizard\System.Security.Cryptography.Cng.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Cryptography.Csp.dll">
+      <PackagePath>Remoting Wizard\System.Security.Cryptography.Csp.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Cryptography.Encoding.dll">
+      <PackagePath>Remoting Wizard\System.Security.Cryptography.Encoding.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Cryptography.OpenSsl.dll">
+      <PackagePath>Remoting Wizard\System.Security.Cryptography.OpenSsl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Cryptography.Primitives.dll">
+      <PackagePath>Remoting Wizard\System.Security.Cryptography.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Cryptography.X509Certificates.dll">
+      <PackagePath>Remoting Wizard\System.Security.Cryptography.X509Certificates.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Principal.Windows.dll">
+      <PackagePath>Remoting Wizard\System.Security.Principal.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Principal.dll">
+      <PackagePath>Remoting Wizard\System.Security.Principal.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.SecureString.dll">
+      <PackagePath>Remoting Wizard\System.Security.SecureString.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.dll">
+      <PackagePath>Remoting Wizard\System.Security.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.ServiceModel.Web.dll">
+      <PackagePath>Remoting Wizard\System.ServiceModel.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.ServiceProcess.dll">
+      <PackagePath>Remoting Wizard\System.ServiceProcess.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Text.Encoding.CodePages.dll">
+      <PackagePath>Remoting Wizard\System.Text.Encoding.CodePages.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Text.Encoding.Extensions.dll">
+      <PackagePath>Remoting Wizard\System.Text.Encoding.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Text.Encoding.dll">
+      <PackagePath>Remoting Wizard\System.Text.Encoding.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Text.Encodings.Web.dll">
+      <PackagePath>Remoting Wizard\System.Text.Encodings.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Text.Json.dll">
+      <PackagePath>Remoting Wizard\System.Text.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Text.RegularExpressions.dll">
+      <PackagePath>Remoting Wizard\System.Text.RegularExpressions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.Channels.dll">
+      <PackagePath>Remoting Wizard\System.Threading.Channels.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.Overlapped.dll">
+      <PackagePath>Remoting Wizard\System.Threading.Overlapped.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.Tasks.Dataflow.dll">
+      <PackagePath>Remoting Wizard\System.Threading.Tasks.Dataflow.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.Tasks.Extensions.dll">
+      <PackagePath>Remoting Wizard\System.Threading.Tasks.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.Tasks.Parallel.dll">
+      <PackagePath>Remoting Wizard\System.Threading.Tasks.Parallel.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.Tasks.dll">
+      <PackagePath>Remoting Wizard\System.Threading.Tasks.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.Thread.dll">
+      <PackagePath>Remoting Wizard\System.Threading.Thread.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.ThreadPool.dll">
+      <PackagePath>Remoting Wizard\System.Threading.ThreadPool.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.Timer.dll">
+      <PackagePath>Remoting Wizard\System.Threading.Timer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.dll">
+      <PackagePath>Remoting Wizard\System.Threading.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Transactions.Local.dll">
+      <PackagePath>Remoting Wizard\System.Transactions.Local.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Transactions.dll">
+      <PackagePath>Remoting Wizard\System.Transactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.ValueTuple.dll">
+      <PackagePath>Remoting Wizard\System.ValueTuple.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Web.HttpUtility.dll">
+      <PackagePath>Remoting Wizard\System.Web.HttpUtility.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Web.dll">
+      <PackagePath>Remoting Wizard\System.Web.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Windows.dll">
+      <PackagePath>Remoting Wizard\System.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Xml.Linq.dll">
+      <PackagePath>Remoting Wizard\System.Xml.Linq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Xml.ReaderWriter.dll">
+      <PackagePath>Remoting Wizard\System.Xml.ReaderWriter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Xml.Serialization.dll">
+      <PackagePath>Remoting Wizard\System.Xml.Serialization.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Xml.XDocument.dll">
+      <PackagePath>Remoting Wizard\System.Xml.XDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Xml.XPath.XDocument.dll">
+      <PackagePath>Remoting Wizard\System.Xml.XPath.XDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Xml.XPath.dll">
+      <PackagePath>Remoting Wizard\System.Xml.XPath.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Xml.XmlDocument.dll">
+      <PackagePath>Remoting Wizard\System.Xml.XmlDocument.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Xml.XmlSerializer.dll">
+      <PackagePath>Remoting Wizard\System.Xml.XmlSerializer.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Xml.dll">
+      <PackagePath>Remoting Wizard\System.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.dll">
+      <PackagePath>Remoting Wizard\System.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\mscorlib.dll">
+      <PackagePath>Remoting Wizard\mscorlib.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\netstandard.dll">
+      <PackagePath>Remoting Wizard\netstandard.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Accessibility.dll">
+      <PackagePath>Remoting Wizard\Accessibility.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\DirectWriteForwarder.dll">
+      <PackagePath>Remoting Wizard\DirectWriteForwarder.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.VisualBasic.Forms.dll">
+      <PackagePath>Remoting Wizard\Microsoft.VisualBasic.Forms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.VisualBasic.dll">
+      <PackagePath>Remoting Wizard\Microsoft.VisualBasic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.Win32.Registry.AccessControl.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Win32.Registry.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.Win32.SystemEvents.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Win32.SystemEvents.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationCore.dll">
+      <PackagePath>Remoting Wizard\PresentationCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework-SystemCore.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework-SystemCore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework-SystemData.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework-SystemData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework-SystemDrawing.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework-SystemDrawing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework-SystemXml.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework-SystemXml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework-SystemXmlLinq.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework-SystemXmlLinq.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework.Aero.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework.Aero.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework.Aero2.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework.Aero2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework.AeroLite.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework.AeroLite.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework.Classic.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework.Classic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework.Luna.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework.Luna.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework.Royale.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework.Royale.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationFramework.dll">
+      <PackagePath>Remoting Wizard\PresentationFramework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationUI.dll">
+      <PackagePath>Remoting Wizard\PresentationUI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ReachFramework.dll">
+      <PackagePath>Remoting Wizard\ReachFramework.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.CodeDom.dll">
+      <PackagePath>Remoting Wizard\System.CodeDom.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Configuration.ConfigurationManager.dll">
+      <PackagePath>Remoting Wizard\System.Configuration.ConfigurationManager.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Design.dll">
+      <PackagePath>Remoting Wizard\System.Design.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.EventLog.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.EventLog.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Diagnostics.PerformanceCounter.dll">
+      <PackagePath>Remoting Wizard\System.Diagnostics.PerformanceCounter.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.DirectoryServices.dll">
+      <PackagePath>Remoting Wizard\System.DirectoryServices.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Drawing.Common.dll">
+      <PackagePath>Remoting Wizard\System.Drawing.Common.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Drawing.Design.dll">
+      <PackagePath>Remoting Wizard\System.Drawing.Design.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Drawing.dll">
+      <PackagePath>Remoting Wizard\System.Drawing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.Packaging.dll">
+      <PackagePath>Remoting Wizard\System.IO.Packaging.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Printing.dll">
+      <PackagePath>Remoting Wizard\System.Printing.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Resources.Extensions.dll">
+      <PackagePath>Remoting Wizard\System.Resources.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Cryptography.Pkcs.dll">
+      <PackagePath>Remoting Wizard\System.Security.Cryptography.Pkcs.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Cryptography.ProtectedData.dll">
+      <PackagePath>Remoting Wizard\System.Security.Cryptography.ProtectedData.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Cryptography.Xml.dll">
+      <PackagePath>Remoting Wizard\System.Security.Cryptography.Xml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Security.Permissions.dll">
+      <PackagePath>Remoting Wizard\System.Security.Permissions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Threading.AccessControl.dll">
+      <PackagePath>Remoting Wizard\System.Threading.AccessControl.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Windows.Controls.Ribbon.dll">
+      <PackagePath>Remoting Wizard\System.Windows.Controls.Ribbon.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Windows.Extensions.dll">
+      <PackagePath>Remoting Wizard\System.Windows.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Windows.Forms.Design.Editors.dll">
+      <PackagePath>Remoting Wizard\System.Windows.Forms.Design.Editors.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Windows.Forms.Design.dll">
+      <PackagePath>Remoting Wizard\System.Windows.Forms.Design.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Windows.Forms.Primitives.dll">
+      <PackagePath>Remoting Wizard\System.Windows.Forms.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Windows.Forms.dll">
+      <PackagePath>Remoting Wizard\System.Windows.Forms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Windows.Input.Manipulations.dll">
+      <PackagePath>Remoting Wizard\System.Windows.Input.Manipulations.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Windows.Presentation.dll">
+      <PackagePath>Remoting Wizard\System.Windows.Presentation.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Xaml.dll">
+      <PackagePath>Remoting Wizard\System.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\UIAutomationClient.dll">
+      <PackagePath>Remoting Wizard\UIAutomationClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\UIAutomationClientSideProviders.dll">
+      <PackagePath>Remoting Wizard\UIAutomationClientSideProviders.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\UIAutomationProvider.dll">
+      <PackagePath>Remoting Wizard\UIAutomationProvider.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\UIAutomationTypes.dll">
+      <PackagePath>Remoting Wizard\UIAutomationTypes.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\WindowsBase.dll">
+      <PackagePath>Remoting Wizard\WindowsBase.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\WindowsFormsIntegration.dll">
+      <PackagePath>Remoting Wizard\WindowsFormsIntegration.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\API-MS-Win-core-xstate-l2-1-0.dll">
+      <PackagePath>Remoting Wizard\API-MS-Win-core-xstate-l2-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.DiaSymReader.Native.x86.dll">
+      <PackagePath>Remoting Wizard\Microsoft.DiaSymReader.Native.x86.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IO.Compression.Native.dll">
+      <PackagePath>Remoting Wizard\System.IO.Compression.Native.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-console-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-console-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-console-l1-2-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-console-l1-2-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-datetime-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-datetime-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-debug-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-debug-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-errorhandling-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-errorhandling-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-fibers-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-fibers-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-file-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-file-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-file-l1-2-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-file-l1-2-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-file-l2-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-file-l2-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-handle-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-handle-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-heap-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-heap-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-interlocked-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-interlocked-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-libraryloader-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-libraryloader-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-localization-l1-2-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-localization-l1-2-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-memory-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-memory-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-namedpipe-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-namedpipe-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-processenvironment-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-processenvironment-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-processthreads-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-processthreads-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-processthreads-l1-1-1.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-processthreads-l1-1-1.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-profile-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-profile-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-rtlsupport-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-rtlsupport-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-string-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-string-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-synch-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-synch-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-synch-l1-2-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-synch-l1-2-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-sysinfo-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-sysinfo-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-timezone-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-timezone-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-core-util-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-core-util-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-conio-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-conio-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-convert-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-convert-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-environment-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-environment-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-filesystem-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-filesystem-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-heap-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-heap-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-locale-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-locale-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-math-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-math-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-multibyte-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-multibyte-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-private-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-private-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-process-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-process-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-runtime-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-runtime-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-stdio-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-stdio-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-string-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-string-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-time-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-time-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\api-ms-win-crt-utility-l1-1-0.dll">
+      <PackagePath>Remoting Wizard\api-ms-win-crt-utility-l1-1-0.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\clretwrc.dll">
+      <PackagePath>Remoting Wizard\clretwrc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\clrjit.dll">
+      <PackagePath>Remoting Wizard\clrjit.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\coreclr.dll">
+      <PackagePath>Remoting Wizard\coreclr.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\createdump.exe">
+      <PackagePath>Remoting Wizard\createdump.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\dbgshim.dll">
+      <PackagePath>Remoting Wizard\dbgshim.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\hostfxr.dll">
+      <PackagePath>Remoting Wizard\hostfxr.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\hostpolicy.dll">
+      <PackagePath>Remoting Wizard\hostpolicy.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\mscordaccore.dll">
+      <PackagePath>Remoting Wizard\mscordaccore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\mscordaccore_x86_x86_6.0.522.21309.dll">
+      <PackagePath>Remoting Wizard\mscordaccore_x86_x86_6.0.522.21309.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\mscordbi.dll">
+      <PackagePath>Remoting Wizard\mscordbi.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\mscorrc.dll">
+      <PackagePath>Remoting Wizard\mscorrc.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\msquic.dll">
+      <PackagePath>Remoting Wizard\msquic.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ucrtbase.dll">
+      <PackagePath>Remoting Wizard\ucrtbase.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\D3DCompiler_47_cor3.dll">
+      <PackagePath>Remoting Wizard\D3DCompiler_47_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PenImc_cor3.dll">
+      <PackagePath>Remoting Wizard\PenImc_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\PresentationNative_cor3.dll">
+      <PackagePath>Remoting Wizard\PresentationNative_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\vcruntime140_cor3.dll">
+      <PackagePath>Remoting Wizard\vcruntime140_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\wpfgfx_cor3.dll">
+      <PackagePath>Remoting Wizard\wpfgfx_cor3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\cs\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\cs\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\cs\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\cs\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\cs\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\cs\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\cs\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\cs\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\cs\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\cs\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\cs\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\cs\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\cs\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\cs\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\cs\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\cs\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\cs\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\de\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\de\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\de\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\de\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\de\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\de\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\de\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\de\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\de\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\de\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\de\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\de\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\de\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\de\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\de\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\de\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\de\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\es\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\es\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\es\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\es\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\es\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\es\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\es\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\es\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\es\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\es\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\es\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\es\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\es\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\es\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\es\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\es\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\es\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\fr\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\fr\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\fr\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\fr\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\fr\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\fr\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\fr\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\fr\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\fr\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\fr\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\fr\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\fr\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\fr\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\fr\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\fr\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\fr\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\fr\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\it\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\it\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\it\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\it\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\it\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\it\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\it\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\it\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\it\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\it\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\it\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\it\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\it\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\it\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\it\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\it\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\it\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\ja\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\ja\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\ja\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\ja\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\ja\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\ja\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\ja\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\ja\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\ja\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\ja\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\ja\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\ja\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\ja\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\ja\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\ja\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\ja\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\ja\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\ko\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\ko\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\ko\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\ko\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\ko\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\ko\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\ko\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\ko\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\ko\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\ko\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\ko\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\ko\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\ko\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\ko\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\ko\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\ko\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ko\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\ko\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\pl\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\pl\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\pl\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\pl\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\pl\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\pl\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\pl\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\pl\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\pl\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\pl\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\pl\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\pl\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\pl\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\pl\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\pl\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\pl\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pl\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\pl\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\ru\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\ru\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\ru\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\ru\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\ru\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\ru\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\ru\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\ru\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\ru\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\ru\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\ru\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\ru\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\ru\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\ru\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\ru\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\ru\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\ru\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\tr\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\tr\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\tr\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\tr\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\tr\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\tr\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\tr\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\tr\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\tr\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\tr\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\tr\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\tr\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\tr\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\tr\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\tr\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\tr\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\tr\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\tr\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\Microsoft.VisualBasic.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\Microsoft.VisualBasic.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\PresentationCore.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\PresentationCore.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\PresentationFramework.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\PresentationFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\PresentationUI.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\PresentationUI.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\ReachFramework.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\ReachFramework.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\System.Windows.Controls.Ribbon.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\System.Windows.Controls.Ribbon.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\System.Windows.Forms.Design.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\System.Windows.Forms.Design.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\System.Windows.Forms.Primitives.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\System.Windows.Forms.Primitives.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\System.Windows.Forms.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\System.Windows.Forms.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\System.Windows.Input.Manipulations.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\System.Windows.Input.Manipulations.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\System.Xaml.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\System.Xaml.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\UIAutomationClient.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\UIAutomationClient.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\UIAutomationClientSideProviders.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\UIAutomationClientSideProviders.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\UIAutomationProvider.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\UIAutomationProvider.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\UIAutomationTypes.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\UIAutomationTypes.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\WindowsBase.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\WindowsBase.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\WindowsFormsIntegration.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hant\WindowsFormsIntegration.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.Data.SqlClient.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Data.SqlClient.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.Identity.Client.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Identity.Client.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.IdentityModel.JsonWebTokens.dll">
+      <PackagePath>Remoting Wizard\Microsoft.IdentityModel.JsonWebTokens.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.IdentityModel.Logging.dll">
+      <PackagePath>Remoting Wizard\Microsoft.IdentityModel.Logging.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.IdentityModel.Protocols.dll">
+      <PackagePath>Remoting Wizard\Microsoft.IdentityModel.Protocols.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll">
+      <PackagePath>Remoting Wizard\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.IdentityModel.Tokens.dll">
+      <PackagePath>Remoting Wizard\Microsoft.IdentityModel.Tokens.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.Xaml.Behaviors.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Xaml.Behaviors.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\MSL.Connectivity.dll">
+      <PackagePath>Remoting Wizard\MSL.Connectivity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\MSL.Core.dll">
+      <PackagePath>Remoting Wizard\MSL.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\MSL.Core.Wpf.dll">
+      <PackagePath>Remoting Wizard\MSL.Core.Wpf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\MSL.Media.Wpf.dll">
+      <PackagePath>Remoting Wizard\MSL.Media.Wpf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\MSL.Process.dll">
+      <PackagePath>Remoting Wizard\MSL.Process.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\MSL.Process.Wpf.dll">
+      <PackagePath>Remoting Wizard\MSL.Process.Wpf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\MSL.UI.dll">
+      <PackagePath>Remoting Wizard\MSL.UI.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\MSL.UI.Wpf.dll">
+      <PackagePath>Remoting Wizard\MSL.UI.Wpf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Prism.dll">
+      <PackagePath>Remoting Wizard\Prism.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Prism.Unity.Wpf.dll">
+      <PackagePath>Remoting Wizard\Prism.Unity.Wpf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Prism.Wpf.dll">
+      <PackagePath>Remoting Wizard\Prism.Wpf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.IdentityModel.Tokens.Jwt.dll">
+      <PackagePath>Remoting Wizard\System.IdentityModel.Tokens.Jwt.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\System.Runtime.Caching.dll">
+      <PackagePath>Remoting Wizard\System.Runtime.Caching.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Unity.Abstractions.dll">
+      <PackagePath>Remoting Wizard\Unity.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Unity.Container.dll">
+      <PackagePath>Remoting Wizard\Unity.Container.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\WpfAnimatedGif.dll">
+      <PackagePath>Remoting Wizard\WpfAnimatedGif.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.Data.SqlClient.SNI.dll">
+      <PackagePath>Remoting Wizard\Microsoft.Data.SqlClient.SNI.dll</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

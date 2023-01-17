@@ -1,0 +1,37 @@
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Data\PCs.csv
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Remoting Wizard.exe
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Remoting Wizard.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Remoting Wizard.deps.json
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Remoting Wizard.runtimeconfig.json
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Remoting Wizard.pdb
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Microsoft.Identity.Client.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Microsoft.IdentityModel.Logging.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Microsoft.IdentityModel.Protocols.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Microsoft.IdentityModel.Tokens.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Microsoft.Xaml.Behaviors.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\MSL.Connectivity.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\MSL.Core.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\MSL.Core.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\MSL.Media.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\MSL.Process.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\MSL.Process.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\MSL.UI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\MSL.UI.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Prism.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Prism.Unity.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Prism.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\System.IdentityModel.Tokens.Jwt.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\System.Runtime.Caching.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Unity.Abstractions.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\Unity.Container.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\WpfAnimatedGif.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Builds\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll

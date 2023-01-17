@@ -1,0 +1,20 @@
+﻿Remoting Wizard
+2.0.0.0
+
+winexe
+C#
+.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\
+Remoting_Wizard
+none
+false
+TRACE;DEBUG;NET;NET6_0;NETCOREAPP
+C:\devops\MultiscreenRDP\Remoting Wizard\App.xaml
+51386447777
+3340989222
+20625311086
+2011510034543
+Controls\Datagrid.xaml;MainWindow.xaml;ViewModels\AddPCPopUp.xaml;ViewModels\RemoteFiles.xaml;ViewModels\RemotingWizard.xaml;
+
+False
+

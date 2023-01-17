@@ -1,0 +1,362 @@
+Images\LargeTile.scale-100.png
+Images\LargeTile.scale-125.png
+Images\LargeTile.scale-150.png
+Images\LargeTile.scale-200.png
+Images\LargeTile.scale-400.png
+Images\LockScreenLogo.scale-200.png
+Images\SmallTile.scale-100.png
+Images\SmallTile.scale-125.png
+Images\SmallTile.scale-150.png
+Images\SmallTile.scale-200.png
+Images\SmallTile.scale-400.png
+Images\SplashScreen.scale-100.png
+Images\SplashScreen.scale-125.png
+Images\SplashScreen.scale-150.png
+Images\SplashScreen.scale-200.png
+Images\SplashScreen.scale-400.png
+Images\Square150x150Logo.scale-100.png
+Images\Square150x150Logo.scale-125.png
+Images\Square150x150Logo.scale-150.png
+Images\Square150x150Logo.scale-200.png
+Images\Square150x150Logo.scale-400.png
+Images\Square44x44Logo.altform-lightunplated_targetsize-16.png
+Images\Square44x44Logo.altform-lightunplated_targetsize-24.png
+Images\Square44x44Logo.altform-lightunplated_targetsize-256.png
+Images\Square44x44Logo.altform-lightunplated_targetsize-32.png
+Images\Square44x44Logo.altform-lightunplated_targetsize-48.png
+Images\Square44x44Logo.altform-unplated_targetsize-16.png
+Images\Square44x44Logo.altform-unplated_targetsize-256.png
+Images\Square44x44Logo.altform-unplated_targetsize-32.png
+Images\Square44x44Logo.altform-unplated_targetsize-48.png
+Images\Square44x44Logo.scale-100.png
+Images\Square44x44Logo.scale-125.png
+Images\Square44x44Logo.scale-150.png
+Images\Square44x44Logo.scale-200.png
+Images\Square44x44Logo.scale-400.png
+Images\Square44x44Logo.targetsize-16.png
+Images\Square44x44Logo.targetsize-24.png
+Images\Square44x44Logo.targetsize-24_altform-unplated.png
+Images\Square44x44Logo.targetsize-256.png
+Images\Square44x44Logo.targetsize-32.png
+Images\Square44x44Logo.targetsize-48.png
+Images\StoreLogo.scale-100.png
+Images\StoreLogo.scale-125.png
+Images\StoreLogo.scale-150.png
+Images\StoreLogo.scale-200.png
+Images\StoreLogo.scale-400.png
+Images\Wide310x150Logo.scale-100.png
+Images\Wide310x150Logo.scale-125.png
+Images\Wide310x150Logo.scale-150.png
+Images\Wide310x150Logo.scale-200.png
+Images\Wide310x150Logo.scale-400.png
+Remoting Wizard\Accessibility.dll
+Remoting Wizard\api-ms-win-core-console-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-console-l1-2-0.dll
+Remoting Wizard\api-ms-win-core-datetime-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-debug-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-errorhandling-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-fibers-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-file-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-file-l1-2-0.dll
+Remoting Wizard\api-ms-win-core-file-l2-1-0.dll
+Remoting Wizard\api-ms-win-core-handle-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-heap-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-interlocked-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-libraryloader-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-localization-l1-2-0.dll
+Remoting Wizard\api-ms-win-core-memory-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-namedpipe-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-processenvironment-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-processthreads-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-processthreads-l1-1-1.dll
+Remoting Wizard\api-ms-win-core-profile-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-rtlsupport-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-string-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-synch-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-synch-l1-2-0.dll
+Remoting Wizard\api-ms-win-core-sysinfo-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-timezone-l1-1-0.dll
+Remoting Wizard\api-ms-win-core-util-l1-1-0.dll
+Remoting Wizard\API-MS-Win-core-xstate-l2-1-0.dll
+Remoting Wizard\api-ms-win-crt-conio-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-convert-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-environment-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-filesystem-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-heap-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-locale-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-math-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-multibyte-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-private-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-process-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-runtime-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-stdio-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-string-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-time-l1-1-0.dll
+Remoting Wizard\api-ms-win-crt-utility-l1-1-0.dll
+Remoting Wizard\App.config
+Remoting Wizard\clretwrc.dll
+Remoting Wizard\clrjit.dll
+Remoting Wizard\coreclr.dll
+Remoting Wizard\createdump.exe
+Remoting Wizard\D3DCompiler_47_cor3.dll
+Remoting Wizard\Data\PCs.csv
+Remoting Wizard\Data\RemoteConnectionTemplate.txt
+Remoting Wizard\dbgshim.dll
+Remoting Wizard\DirectWriteForwarder.dll
+Remoting Wizard\hostfxr.dll
+Remoting Wizard\hostpolicy.dll
+Remoting Wizard\Microsoft.CSharp.dll
+Remoting Wizard\Microsoft.Data.SqlClient.dll
+Remoting Wizard\Microsoft.Data.SqlClient.SNI.dll
+Remoting Wizard\Microsoft.DiaSymReader.Native.x86.dll
+Remoting Wizard\Microsoft.Identity.Client.dll
+Remoting Wizard\Microsoft.IdentityModel.JsonWebTokens.dll
+Remoting Wizard\Microsoft.IdentityModel.Logging.dll
+Remoting Wizard\Microsoft.IdentityModel.Protocols.dll
+Remoting Wizard\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+Remoting Wizard\Microsoft.IdentityModel.Tokens.dll
+Remoting Wizard\Microsoft.VisualBasic.Core.dll
+Remoting Wizard\Microsoft.VisualBasic.dll
+Remoting Wizard\Microsoft.VisualBasic.Forms.dll
+Remoting Wizard\Microsoft.Win32.Primitives.dll
+Remoting Wizard\Microsoft.Win32.Registry.AccessControl.dll
+Remoting Wizard\Microsoft.Win32.Registry.dll
+Remoting Wizard\Microsoft.Win32.SystemEvents.dll
+Remoting Wizard\Microsoft.Xaml.Behaviors.dll
+Remoting Wizard\mscordaccore.dll
+Remoting Wizard\mscordaccore_x86_x86_6.0.522.21309.dll
+Remoting Wizard\mscordbi.dll
+Remoting Wizard\mscorlib.dll
+Remoting Wizard\mscorrc.dll
+Remoting Wizard\MSL.Connectivity.dll
+Remoting Wizard\MSL.Core.dll
+Remoting Wizard\MSL.Core.Wpf.dll
+Remoting Wizard\MSL.Media.Wpf.dll
+Remoting Wizard\MSL.Process.dll
+Remoting Wizard\MSL.Process.Wpf.dll
+Remoting Wizard\MSL.UI.dll
+Remoting Wizard\MSL.UI.Wpf.dll
+Remoting Wizard\msquic.dll
+Remoting Wizard\netstandard.dll
+Remoting Wizard\PenImc_cor3.dll
+Remoting Wizard\PresentationCore.dll
+Remoting Wizard\PresentationFramework.Aero.dll
+Remoting Wizard\PresentationFramework.Aero2.dll
+Remoting Wizard\PresentationFramework.AeroLite.dll
+Remoting Wizard\PresentationFramework.Classic.dll
+Remoting Wizard\PresentationFramework.dll
+Remoting Wizard\PresentationFramework.Luna.dll
+Remoting Wizard\PresentationFramework.Royale.dll
+Remoting Wizard\PresentationFramework-SystemCore.dll
+Remoting Wizard\PresentationFramework-SystemData.dll
+Remoting Wizard\PresentationFramework-SystemDrawing.dll
+Remoting Wizard\PresentationFramework-SystemXml.dll
+Remoting Wizard\PresentationFramework-SystemXmlLinq.dll
+Remoting Wizard\PresentationNative_cor3.dll
+Remoting Wizard\PresentationUI.dll
+Remoting Wizard\Prism.dll
+Remoting Wizard\Prism.Unity.Wpf.dll
+Remoting Wizard\Prism.Wpf.dll
+Remoting Wizard\ReachFramework.dll
+Remoting Wizard\Remoting Wizard.deps.json
+Remoting Wizard\Remoting Wizard.dll
+Remoting Wizard\Remoting Wizard.dll.config
+Remoting Wizard\Remoting Wizard.exe
+Remoting Wizard\Remoting Wizard.runtimeconfig.json
+Remoting Wizard\System.AppContext.dll
+Remoting Wizard\System.Buffers.dll
+Remoting Wizard\System.CodeDom.dll
+Remoting Wizard\System.Collections.Concurrent.dll
+Remoting Wizard\System.Collections.dll
+Remoting Wizard\System.Collections.Immutable.dll
+Remoting Wizard\System.Collections.NonGeneric.dll
+Remoting Wizard\System.Collections.Specialized.dll
+Remoting Wizard\System.ComponentModel.Annotations.dll
+Remoting Wizard\System.ComponentModel.DataAnnotations.dll
+Remoting Wizard\System.ComponentModel.dll
+Remoting Wizard\System.ComponentModel.EventBasedAsync.dll
+Remoting Wizard\System.ComponentModel.Primitives.dll
+Remoting Wizard\System.ComponentModel.TypeConverter.dll
+Remoting Wizard\System.Configuration.ConfigurationManager.dll
+Remoting Wizard\System.Configuration.dll
+Remoting Wizard\System.Console.dll
+Remoting Wizard\System.Core.dll
+Remoting Wizard\System.Data.Common.dll
+Remoting Wizard\System.Data.DataSetExtensions.dll
+Remoting Wizard\System.Data.dll
+Remoting Wizard\System.Design.dll
+Remoting Wizard\System.Diagnostics.Contracts.dll
+Remoting Wizard\System.Diagnostics.Debug.dll
+Remoting Wizard\System.Diagnostics.DiagnosticSource.dll
+Remoting Wizard\System.Diagnostics.EventLog.dll
+Remoting Wizard\System.Diagnostics.FileVersionInfo.dll
+Remoting Wizard\System.Diagnostics.PerformanceCounter.dll
+Remoting Wizard\System.Diagnostics.Process.dll
+Remoting Wizard\System.Diagnostics.StackTrace.dll
+Remoting Wizard\System.Diagnostics.TextWriterTraceListener.dll
+Remoting Wizard\System.Diagnostics.Tools.dll
+Remoting Wizard\System.Diagnostics.TraceSource.dll
+Remoting Wizard\System.Diagnostics.Tracing.dll
+Remoting Wizard\System.DirectoryServices.dll
+Remoting Wizard\System.dll
+Remoting Wizard\System.Drawing.Common.dll
+Remoting Wizard\System.Drawing.Design.dll
+Remoting Wizard\System.Drawing.dll
+Remoting Wizard\System.Drawing.Primitives.dll
+Remoting Wizard\System.Dynamic.Runtime.dll
+Remoting Wizard\System.Formats.Asn1.dll
+Remoting Wizard\System.Globalization.Calendars.dll
+Remoting Wizard\System.Globalization.dll
+Remoting Wizard\System.Globalization.Extensions.dll
+Remoting Wizard\System.IdentityModel.Tokens.Jwt.dll
+Remoting Wizard\System.IO.Compression.Brotli.dll
+Remoting Wizard\System.IO.Compression.dll
+Remoting Wizard\System.IO.Compression.FileSystem.dll
+Remoting Wizard\System.IO.Compression.Native.dll
+Remoting Wizard\System.IO.Compression.ZipFile.dll
+Remoting Wizard\System.IO.dll
+Remoting Wizard\System.IO.FileSystem.AccessControl.dll
+Remoting Wizard\System.IO.FileSystem.dll
+Remoting Wizard\System.IO.FileSystem.DriveInfo.dll
+Remoting Wizard\System.IO.FileSystem.Primitives.dll
+Remoting Wizard\System.IO.FileSystem.Watcher.dll
+Remoting Wizard\System.IO.IsolatedStorage.dll
+Remoting Wizard\System.IO.MemoryMappedFiles.dll
+Remoting Wizard\System.IO.Packaging.dll
+Remoting Wizard\System.IO.Pipes.AccessControl.dll
+Remoting Wizard\System.IO.Pipes.dll
+Remoting Wizard\System.IO.UnmanagedMemoryStream.dll
+Remoting Wizard\System.Linq.dll
+Remoting Wizard\System.Linq.Expressions.dll
+Remoting Wizard\System.Linq.Parallel.dll
+Remoting Wizard\System.Linq.Queryable.dll
+Remoting Wizard\System.Memory.dll
+Remoting Wizard\System.Net.dll
+Remoting Wizard\System.Net.Http.dll
+Remoting Wizard\System.Net.Http.Json.dll
+Remoting Wizard\System.Net.HttpListener.dll
+Remoting Wizard\System.Net.Mail.dll
+Remoting Wizard\System.Net.NameResolution.dll
+Remoting Wizard\System.Net.NetworkInformation.dll
+Remoting Wizard\System.Net.Ping.dll
+Remoting Wizard\System.Net.Primitives.dll
+Remoting Wizard\System.Net.Quic.dll
+Remoting Wizard\System.Net.Requests.dll
+Remoting Wizard\System.Net.Security.dll
+Remoting Wizard\System.Net.ServicePoint.dll
+Remoting Wizard\System.Net.Sockets.dll
+Remoting Wizard\System.Net.WebClient.dll
+Remoting Wizard\System.Net.WebHeaderCollection.dll
+Remoting Wizard\System.Net.WebProxy.dll
+Remoting Wizard\System.Net.WebSockets.Client.dll
+Remoting Wizard\System.Net.WebSockets.dll
+Remoting Wizard\System.Numerics.dll
+Remoting Wizard\System.Numerics.Vectors.dll
+Remoting Wizard\System.ObjectModel.dll
+Remoting Wizard\System.Printing.dll
+Remoting Wizard\System.Private.CoreLib.dll
+Remoting Wizard\System.Private.DataContractSerialization.dll
+Remoting Wizard\System.Private.Uri.dll
+Remoting Wizard\System.Private.Xml.dll
+Remoting Wizard\System.Private.Xml.Linq.dll
+Remoting Wizard\System.Reflection.DispatchProxy.dll
+Remoting Wizard\System.Reflection.dll
+Remoting Wizard\System.Reflection.Emit.dll
+Remoting Wizard\System.Reflection.Emit.ILGeneration.dll
+Remoting Wizard\System.Reflection.Emit.Lightweight.dll
+Remoting Wizard\System.Reflection.Extensions.dll
+Remoting Wizard\System.Reflection.Metadata.dll
+Remoting Wizard\System.Reflection.Primitives.dll
+Remoting Wizard\System.Reflection.TypeExtensions.dll
+Remoting Wizard\System.Resources.Extensions.dll
+Remoting Wizard\System.Resources.Reader.dll
+Remoting Wizard\System.Resources.ResourceManager.dll
+Remoting Wizard\System.Resources.Writer.dll
+Remoting Wizard\System.Runtime.Caching.dll
+Remoting Wizard\System.Runtime.CompilerServices.Unsafe.dll
+Remoting Wizard\System.Runtime.CompilerServices.VisualC.dll
+Remoting Wizard\System.Runtime.dll
+Remoting Wizard\System.Runtime.Extensions.dll
+Remoting Wizard\System.Runtime.Handles.dll
+Remoting Wizard\System.Runtime.InteropServices.dll
+Remoting Wizard\System.Runtime.InteropServices.RuntimeInformation.dll
+Remoting Wizard\System.Runtime.Intrinsics.dll
+Remoting Wizard\System.Runtime.Loader.dll
+Remoting Wizard\System.Runtime.Numerics.dll
+Remoting Wizard\System.Runtime.Serialization.dll
+Remoting Wizard\System.Runtime.Serialization.Formatters.dll
+Remoting Wizard\System.Runtime.Serialization.Json.dll
+Remoting Wizard\System.Runtime.Serialization.Primitives.dll
+Remoting Wizard\System.Runtime.Serialization.Xml.dll
+Remoting Wizard\System.Security.AccessControl.dll
+Remoting Wizard\System.Security.Claims.dll
+Remoting Wizard\System.Security.Cryptography.Algorithms.dll
+Remoting Wizard\System.Security.Cryptography.Cng.dll
+Remoting Wizard\System.Security.Cryptography.Csp.dll
+Remoting Wizard\System.Security.Cryptography.Encoding.dll
+Remoting Wizard\System.Security.Cryptography.OpenSsl.dll
+Remoting Wizard\System.Security.Cryptography.Pkcs.dll
+Remoting Wizard\System.Security.Cryptography.Primitives.dll
+Remoting Wizard\System.Security.Cryptography.ProtectedData.dll
+Remoting Wizard\System.Security.Cryptography.X509Certificates.dll
+Remoting Wizard\System.Security.Cryptography.Xml.dll
+Remoting Wizard\System.Security.dll
+Remoting Wizard\System.Security.Permissions.dll
+Remoting Wizard\System.Security.Principal.dll
+Remoting Wizard\System.Security.Principal.Windows.dll
+Remoting Wizard\System.Security.SecureString.dll
+Remoting Wizard\System.ServiceModel.Web.dll
+Remoting Wizard\System.ServiceProcess.dll
+Remoting Wizard\System.Text.Encoding.CodePages.dll
+Remoting Wizard\System.Text.Encoding.dll
+Remoting Wizard\System.Text.Encoding.Extensions.dll
+Remoting Wizard\System.Text.Encodings.Web.dll
+Remoting Wizard\System.Text.Json.dll
+Remoting Wizard\System.Text.RegularExpressions.dll
+Remoting Wizard\System.Threading.AccessControl.dll
+Remoting Wizard\System.Threading.Channels.dll
+Remoting Wizard\System.Threading.dll
+Remoting Wizard\System.Threading.Overlapped.dll
+Remoting Wizard\System.Threading.Tasks.Dataflow.dll
+Remoting Wizard\System.Threading.Tasks.dll
+Remoting Wizard\System.Threading.Tasks.Extensions.dll
+Remoting Wizard\System.Threading.Tasks.Parallel.dll
+Remoting Wizard\System.Threading.Thread.dll
+Remoting Wizard\System.Threading.ThreadPool.dll
+Remoting Wizard\System.Threading.Timer.dll
+Remoting Wizard\System.Transactions.dll
+Remoting Wizard\System.Transactions.Local.dll
+Remoting Wizard\System.ValueTuple.dll
+Remoting Wizard\System.Web.dll
+Remoting Wizard\System.Web.HttpUtility.dll
+Remoting Wizard\System.Windows.Controls.Ribbon.dll
+Remoting Wizard\System.Windows.dll
+Remoting Wizard\System.Windows.Extensions.dll
+Remoting Wizard\System.Windows.Forms.Design.dll
+Remoting Wizard\System.Windows.Forms.Design.Editors.dll
+Remoting Wizard\System.Windows.Forms.dll
+Remoting Wizard\System.Windows.Forms.Primitives.dll
+Remoting Wizard\System.Windows.Input.Manipulations.dll
+Remoting Wizard\System.Windows.Presentation.dll
+Remoting Wizard\System.Xaml.dll
+Remoting Wizard\System.Xml.dll
+Remoting Wizard\System.Xml.Linq.dll
+Remoting Wizard\System.Xml.ReaderWriter.dll
+Remoting Wizard\System.Xml.Serialization.dll
+Remoting Wizard\System.Xml.XDocument.dll
+Remoting Wizard\System.Xml.XmlDocument.dll
+Remoting Wizard\System.Xml.XmlSerializer.dll
+Remoting Wizard\System.Xml.XPath.dll
+Remoting Wizard\System.Xml.XPath.XDocument.dll
+Remoting Wizard\ucrtbase.dll
+Remoting Wizard\UIAutomationClient.dll
+Remoting Wizard\UIAutomationClientSideProviders.dll
+Remoting Wizard\UIAutomationProvider.dll
+Remoting Wizard\UIAutomationTypes.dll
+Remoting Wizard\Unity.Abstractions.dll
+Remoting Wizard\Unity.Container.dll
+Remoting Wizard\vcruntime140_cor3.dll
+Remoting Wizard\WindowsBase.dll
+Remoting Wizard\WindowsFormsIntegration.dll
+Remoting Wizard\WpfAnimatedGif.dll
+Remoting Wizard\wpfgfx_cor3.dll

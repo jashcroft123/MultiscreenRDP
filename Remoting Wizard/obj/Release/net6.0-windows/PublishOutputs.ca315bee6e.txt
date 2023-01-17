@@ -1,0 +1,38 @@
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Data\PCs.csv
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Data\RemoteConnectionTemplate.txt
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Remoting Wizard.exe
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Remoting Wizard.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Remoting Wizard.deps.json
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Remoting Wizard.runtimeconfig.json
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Remoting Wizard.pdb
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Microsoft.Identity.Client.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Microsoft.IdentityModel.Logging.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Microsoft.IdentityModel.Protocols.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Microsoft.IdentityModel.Tokens.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Microsoft.Xaml.Behaviors.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\MSL.Connectivity.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\MSL.Core.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\MSL.Core.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\MSL.Media.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\MSL.Process.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\MSL.Process.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\MSL.UI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\MSL.UI.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Prism.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Prism.Unity.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Prism.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\System.IdentityModel.Tokens.Jwt.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\System.Runtime.Caching.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Unity.Abstractions.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\Unity.Container.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\WpfAnimatedGif.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard_Package\bin\AnyCPU\Release\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll

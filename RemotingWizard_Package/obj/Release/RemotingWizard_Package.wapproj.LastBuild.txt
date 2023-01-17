@@ -1,0 +1,91 @@
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LargeTile.scale-100.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LargeTile.scale-125.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LargeTile.scale-150.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LargeTile.scale-200.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LargeTile.scale-400.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SmallTile.scale-100.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SmallTile.scale-125.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SmallTile.scale-150.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SmallTile.scale-200.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SmallTile.scale-400.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SplashScreen.scale-100.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SplashScreen.scale-125.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SplashScreen.scale-150.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SplashScreen.scale-200.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\LockScreenLogo.scale-200.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\SplashScreen.scale-400.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square150x150Logo.scale-100.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square150x150Logo.scale-125.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square150x150Logo.scale-150.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square150x150Logo.scale-200.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square150x150Logo.scale-400.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-lightunplated_targetsize-16.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-lightunplated_targetsize-24.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-lightunplated_targetsize-256.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-lightunplated_targetsize-32.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-lightunplated_targetsize-48.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-unplated_targetsize-16.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-unplated_targetsize-256.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-unplated_targetsize-32.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.altform-unplated_targetsize-48.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.scale-100.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.scale-125.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.scale-150.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.scale-200.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.scale-400.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-16.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-24.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-24_altform-unplated.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-256.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-32.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Square44x44Logo.targetsize-48.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\StoreLogo.scale-100.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\StoreLogo.scale-125.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\StoreLogo.scale-150.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\StoreLogo.scale-200.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\StoreLogo.scale-400.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Wide310x150Logo.scale-100.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Wide310x150Logo.scale-125.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Wide310x150Logo.scale-150.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Wide310x150Logo.scale-200.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\Images\Wide310x150Logo.scale-400.png
+C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizard_Package\bin\AnyCPU\Release\resources.pri
+C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient\2.1.1\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ja151016\.nuget\packages\microsoft.identity.client\4.21.1\lib\netcoreapp2.1\Microsoft.Identity.Client.dll
+C:\Users\ja151016\.nuget\packages\microsoft.identitymodel.jsonwebtokens\6.8.0\lib\netstandard2.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ja151016\.nuget\packages\microsoft.identitymodel.logging\6.8.0\lib\netstandard2.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ja151016\.nuget\packages\microsoft.identitymodel.protocols\6.8.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ja151016\.nuget\packages\microsoft.identitymodel.protocols.openidconnect\6.8.0\lib\netstandard2.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ja151016\.nuget\packages\microsoft.identitymodel.tokens\6.8.0\lib\netstandard2.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ja151016\.nuget\packages\microsoft.xaml.behaviors.wpf\1.1.19\lib\netcoreapp3.0\Microsoft.Xaml.Behaviors.dll
+C:\Users\ja151016\.nuget\packages\msl.connectivity\2.0.0\lib\netstandard2.1\MSL.Connectivity.dll
+C:\Users\ja151016\.nuget\packages\msl.core\2.0.0\lib\netstandard2.1\MSL.Core.dll
+C:\Users\ja151016\.nuget\packages\msl.core.wpf\2.0.0\lib\netcoreapp3.1\MSL.Core.Wpf.dll
+C:\Users\ja151016\.nuget\packages\msl.media.wpf\2.0.0\lib\netcoreapp3.1\MSL.Media.Wpf.dll
+C:\Users\ja151016\.nuget\packages\msl.process\2.0.0\lib\netstandard2.1\MSL.Process.dll
+C:\Users\ja151016\.nuget\packages\msl.process.wpf\2.0.0\lib\netcoreapp3.1\MSL.Process.Wpf.dll
+C:\Users\ja151016\.nuget\packages\msl.ui\2.0.0\lib\netstandard2.1\MSL.UI.dll
+C:\Users\ja151016\.nuget\packages\msl.ui.wpf\2.0.0\lib\netcoreapp3.1\MSL.UI.Wpf.dll
+C:\Users\ja151016\.nuget\packages\prism.core\8.0.0.1909\lib\netstandard2.0\Prism.dll
+C:\Users\ja151016\.nuget\packages\prism.unity\8.0.0.1909\lib\netcoreapp3.1\Prism.Unity.Wpf.dll
+C:\Users\ja151016\.nuget\packages\prism.wpf\8.0.0.1909\lib\netcoreapp3.1\Prism.Wpf.dll
+C:\Users\ja151016\.nuget\packages\system.identitymodel.tokens.jwt\6.8.0\lib\netstandard2.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ja151016\.nuget\packages\system.runtime.caching\4.7.0\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\ja151016\.nuget\packages\unity.abstractions\5.11.6\lib\netcoreapp3.0\Unity.Abstractions.dll
+C:\Users\ja151016\.nuget\packages\unity.container\5.11.8\lib\netcoreapp3.0\Unity.Container.dll
+C:\Users\ja151016\.nuget\packages\wpfanimatedgif\2.0.0\lib\netcoreapp3.0\WpfAnimatedGif.dll
+C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient\2.1.1\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient\2.1.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient.sni.runtime\2.1.1\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient.sni.runtime\2.1.1\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient.sni.runtime\2.1.1\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ja151016\.nuget\packages\microsoft.data.sqlclient.sni.runtime\2.1.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ja151016\.nuget\packages\system.runtime.caching\4.7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\Remoting Wizard.deps.json
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\Data\PCs.csv
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\Data\RemoteConnectionTemplate.txt
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Release\net6.0-windows\apphost.exe
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\Remoting Wizard.runtimeconfig.json
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\Remoting Wizard.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\Remoting Wizard.dll.config
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Release\net6.0-windows\Remoting Wizard.pdb

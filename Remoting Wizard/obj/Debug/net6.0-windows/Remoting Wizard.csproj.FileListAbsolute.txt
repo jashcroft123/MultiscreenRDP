@@ -1,0 +1,147 @@
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.AssemblyReference.cache
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Process\ObjectInheritence\Views\Inheritence.g.cs
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Process\Selection\Views\SelectApp.g.cs
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Process\Wizard\Views\RemotingWizard.g.cs
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\App.g.cs
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_MarkupCompile.cache
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_MarkupCompile.lref
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.exe
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.deps.json
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.runtimeconfig.json
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.pdb
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\MSL.Connectivity.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\MSL.Core.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\MSL.Core.Wpf.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\MSL.Media.Wpf.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\MSL.Process.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\MSL.Process.Wpf.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\MSL.UI.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\MSL.UI.Wpf.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Prism.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Prism.Unity.Wpf.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Prism.Wpf.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Unity.Abstractions.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\Unity.Container.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\WpfAnimatedGif.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Process\RemoteFileManager\Views\RemoteFiles.g.cs
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\App.baml
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\MainWindow.baml
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Process\ObjectInheritence\Views\Inheritence.baml
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Process\Selection\Views\SelectApp.baml
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Process\Wizard\Views\RemotingWizard.baml
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Process\RemoteFileManager\Views\RemoteFiles.baml
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.g.resources
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.GeneratedMSBuildEditorConfig.editorconfig
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.AssemblyInfoInputs.cache
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.AssemblyInfo.cs
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.CoreCompileInputs.cache
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.CopyComplete
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\refint\Remoting Wizard.dll
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.pdb
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.genruntimeconfig.cache
+C:\devops\CGPD\C#\Remoting Wizard\Remoting Wizard\Remoting Wizard\obj\Debug\net6.0-windows\ref\Remoting Wizard.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.AssemblyReference.cache
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\MainWindow.baml
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Controls\Datagrid.g.cs
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemotingWizard.g.cs
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\App.g.cs
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_Content.g.cs
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_MarkupCompile.cache
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_MarkupCompile.lref
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\AddPCPopUp.g.cs
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemoteFiles.g.cs
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.GeneratedMSBuildEditorConfig.editorconfig
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.AssemblyInfoInputs.cache
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.AssemblyInfo.cs
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.CoreCompileInputs.cache
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.exe
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\App.config
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Data\PCs.csv
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Data\RemoteConnectionTemplate.txt
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.dll.config
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.deps.json
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.runtimeconfig.json
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.pdb
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Prism.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Prism.Unity.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Prism.Wpf.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Unity.Abstractions.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\Debug\net6.0-windows\Unity.Container.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\AddPCPopUp.baml
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemoteFiles.baml
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Controls\Datagrid.baml
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemotingWizard.baml
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.g.resources
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.CopyComplete
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\refint\Remoting Wizard.dll
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.pdb
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.genruntimeconfig.cache
+C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\ref\Remoting Wizard.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.exe
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\App.config
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Data\PCs.csv
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Data\RemoteConnectionTemplate.txt
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.dll.config
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.deps.json
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.runtimeconfig.json
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Remoting Wizard.pdb
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Microsoft.Xaml.Behaviors.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Prism.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Prism.Unity.Wpf.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Prism.Wpf.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Unity.Abstractions.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Unity.Container.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.AssemblyReference.cache
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\MainWindow.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\AddPCPopUp.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemoteFiles.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Controls\Datagrid.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\AddPCPopUp.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemoteFiles.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemotingWizard.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\App.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_Content.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_MarkupCompile.cache
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_MarkupCompile.lref
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Controls\Datagrid.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemotingWizard.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.g.resources
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.GeneratedMSBuildEditorConfig.editorconfig
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.AssemblyInfoInputs.cache
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.AssemblyInfo.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.CoreCompileInputs.cache
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.CopyComplete
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\refint\Remoting Wizard.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.pdb
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.genruntimeconfig.cache
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ref\Remoting Wizard.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\CsvHelper.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dTqt10jjWoCiM1dChOpVVkd5TAsWCeXolORHglqXt+Gp0LGMcuFETuRvPt3iNet4PWTlyGHu6/Db5n+yeKYb9Q==",
+  "success": true,
+  "projectFilePath": "C:\\devops\\CGPD\\C#\\C#RemotingWizard\\RemotingWizard_Package\\RemotingWizard_Package.wapproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages\\microsoft.windows.sdk.buildtools\\10.0.22000.194\\microsoft.windows.sdk.buildtools.10.0.22000.194.nupkg.sha512"
+  ],
+  "logs": []
+}

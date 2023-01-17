@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///C:/devops/CGPD/C#/C#RemotingWizard/Builds/Remoting Wizard_Package.appinstaller"
+	Version="1.0.4.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	<MainBundle
+		Name="ca6cee8f-867a-4113-b273-f471a29ce8a1"
+		Version="1.0.4.0"
+		Publisher="CN=James Ashcroft"
+		Uri="file:///C:/devops/CGPD/C#/C#RemotingWizard/Builds/Remoting Wizard_Package_1.0.4.0_Test/Remoting Wizard_Package_1.0.4.0_AnyCPU.msixbundle" />
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0" />
+	</UpdateSettings>
+</AppInstaller>

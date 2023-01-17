@@ -1,0 +1,2 @@
+MainPackage=C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_1.1.11.0_AnyCPU.msix
+SymbolPackage=C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\obj\Release\Symbols\RemotingWizardPackage_1.1.11.0_AnyCPU.appxsym
