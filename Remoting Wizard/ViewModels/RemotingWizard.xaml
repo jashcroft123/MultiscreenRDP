@@ -1,83 +1,62 @@
 ﻿<UserControl x:Class="Remoting_Wizard.ViewModels.RemotingWizard"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:Binding="clr-namespace:Remoting_Wizard.Converters"
-             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
-             xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450"
+             d:DesignWidth="800"
+             mc:Ignorable="d"
+             xmlns:Binding="clr-namespace:Remoting_Wizard.Converters"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <UserControl.Resources>
         <ResourceDictionary>
-            <Binding:ModeToVisibiltyConverter x:Key="ModeToVisibiltyConverter"/>
-            <Binding:MinCountToVisibilityConverter x:Key="MinCountToVisibilityConverter"/>
+            <Style BasedOn="{StaticResource JALabel}" TargetType="Label" />
+            <Style BasedOn="{StaticResource JAComboBox}" TargetType="ComboBox" />
 
-            <Style TargetType="{x:Type Label}">
+            <Binding:ModeToVisibiltyConverter x:Key="ModeToVisibiltyConverter" />
+            <Binding:MinCountToVisibilityConverter x:Key="MinCountToVisibilityConverter" />
+
+            <!--<Style TargetType="{x:Type Label}">
                 <Setter Property="Foreground" Value="White"/>
                 <Setter Property="FontSize" Value="24"/>
-            </Style>
-            
+            </Style>-->
+
             <Style TargetType="{x:Type TabItem}">
                 <Setter Property="Template">
                     <Setter.Value>
                         <ControlTemplate TargetType="TabItem">
-                            <Border Name="Border" BorderThickness="1,1,1,0" BorderBrush="Orange" CornerRadius="4,4,0,0" Margin="2,0">
+                            <Border BorderBrush="Orange"
+                                    BorderThickness="1,1,1,0"
+                                    CornerRadius="4,4,0,0"
+                                    Margin="2,0"
+                                    Name="Border">
                                 <TextBlock Name="Panel">
-                                        <ContentPresenter x:Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Center" ContentSource="Header" Margin="10,2"/>
+                                    <ContentPresenter x:Name="ContentSite"
+                                                      ContentSource="Header"
+                                                      HorizontalAlignment="Center"
+                                                      Margin="10,2"
+                                                      VerticalAlignment="Center" />
                                 </TextBlock>
                             </Border>
                             <ControlTemplate.Triggers>
                                 <Trigger Property="IsSelected" Value="True">
-                                    <Setter TargetName="Panel" Property="Foreground" Value="Black"/>
-                                    <Setter TargetName="Panel" Property="Background" Value= "Orange"/>
-                                    <Setter TargetName="Panel" Property="TextBlock.FontSize" Value="24"/>
+                                    <Setter Property="Foreground" TargetName="Panel" Value="Black" />
+                                    <Setter Property="Background" TargetName="Panel" Value="Orange" />
+                                    <Setter Property="TextBlock.FontSize" TargetName="Panel" Value="24" />
                                 </Trigger>
 
                                 <Trigger Property="IsSelected" Value="False">
-                                    <Setter TargetName="Panel" Property="Foreground" Value="Orange"/>
-                                    <Setter TargetName="Panel" Property="Background" Value="Transparent"/>
-                                    <Setter TargetName="Panel" Property="TextBlock.FontSize" Value="24"/>
+                                    <Setter Property="Foreground" TargetName="Panel" Value="Orange" />
+                                    <Setter Property="Background" TargetName="Panel" Value="Transparent" />
+                                    <Setter Property="TextBlock.FontSize" TargetName="Panel" Value="24" />
                                 </Trigger>
 
-                                <Trigger Property="IsMouseOver" Value="True" SourceName="Border">
-                                    <Setter TargetName="Panel" Property="Foreground" Value="white"/>
-                                    <Setter TargetName="Panel" Property="TextBlock.FontSize" Value="24"/>
-                                </Trigger>
-                            </ControlTemplate.Triggers>
-                        </ControlTemplate>
-                    </Setter.Value>
-                </Setter>
-            </Style>
-
-            <Style x:Key="{x:Type ComboBoxItem}" TargetType="{x:Type ComboBoxItem}">
-                <Setter Property="SnapsToDevicePixels" Value="true" />
-                <Setter Property="OverridesDefaultStyle" Value="true" />
-                <Setter Property="FontSize" Value="{Binding Path=FontSize, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ComboBox}}}"/>
-                <Setter Property="Foreground" Value="#FF9A35"/>
-                <Setter Property="Template">
-                    <Setter.Value>
-                        <ControlTemplate TargetType="{x:Type ComboBoxItem}">
-                            <Border x:Name="Border" Padding="2" SnapsToDevicePixels="true" Background="Transparent" Cursor="Hand" CornerRadius="5">
-                                <VisualStateManager.VisualStateGroups>
-                                    <VisualStateGroup x:Name="SelectionStates">
-                                        <VisualState x:Name="Unselected" />
-                                        <VisualState x:Name="Selected">
-                                            <Storyboard>
-                                                <ColorAnimationUsingKeyFrames Storyboard.TargetName="Border" Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)">
-                                                    <EasingColorKeyFrame KeyTime="0" Value="#787878" />
-                                                </ColorAnimationUsingKeyFrames>
-                                            </Storyboard>
-                                        </VisualState>
-                                    </VisualStateGroup>
-                                </VisualStateManager.VisualStateGroups>
-                                <ContentPresenter />
-                            </Border>
-                            <ControlTemplate.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter TargetName="Border" Property="Background" Value="#FF9A35"/>
+                                <Trigger Property="IsMouseOver" SourceName="Border" Value="True">
+                                    <Setter Property="Foreground" TargetName="Panel" Value="white" />
+                                    <Setter Property="TextBlock.FontSize" TargetName="Panel" Value="24" />
                                 </Trigger>
                             </ControlTemplate.Triggers>
                         </ControlTemplate>
@@ -87,8 +66,11 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid VerticalAlignment="Top" Margin="20,5">
-        <TabControl Margin="0,10,0,0" Background="Transparent" BorderThickness="0.5" BorderBrush="#FF9A35">
+    <Grid Margin="20,5" VerticalAlignment="Top">
+        <TabControl Background="Transparent"
+                    BorderBrush="#FF9A35"
+                    BorderThickness="0.5"
+                    Margin="0,10,0,0">
 
             <!--<i:Interaction.Triggers>
                 <i:EventTrigger EventName="SelectionChanged" >
@@ -96,70 +78,147 @@
                 </i:EventTrigger>
             </i:Interaction.Triggers>-->
 
-            <TabItem  Header="Connect">
-                <StackPanel  HorizontalAlignment="Center" Margin="20">
+            <TabItem Header="Connect">
+                <StackPanel HorizontalAlignment="Center" Margin="20">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Modes:"
+                                   HorizontalAlignment="Right"
+                                   HorizontalContentAlignment="Right"
+                                   Margin="0,0,10,5"
+                                   Width="150" />
+
+                            <ComboBox x:Name="ComboBoxMode"
+                                      DisplayMemberPath="Mode"
+                                      ItemsSource="{Binding Modes}"
+                                      FontSize="24"
+                                      MinWidth="260"
+                                      SelectedIndex="0"
+                                      SelectedItem="{Binding SelectedMode, Mode=TwoWay}" />
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="PC:"
+                                   HorizontalAlignment="Right"
+                                   HorizontalContentAlignment="Right"
+                                   Margin="0,0,10,5"
+                                   Width="150" />
+
+                            <ComboBox x:Name="ComboBoxPCs"
+                                      ItemsSource="{Binding Alias}"
+                                      MinWidth="260"
+                                      SelectedIndex="0"
+                                      SelectedItem="{Binding SelectedAlias, Mode=TwoWay}" />
+                        </StackPanel>
+
+
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="User Name:"
+                                   HorizontalAlignment="Right"
+                                   HorizontalContentAlignment="Right"
+                                   Margin="0,0,10,5"
+                                   Style="{StaticResource JALabel}"
+                                   Width="150" />
+
+                            <ComboBox x:Name="ComboBoxUsernames"
+                                      ItemsSource="{Binding Usernames}"
+                                      MinWidth="260"
+                                      SelectedIndex="0"
+                                      SelectedItem="{Binding SelectedUserName, Mode=TwoWay}" />
+                        </StackPanel>
+                    </StackPanel>
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width="2*"/>
-                            <ColumnDefinition Width="8*"/>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="8*" />
                         </Grid.ColumnDefinitions>
 
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="6*"/>
-                            <RowDefinition Height="6*"/>
+                            <RowDefinition Height="6*" />
+                            <RowDefinition Height="6*" />
                         </Grid.RowDefinitions>
 
-                        <Label x:Name="Padding" Grid.Column="1" Grid.Row="0" Grid.RowSpan="3" Margin="10"/>
+                        <TextBlock Grid.Column="0"
+                                   Grid.Row="1"
+                                   HorizontalAlignment="Right"
+                                   Text="PC:"
+                                   TextAlignment="Right"
+                                   Width="125" />
 
-                        <Label Content="Mode:" Grid.Column="0" Grid.Row="0" Width="125"  HorizontalAlignment="Right"/>
-                        <ComboBox x:Name="ComboBoxMode" Grid.Column="2" Grid.Row="0" MinWidth="260" SelectedIndex="0" ItemsSource="{Binding Modes}" SelectedItem="{Binding SelectedMode,Mode=TwoWay}" DisplayMemberPath="Mode"/>
-
-                        <TextBlock Text="PC:" Grid.Column="0" Grid.Row="1" Width="125" HorizontalAlignment="Right" TextAlignment="Right"/>
-                        <ComboBox x:Name="ComboBoxPCs" Grid.Column="2" Grid.Row="1" MinWidth="260" ItemsSource="{Binding Alias}" SelectedIndex="0" SelectedItem="{Binding SelectedAlias, Mode=TwoWay}"/>
 
                     </Grid>
 
                     <!--#region Remote Connection-->
-                    <StackPanel Visibility="{Binding SelectedMode,Converter={StaticResource ModeToVisibiltyConverter},ConverterParameter='Remote Connection'}" >
-                        <Grid HorizontalAlignment="Center" VerticalAlignment="Center"  Visibility="{Binding Usernames.Count,Converter={StaticResource MinCountToVisibilityConverter},ConverterParameter=1}">
+                    <StackPanel Visibility="{Binding SelectedMode, Converter={StaticResource ModeToVisibiltyConverter}, ConverterParameter='Remote Connection'}">
+                        <Grid HorizontalAlignment="Center"
+                              VerticalAlignment="Center"
+                              Visibility="{Binding Usernames.Count, Converter={StaticResource MinCountToVisibilityConverter}, ConverterParameter=1}">
                             <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width="8*"/>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="8*" />
                             </Grid.ColumnDefinitions>
                             <Grid.RowDefinitions>
-                                <RowDefinition Height="4*"/>
-                                <RowDefinition Height="4*"/>
-                                <RowDefinition Height="4*"/>
+                                <RowDefinition Height="4*" />
+                                <RowDefinition Height="4*" />
+                                <RowDefinition Height="4*" />
                             </Grid.RowDefinitions>
-                            <TextBlock x:Name="PaddingUserName" Grid.Column="1" Grid.Row="0" Grid.RowSpan="1" Margin="10"/>
 
-                            <TextBlock Text="User Name:" Grid.Column="0" Grid.Row="0" Width="125" HorizontalAlignment="Right" TextAlignment="Right" />
-                            <ComboBox x:Name="ComboBoxUsernames" Grid.Column="2" Grid.Row="0" MinWidth="260" ItemsSource="{Binding Usernames}" SelectedIndex="0" SelectedItem="{Binding SelectedUserName, Mode=TwoWay}"/>
+
+                            <TextBlock x:Name="PaddingUserName"
+                                       Grid.Column="1"
+                                       Grid.Row="0"
+                                       Grid.RowSpan="1"
+                                       Margin="10" />
+
                         </Grid>
 
 
-                        <Border CornerRadius="10" BorderBrush="Gray" BorderThickness="2.5" Width="Auto" Height="Auto" Margin="10">
+                        <Border BorderBrush="Gray"
+                                BorderThickness="2.5"
+                                CornerRadius="10"
+                                Height="Auto"
+                                Margin="10"
+                                Width="Auto">
                             <Grid Margin="15">
                                 <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="50"/>
-                                    <ColumnDefinition Width="{Binding MaxWidth}"/>
-                                    <ColumnDefinition Width="50"/>
+                                    <ColumnDefinition Width="50" />
+                                    <ColumnDefinition Width="{Binding MaxWidth}" />
+                                    <ColumnDefinition Width="50" />
                                 </Grid.ColumnDefinitions>
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="2*"/>
-                                    <RowDefinition Height="10*"/>
+                                    <RowDefinition Height="2*" />
+                                    <RowDefinition Height="10*" />
                                 </Grid.RowDefinitions>
 
-                                <TextBlock Text="Select Screens" Grid.Column="1" Grid.Row="0"/>
-                                <Button x:Name="Refresh" Command="{Binding BtnRefresh}" Content="⟳" HorizontalAlignment="Right" Width="50" Height="40" HorizontalContentAlignment="Right" Grid.Column="2" Grid.Row="0"/>
+                                <TextBlock Grid.Column="1"
+                                           Grid.Row="0"
+                                           Text="Select Screens" />
+                                <Button x:Name="Refresh"
+                                        Command="{Binding BtnRefresh}"
+                                        Content="⟳"
+                                        Grid.Column="2"
+                                        Grid.Row="0"
+                                        Height="40"
+                                        HorizontalAlignment="Right"
+                                        HorizontalContentAlignment="Right"
+                                        Width="50" />
 
-                                <ScrollViewer Grid.Row="1" Grid.Column="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto" Height="250">
-                                    <ItemsControl x:Name="Screens"  ItemsSource="{Binding Screens, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" BorderThickness="0" >
+                                <ScrollViewer Grid.Column="1"
+                                              Grid.Row="1"
+                                              Height="250"
+                                              HorizontalScrollBarVisibility="Disabled"
+                                              VerticalScrollBarVisibility="Auto">
+                                    <ItemsControl x:Name="Screens"
+                                                  Background="Transparent"
+                                                  BorderThickness="0"
+                                                  HorizontalAlignment="Center"
+                                                  ItemsSource="{Binding Screens, UpdateSourceTrigger=PropertyChanged}"
+                                                  VerticalAlignment="Center">
                                         <ItemsControl.ItemsPanel>
                                             <ItemsPanelTemplate>
-                                                <Canvas Height="{Binding MaxHeight}" Width="{Binding MaxWidth}"/>
+                                                <Canvas Height="{Binding MaxHeight}" Width="{Binding MaxWidth}" />
                                             </ItemsPanelTemplate>
                                         </ItemsControl.ItemsPanel>
 
@@ -172,11 +231,14 @@
 
                                         <ItemsControl.ItemTemplate>
                                             <DataTemplate>
-                                                <ToggleButton Content="screen" IsChecked="{Binding Selected, Mode=TwoWay}" Width="{Binding Width}" Height="{Binding Height}"
-                                                                                VerticalAlignment="Top">
+                                                <ToggleButton Content="screen"
+                                                              Height="{Binding Height}"
+                                                              IsChecked="{Binding Selected, Mode=TwoWay}"
+                                                              VerticalAlignment="Top"
+                                                              Width="{Binding Width}">
                                                     <i:Interaction.Triggers>
                                                         <i:EventTrigger EventName="MouseRightButtonUp">
-                                                            <i:InvokeCommandAction Command="{Binding RightClick}" CommandParameter="{Binding ID}"/>
+                                                            <i:InvokeCommandAction Command="{Binding RightClick}" CommandParameter="{Binding ID}" />
                                                         </i:EventTrigger>
                                                     </i:Interaction.Triggers>
                                                 </ToggleButton>
@@ -188,13 +250,24 @@
 
                             <!--<TextBlock Text="{Binding PrimaryScreenID, StringFormat='Primary Screen ID: {0}'}" Style="{StaticResource MslTextBlock}"/>-->
                         </Border>
-                        <Button  x:Name ="StartRemote" Content="Connect" FontSize="24" Width="275" Height="75" Command="{Binding BtnRemoteConnect}"/>
+                        <Button x:Name="StartRemote"
+                                Command="{Binding BtnRemoteConnect}"
+                                Content="Connect"
+                                FontSize="24"
+                                Height="75"
+                                Width="275" />
                     </StackPanel>
                     <!--#endregion-->
 
                     <!--#region C-Drive-->
-                    <StackPanel Visibility="{Binding SelectedMode,Converter={StaticResource ModeToVisibiltyConverter},ConverterParameter='C-Drive'}">
-                        <Button  x:Name ="StartCDrive" Content="Open C Drive" FontSize="24" Width="275" Height="76" Command="{Binding BtnCDriveConnect}" Margin="10"/>
+                    <StackPanel Visibility="{Binding SelectedMode, Converter={StaticResource ModeToVisibiltyConverter}, ConverterParameter='C-Drive'}">
+                        <Button x:Name="StartCDrive"
+                                Command="{Binding BtnCDriveConnect}"
+                                Content="Open C Drive"
+                                FontSize="24"
+                                Height="76"
+                                Margin="10"
+                                Width="275" />
                     </StackPanel>
                     <!--#endregion-->
 
@@ -203,27 +276,37 @@
 
             <TabItem Header="Config">
                 <DockPanel>
-                    <DataGrid x:Name="ConfigData" Margin="10,20,0,10" ItemsSource="{Binding ConfigPCs.PCs, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
-                              SelectedItem="{Binding ConfigPCs.Selected}" Height="550" Width="1000" DockPanel.Dock="Left" Background="Transparent" IsReadOnly="True"
-                              VerticalScrollBarVisibility="Auto" AlternationCount="2" ColumnWidth="*" RowHeaderWidth="0" SelectedIndex="0" ColumnHeaderHeight="50">
+                    <DataGrid x:Name="ConfigData"
+                              AlternationCount="2"
+                              Background="Transparent"
+                              ColumnHeaderHeight="50"
+                              ColumnWidth="*"
+                              DockPanel.Dock="Left"
+                              Height="550"
+                              IsReadOnly="True"
+                              ItemsSource="{Binding ConfigPCs.PCs, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                              Margin="10,20,0,10"
+                              RowHeaderWidth="0"
+                              SelectedIndex="0"
+                              SelectedItem="{Binding ConfigPCs.Selected}"
+                              Style="{StaticResource JADataGrid}"
+                              VerticalScrollBarVisibility="Auto"
+                              Width="1000">
                         <DataGrid.ContextMenu>
                             <ContextMenu>
-                                <MenuItem Header="Insert"
-                                    Click="Insert_OnClick"/>
+                                <MenuItem Click="Insert_OnClick" Header="Insert" />
 
-                                <MenuItem Header="Duplicate"
-                                    Click="Duplicate_OnClick"/>
+                                <MenuItem Click="Duplicate_OnClick" Header="Duplicate" />
 
-                                <MenuItem Header="Edit"
-                                        Click="Edit_OnClick"
-                                        CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=Parent}" />
+                                <MenuItem Click="Edit_OnClick"
+                                          CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=Parent}"
+                                          Header="Edit" />
 
-                                <MenuItem Header="Delete"
-                                        Click="DeleteRow_OnClick"/>
+                                <MenuItem Click="DeleteRow_OnClick" Header="Delete" />
                             </ContextMenu>
                         </DataGrid.ContextMenu>
                         <DataGrid.InputBindings>
-                            <KeyBinding Key="Tab" Command="{Binding SavePressed}"/>
+                            <KeyBinding Command="{Binding SavePressed}" Key="Tab" />
                         </DataGrid.InputBindings>
                     </DataGrid>
                 </DockPanel>

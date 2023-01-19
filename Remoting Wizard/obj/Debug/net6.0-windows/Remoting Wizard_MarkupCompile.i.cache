@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\devops\MultiscreenRDP\Remoting Wizard\App.xaml
-51386447777
+121478930473
 3340989222
-20625311086
+18703805365
 2011510034543
-Controls\Datagrid.xaml;MainWindow.xaml;ViewModels\AddPCPopUp.xaml;ViewModels\RemoteFiles.xaml;ViewModels\RemotingWizard.xaml;
+Controls\Datagrid.xaml;MainWindow.xaml;Styles\Bars.xaml;Styles\Boxes.xaml;Styles\Colours.xaml;Styles\Fonts.xaml;Styles\ItemControls.xaml;Styles\JAStyles.xaml;Styles\Texts.xaml;Styles\TextStyles.xaml;ViewModels\AddPCPopUp.xaml;ViewModels\RemotingWizard.xaml;
 
-False
+True
 

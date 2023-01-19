@@ -3,7 +3,6 @@ using Prism.Ioc;
 using Prism.Regions;
 using Prism.Unity;
 using Remoting_Wizard.Class;
-using Remoting_Wizard.Process;
 using Remoting_Wizard.ViewModels;
 using System;
 using System.Collections.Generic;

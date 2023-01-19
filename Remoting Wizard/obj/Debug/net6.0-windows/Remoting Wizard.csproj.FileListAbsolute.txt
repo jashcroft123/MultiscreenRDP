@@ -120,11 +120,9 @@ C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Unity.Containe
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.AssemblyReference.cache
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\MainWindow.baml
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\AddPCPopUp.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemoteFiles.baml
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Controls\Datagrid.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\AddPCPopUp.g.cs
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemoteFiles.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\RemotingWizard.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\App.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_Content.g.cs
@@ -145,3 +143,12 @@ C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizar
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.genruntimeconfig.cache
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ref\Remoting Wizard.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\CsvHelper.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Styles\JAStyles.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Styles\TextStyles.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\App.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Styles\Fonts.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Styles\Boxes.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Styles\Colours.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Styles\Texts.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Styles\ItemControls.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Styles\Bars.baml

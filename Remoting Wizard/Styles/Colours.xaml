@@ -1,0 +1,44 @@
+﻿<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <!--#region Brushes-->
+    <!--  Backgrounds  -->
+    <SolidColorBrush x:Key="BackgroundLightBrush" Color="#585858" />
+    <SolidColorBrush x:Key="BackgroundBrush" Color="#484848" />
+    <SolidColorBrush x:Key="BackgroundDarkBrush" Color="#333333" />
+
+    <!--  Headers and Text  -->
+    <SolidColorBrush x:Key="RenishawOrangeBrush" Color="#FF9933" />
+
+    <!--  Fill Colours  -->
+    <SolidColorBrush x:Key="PassGreenBrush" Color="#8EE43F" />
+    <SolidColorBrush x:Key="FailRedBrush" Color="#FF626D" />
+    <SolidColorBrush x:Key="BlueBrush" Color="#33BBFF" />
+    <SolidColorBrush x:Key="LightBlueBrush" Color="#7AD9F5" />
+
+    <SolidColorBrush x:Key="HighlightBrush" Color="White" />
+
+    <!--  Transparent  -->
+    <SolidColorBrush x:Key="TransparentBrush" Color="Transparent" />
+    <!--#endregion-->
+
+
+
+    <!--#region Colours-->
+    <!--  Backgrounds  -->
+    <Color x:Key="BackgroundLight">#585858</Color>
+    <Color x:Key="Background">#484848</Color>
+    <Color x:Key="BackgroundDark">#333333</Color>
+
+    <!--  Headers and Text  -->
+    <Color x:Key="RenishawOrange">#FF9933</Color>
+
+    <!--  Fill Colours  -->
+    <Color x:Key="PassGreen">#8EE43F</Color>
+    <Color x:Key="FailRed">#FF626D</Color>
+    <Color x:Key="Blue">#33BBFF</Color>
+    <Color x:Key="LightBlue">#7AD9F5</Color>
+
+    <!--  Transparent  -->
+    <Color x:Key="Transparent">Transparent</Color>
+    <!--#endregion-->
+</ResourceDictionary>

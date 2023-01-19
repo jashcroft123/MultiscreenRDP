@@ -26,7 +26,28 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ViewModels\RemoteFiles.xaml">
+    <Page Update="Styles\Bars.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Boxes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Colours.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Fonts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\ItemControls.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\JAStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\Texts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\TextStyles.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewModels\AddPCPopUp.xaml">
