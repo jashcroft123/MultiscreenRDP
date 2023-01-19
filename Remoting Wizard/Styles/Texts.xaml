@@ -6,11 +6,9 @@
     </ResourceDictionary.MergedDictionaries>
 
     <!--  Header bar style text  -->
-    <Style x:Key="MslHeaderTextBlock"
-           BasedOn="{StaticResource BaseTextBlockStyle}"
-           TargetType="{x:Type TextBlock}">
+    <Style x:Key="MslHeaderTextBlock" BasedOn="{StaticResource BaseTextBlockStyle}" TargetType="{x:Type TextBlock}">
         <Setter Property="FontWeight" Value="Thin" />
-        <Setter Property="Foreground" Value="{StaticResource RenishawOrangeBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource SystemAccentColorBrush}" />
         <Setter Property="FontSize" Value="{StaticResource FontSizeLarge}" />
         <Setter Property="Height" Value="Auto" />
         <Setter Property="Width" Value="Auto" />
@@ -20,12 +18,10 @@
     </Style>
 
     <!--  Main Page Text, not user input  -->
-    <Style x:Key="MslTextBlock"
-           BasedOn="{StaticResource BaseTextBlockStyle}"
-           TargetType="{x:Type TextBlock}">
+    <Style x:Key="MslTextBlock" BasedOn="{StaticResource BaseTextBlockStyle}" TargetType="{x:Type TextBlock}">
         <Setter Property="FontWeight" Value="Thin" />
-        <Setter Property="Foreground" Value="{StaticResource ForegroundVeryLightBrush}" />
-        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}" />
+        <Setter Property="Foreground" Value="{StaticResource ForegroundXLightBrush}" />
+        <Setter Property="FontSize" Value="{StaticResource Medium}" />
         <Setter Property="Height" Value="Auto" />
         <Setter Property="Padding" Value="0,0,0,0" />
         <Setter Property="Width" Value="Auto" />
@@ -37,12 +33,10 @@
     </Style>
 
     <!--  Notation text  -->
-    <Style x:Key="MslNoteTextBlock"
-           BasedOn="{StaticResource BaseTextBlockStyle}"
-           TargetType="{x:Type TextBlock}">
+    <Style x:Key="MslNoteTextBlock" BasedOn="{StaticResource BaseTextBlockStyle}" TargetType="{x:Type TextBlock}">
         <Setter Property="FontWeight" Value="Thin" />
         <Setter Property="Foreground" Value="{StaticResource BackgroundLighterBrush}" />
-        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}" />
+        <Setter Property="FontSize" Value="{StaticResource Medium}" />
         <Setter Property="Height" Value="Auto" />
         <Setter Property="Width" Value="Auto" />
         <Setter Property="VerticalAlignment" Value="Center" />
@@ -51,11 +45,9 @@
         <Setter Property="Padding" Value="0" />
     </Style>
 
-    <Style x:Key="MslLabel"
-           BasedOn="{StaticResource BaseStyle}"
-           TargetType="{x:Type Label}">
-        <Setter Property="Foreground" Value="{StaticResource ForegroundVeryLightBrush}" />
-        <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}" />
+    <Style x:Key="MslLabel" BasedOn="{StaticResource BaseStyle}" TargetType="{x:Type Label}">
+        <Setter Property="Foreground" Value="{StaticResource ForegroundXLightBrush}" />
+        <Setter Property="FontSize" Value="{StaticResource Medium}" />
         <Setter Property="Height" Value="Auto" />
         <Setter Property="Width" Value="Auto" />
         <Setter Property="VerticalAlignment" Value="Center" />
@@ -65,9 +57,7 @@
     </Style>
 
     <!--  Input text  -->
-    <Style x:Key="MslTextBox"
-           BasedOn="{StaticResource BaseStyle}"
-           TargetType="{x:Type TextBox}">
+    <Style x:Key="MslTextBox" BasedOn="{StaticResource BaseStyle}" TargetType="{x:Type TextBox}">
         <Setter Property="FontSize" Value="{StaticResource FontSizeRegular}" />
         <Setter Property="Padding" Value="3,16,3,4" />
         <Setter Property="HorizontalAlignment" Value="Center" />
@@ -76,10 +66,10 @@
         <Setter Property="Height" Value="Auto" />
         <Setter Property="TextWrapping" Value="Wrap" />
         <Setter Property="CharacterCasing" Value="Upper" />
-        <Setter Property="Foreground" Value="{StaticResource RenishawOrangeBrush}" />
-        <Setter Property="CaretBrush" Value="{StaticResource RenishawOrangeBrush}" />
-        <Setter Property="SelectionBrush" Value="{StaticResource RenishawOrangeBrush}" />
-        <Setter Property="BorderBrush" Value="{StaticResource RenishawOrangeBrush}" />
+        <Setter Property="Foreground" Value="{StaticResource SystemAccentColorBrush}" />
+        <Setter Property="CaretBrush" Value="{StaticResource SystemAccentColorBrush}" />
+        <Setter Property="SelectionBrush" Value="{StaticResource SystemAccentColorBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SystemAccentColorBrush}" />
         <Setter Property="BorderThickness" Value="0,0,0,1" />
         <Setter Property="Margin" Value="0,0,0,8" />
         <Setter Property="Background" Value="{x:Null}" />
@@ -125,15 +115,15 @@
                                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                                     <LinearGradientBrush.GradientStops>
                                         <GradientStopCollection>
-                                            <GradientStop Color="{StaticResource BackgroundDark}" Offset="0.0" />
-                                            <GradientStop Color="{StaticResource BackgroundDark}" Offset="1.0" />
+                                            <GradientStop Color="{StaticResource BackgroundDark1}" Offset="0.0" />
+                                            <GradientStop Color="{StaticResource BackgroundDark1}" Offset="1.0" />
                                         </GradientStopCollection>
                                     </LinearGradientBrush.GradientStops>
                                 </LinearGradientBrush>
 
                             </Border.Background>
                             <Border.BorderBrush>
-                                <SolidColorBrush Color="{StaticResource RenishawOrange}" />
+                                <SolidColorBrush Color="{StaticResource SystemAccentColour}" />
                             </Border.BorderBrush>
                         </Border>
                         <TextBlock FontSize="{StaticResource FontSizeSmaller}"

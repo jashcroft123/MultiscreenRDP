@@ -1,13 +1,40 @@
 ﻿<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
+    <!--<ResourceDictionary.MergedDictionaries  >
+        <ResourceDictionary x:Key="Light">
+            <SolidColorBrush x:Key="myBrush" Color="{StaticResource ControlFillColorDefault}" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Dark">
+            <SolidColorBrush x:Key="myBrush" Color="{StaticResource ControlFillColorDefault}" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="HighContrast">
+            <SolidColorBrush x:Key="myBrush" Color="{ThemeResource SystemColorButtonFaceColor}" />
+        </ResourceDictionary>
+    </ResourceDictionary.MergedDictionaries>-->
+
     <!--#region Brushes-->
+    <!--  Foregrounds  -->
+    <SolidColorBrush x:Key="ForegroundVeryLightBrush" Color="White" />
+
     <!--  Backgrounds  -->
-    <SolidColorBrush x:Key="BackgroundLightBrush" Color="#585858" />
-    <SolidColorBrush x:Key="BackgroundBrush" Color="#484848" />
-    <SolidColorBrush x:Key="BackgroundDarkBrush" Color="#333333" />
+    <SolidColorBrush x:Key="BackgroundLight4Brush" Color="#484848" />
+    <SolidColorBrush x:Key="BackgroundLight3Brush" Color="#3C3C3C" />
+    <SolidColorBrush x:Key="BackgroundLight2Brush" Color="#333333" />
+    <SolidColorBrush x:Key="BackgroundLight1Brush" Color="#2A2A2A" />
+    <SolidColorBrush x:Key="BackgroundBrush" Color="#212121" />
+    <SolidColorBrush x:Key="BackgroundDark1Brush" Color="#1C1C1C" />
+    <SolidColorBrush x:Key="BackgroundDark2Brush" Color="#131313" />
+    <SolidColorBrush x:Key="BackgroundDark3Brush" Color="#0F0F0F" />
+    <SolidColorBrush x:Key="BackgroundDark4Brush" Color="#000000" />
 
     <!--  Headers and Text  -->
-    <SolidColorBrush x:Key="RenishawOrangeBrush" Color="#FF9933" />
+    <SolidColorBrush x:Key="SystemAccentColorLight3Brush" Color="#ffc030" />
+    <SolidColorBrush x:Key="SystemAccentColorLight2Brush" Color="#ffb331" />
+    <SolidColorBrush x:Key="SystemAccentColorLight1Brush" Color="#ffa632" />
+    <SolidColorBrush x:Key="SystemAccentColorBrush" Color="#FF9933" />
+    <SolidColorBrush x:Key="SystemAccentColorDark1Brush" Color="#cc7a28" />
+    <SolidColorBrush x:Key="SystemAccentColorDark2Brush" Color="#995b1e" />
+    <SolidColorBrush x:Key="SystemAccentColorDark3Brush" Color="#653c14" />
 
     <!--  Fill Colours  -->
     <SolidColorBrush x:Key="PassGreenBrush" Color="#8EE43F" />
@@ -17,6 +44,7 @@
 
     <SolidColorBrush x:Key="HighlightBrush" Color="White" />
 
+
     <!--  Transparent  -->
     <SolidColorBrush x:Key="TransparentBrush" Color="Transparent" />
     <!--#endregion-->
@@ -25,12 +53,24 @@
 
     <!--#region Colours-->
     <!--  Backgrounds  -->
-    <Color x:Key="BackgroundLight">#585858</Color>
+    <Color x:Key="BackgroundLight4">#585858</Color>
+    <Color x:Key="BackgroundLight3">#585858</Color>
+    <Color x:Key="BackgroundLight2">#585858</Color>
+    <Color x:Key="BackgroundLight1">#585858</Color>
     <Color x:Key="Background">#484848</Color>
-    <Color x:Key="BackgroundDark">#333333</Color>
+    <Color x:Key="BackgroundDark1">#333333</Color>
+    <Color x:Key="BackgroundDark2">#333333</Color>
+    <Color x:Key="BackgroundDark3">#333333</Color>
+    <Color x:Key="BackgroundDark4">#333333</Color>
 
     <!--  Headers and Text  -->
-    <Color x:Key="RenishawOrange">#FF9933</Color>
+    <Color x:Key="SystemAccentColourLight3">#ffc030</Color>
+    <Color x:Key="SystemAccentColourLight2">#ffb331</Color>
+    <Color x:Key="SystemAccentColourLight1">#ffa632</Color>
+    <Color x:Key="SystemAccentColour">#FF9933</Color>
+    <Color x:Key="SystemAccentColourDark1">#cc7a28</Color>
+    <Color x:Key="SystemAccentColourDark2">#995b1e</Color>
+    <Color x:Key="SystemAccentColourDark3">#653c14</Color>
 
     <!--  Fill Colours  -->
     <Color x:Key="PassGreen">#8EE43F</Color>

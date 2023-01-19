@@ -14,13 +14,13 @@
                 <ControlTemplate TargetType="{x:Type ProgressBar}">
                     <Grid MinHeight="5" MinWidth="200">
                         <Border x:Name="PART_Track"
-                                Background="{StaticResource BackgroundLightBrush}"
+                                Background="{StaticResource BackgroundLight1Brush}"
                                 BorderBrush="{StaticResource BackgroundVeryLightBrush}"
                                 BorderThickness="1"
                                 CornerRadius="2" />
                         <Border x:Name="PART_Indicator"
-                                Background="{StaticResource RenishawOrangeBrush}"
-                                BorderBrush="{StaticResource RenishawOrangeBrush}"
+                                Background="{StaticResource SystemAccentColorBrush}"
+                                BorderBrush="{StaticResource SystemAccentColorBrush}"
                                 BorderThickness="1"
                                 CornerRadius="2"
                                 HorizontalAlignment="Left"
@@ -40,7 +40,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RepeatButton}">
-                    <Border Background="{StaticResource BackgroundLightBrush}"
+                    <Border Background="{StaticResource BackgroundLight1Brush}"
                             BorderBrush="{StaticResource TransparentBrush}"
                             BorderThickness="1"
                             CornerRadius="2"
@@ -55,10 +55,10 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsPressed" Value="true">
-                            <Setter Property="Fill" TargetName="Path" Value="{StaticResource RenishawOrangeBrush}" />
+                            <Setter Property="Fill" TargetName="Path" Value="{StaticResource SystemAccentColorBrush}" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Foreground" Value="{StaticResource BackgroundLightBrush}" />
+                            <Setter Property="Foreground" Value="{StaticResource BackgroundLight1Brush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -104,7 +104,7 @@
                             Name="Border" />
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsDragging" Value="true">
-                            <Setter Property="Background" TargetName="Border" Value="{StaticResource RenishawOrangeBrush}" />
+                            <Setter Property="Background" TargetName="Border" Value="{StaticResource SystemAccentColorBrush}" />
                         </Trigger>
 
                     </ControlTemplate.Triggers>
@@ -122,7 +122,7 @@
                 <RowDefinition MaxHeight="18" />
             </Grid.RowDefinitions>
             <Border Background="{x:Null}"
-                    BorderBrush="{StaticResource BackgroundLightBrush}"
+                    BorderBrush="{StaticResource BackgroundLight1Brush}"
                     BorderThickness="1"
                     CornerRadius="2"
                     Grid.RowSpan="3" />
@@ -131,14 +131,12 @@
                           Grid.Row="0"
                           Height="18"
                           Style="{StaticResource ScrollBarLineButton}" />
-            <Track Grid.Row="1"
-                   IsDirectionReversed="true"
-                   Name="PART_Track">
+            <Track Grid.Row="1" IsDirectionReversed="true" Name="PART_Track">
                 <Track.DecreaseRepeatButton>
                     <RepeatButton Command="ScrollBar.PageUpCommand" Style="{StaticResource ScrollBarPageButton}" />
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
-                    <Thumb Background="{StaticResource BackgroundLightBrush}"
+                    <Thumb Background="{StaticResource BackgroundLight1Brush}"
                            BorderBrush="{StaticResource TransparentBrush}"
                            Margin="1,0,1,0"
                            Opacity="0.6"
@@ -165,7 +163,7 @@
                 <ColumnDefinition MaxWidth="18" />
             </Grid.ColumnDefinitions>
             <Border Background="{x:Null}"
-                    BorderBrush="{StaticResource BackgroundLightBrush}"
+                    BorderBrush="{StaticResource BackgroundLight1Brush}"
                     BorderThickness="1"
                     CornerRadius="2"
                     Grid.ColumnSpan="3" />
@@ -174,14 +172,12 @@
                           Grid.Column="0"
                           Style="{StaticResource ScrollBarLineButton}"
                           Width="18" />
-            <Track Grid.Column="1"
-                   IsDirectionReversed="False"
-                   Name="PART_Track">
+            <Track Grid.Column="1" IsDirectionReversed="False" Name="PART_Track">
                 <Track.DecreaseRepeatButton>
                     <RepeatButton Command="ScrollBar.PageLeftCommand" Style="{StaticResource ScrollBarPageButton}" />
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
-                    <Thumb Background="{StaticResource BackgroundLightBrush}"
+                    <Thumb Background="{StaticResource BackgroundLight1Brush}"
                            BorderBrush="{StaticResource TransparentBrush}"
                            Cursor="Hand"
                            Margin="0,1,0,1"

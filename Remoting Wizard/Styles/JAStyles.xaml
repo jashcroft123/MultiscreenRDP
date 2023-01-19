@@ -4,5 +4,6 @@
         <ResourceDictionary Source="TextStyles.xaml" />
         <ResourceDictionary Source="ItemControls.xaml" />
         <ResourceDictionary Source="Boxes.xaml" />
+        <ResourceDictionary Source="Buttons.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

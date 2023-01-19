@@ -5,9 +5,7 @@
     </ResourceDictionary.MergedDictionaries>
 
 
-    <Style x:Key="JALabel"
-           BasedOn="{StaticResource BaseStyle}"
-           TargetType="Label">
+    <Style x:Key="JALabel" BasedOn="{StaticResource BaseStyle}" TargetType="Label">
         <Setter Property="HorizontalContentAlignment" Value="Left" />
         <Setter Property="VerticalContentAlignment" Value="Top" />
         <Setter Property="Foreground" Value="White" />
@@ -16,9 +14,7 @@
             <Setter.Value>
                 <ControlTemplate TargetType="Label">
                     <Border>
-                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          RecognizesAccessKey="True"
-                                          VerticalAlignment="{TemplateBinding VerticalAlignment}" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" VerticalAlignment="{TemplateBinding VerticalAlignment}" />
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="false">
