@@ -87,6 +87,7 @@
         </ControlTemplate.Triggers>
     </ControlTemplate>
 
+
     <Style x:Key="JAToggleButton" BasedOn="{StaticResource BaseStyle}" TargetType="{x:Type ToggleButton}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="FontSize" Value="{StaticResource Medium}" />
@@ -117,5 +118,4 @@
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>
