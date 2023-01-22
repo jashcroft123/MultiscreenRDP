@@ -5,7 +5,7 @@
     </ResourceDictionary.MergedDictionaries>
 
     <!--  Progress Bar  -->
-    <Style x:Key="MslProgressBar" TargetType="{x:Type ProgressBar}">
+    <Style x:Key="JAProgressBar" TargetType="{x:Type ProgressBar}">
         <Setter Property="HorizontalAlignment" Value="Center" />
         <Setter Property="VerticalAlignment" Value="Center" />
         <Setter Property="Height" Value="5" />
@@ -44,7 +44,6 @@
                             BorderBrush="{StaticResource TransparentBrush}"
                             BorderThickness="1"
                             CornerRadius="2"
-                            Cursor="Hand"
                             Margin="1"
                             Name="Border">
                         <Path Data="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}"
@@ -100,7 +99,6 @@
                             BorderBrush="{x:Null}"
                             BorderThickness="1"
                             CornerRadius="2"
-                            Cursor="Hand"
                             Name="Border" />
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsDragging" Value="true">
@@ -179,7 +177,6 @@
                 <Track.Thumb>
                     <Thumb Background="{StaticResource BackgroundLight1Brush}"
                            BorderBrush="{StaticResource TransparentBrush}"
-                           Cursor="Hand"
                            Margin="0,1,0,1"
                            Style="{StaticResource ScrollBarThumb}" />
                 </Track.Thumb>
@@ -196,7 +193,7 @@
     </ControlTemplate>
 
     <!--  Style for overall  ScrollBar  -->
-    <Style x:Key="MslScrollBar" TargetType="{x:Type ScrollBar}">
+    <Style x:Key="JAScrollBar" TargetType="{x:Type ScrollBar}">
         <Setter Property="SnapsToDevicePixels" Value="True" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Style.Triggers>
@@ -215,7 +212,7 @@
     </Style>
 
     <!--  Style for overall  ScrollViewer  -->
-    <Style x:Key="MslScrollViewer" TargetType="{x:Type ScrollViewer}">
+    <Style x:Key="JAScrollViewer" TargetType="{x:Type ScrollViewer}">
         <Setter Property="OverridesDefaultStyle" Value="True" />
         <Setter Property="Template">
             <Setter.Value>
@@ -236,7 +233,7 @@
                                    Grid.Row="0"
                                    Maximum="{TemplateBinding ScrollableHeight}"
                                    Name="PART_VerticalScrollBar"
-                                   Style="{StaticResource MslScrollBar}"
+                                   Style="{StaticResource JAScrollBar}"
                                    Value="{TemplateBinding VerticalOffset}"
                                    ViewportSize="{TemplateBinding ViewportHeight}"
                                    Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" />
@@ -245,7 +242,7 @@
                                    Maximum="{TemplateBinding ScrollableWidth}"
                                    Name="PART_HorizontalScrollBar"
                                    Orientation="Horizontal"
-                                   Style="{StaticResource MslScrollBar}"
+                                   Style="{StaticResource JAScrollBar}"
                                    Value="{TemplateBinding HorizontalOffset}"
                                    ViewportSize="{TemplateBinding ViewportWidth}"
                                    Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" />

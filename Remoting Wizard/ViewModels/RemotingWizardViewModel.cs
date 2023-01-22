@@ -220,7 +220,7 @@ namespace Remoting_Wizard.ViewModels
         private async Task BtnPCConnectPressed()
         {
             //get selected pc details
-            var selectedPC = SelectedPC;
+            var selectedPC = ConfigPCs.Selected;
 
             //Get selected screens
             List<Screen> SelectedScreens = new(Screens.Where(x => x.Selected.Equals(true)));

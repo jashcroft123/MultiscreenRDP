@@ -71,6 +71,11 @@ namespace Remoting_Wizard.Class
                 UserNames = new ObservableCollection<string>(PCs.Where(x => x.Alias == SelectedAlias).Select(x => x.UserID));
                 SelectedUserName = UserNames[0];
             }
+            if(e.PropertyName == nameof(SelectedUserName))
+            {
+                var pcName = PCs.First(x => x.Alias == SelectedAlias).Name;
+                Selected = PCs.First(x => x.UserID == SelectedUserName && x.Name == pcName);
+            }
         }
     }
 }
