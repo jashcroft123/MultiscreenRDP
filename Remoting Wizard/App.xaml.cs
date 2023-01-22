@@ -24,6 +24,11 @@ namespace Remoting_Wizard
             return Container.Resolve<MainWindow>();
         }
 
+        protected override void InitializeShell(Window shell)
+        {
+            MainWindow = shell;
+        }
+
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
@@ -41,14 +46,22 @@ namespace Remoting_Wizard
             Application.Current.MainWindow.WindowState = WindowState.Maximized;
 
             var RegionManager = Container.Resolve<IRegionManager>();
-            var view = Container.Resolve<RemotingWizard>();
-            _ = RegionManager.AddToRegion("MainRegion", view);
+
+            //Add views to main window
+            var mainContent = Container.Resolve<RemotingWizard>();
+            var titleBar = Container.Resolve<CustomTitleBar>();
+            _ = RegionManager.AddToRegion("MainRegion", mainContent)
+                             .AddToRegion("TitleBar", titleBar);
+
+
             //NavigateShell(typeof(RestHandler));
 
             //Container.RegisterSingleton<CSV>();
             //Container.RegisterSingleton<AddPCPopUp>();
 
             var config = Container.Resolve<ConfigPCs>();
+
+            MainWindow.WindowState = WindowState.Normal;
         }
     }
 }

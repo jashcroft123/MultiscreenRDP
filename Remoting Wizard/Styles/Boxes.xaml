@@ -43,7 +43,7 @@
         </Setter>
     </Style>
 
-    <!--  Drop Down Boxes  -->
+    <!--#region Combo Box-->
     <ControlTemplate x:Key="ComboBoxToggleButton" TargetType="{x:Type ToggleButton}">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -169,8 +169,10 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <!--#endregion-->
 
-    <!--  Check Boxes  -->
+
+    <!--#region Check Box-->
     <Style x:Key="MslCheckBox" BasedOn="{StaticResource BaseStyle}" TargetType="{x:Type CheckBox}">
         <Setter Property="Background" Value="{StaticResource TransparentBrush}" />
         <Setter Property="BorderBrush" Value="{StaticResource SystemAccentColorBrush}" />
@@ -225,4 +227,144 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <!--#endregion-->
+
+
+    <!--#region Tab-->
+    <Style x:Key="JATabItem" TargetType="{x:Type TabItem}">
+        <Setter Property="TextBlock.Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="TextBlock.FontSize" Value="{StaticResource Medium}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <Grid x:Name="root" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                        <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1,1,1,0" Name="Border">
+                            <ContentPresenter x:Name="content"
+                                              ContentSource="Header"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center" />
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" TargetName="Border" Value="{StaticResource BackgroundLight1Brush}" />
+                            <Setter Property="Margin" TargetName="content" Value="15,5" />
+                            <Setter Property="Margin" TargetName="root" Value="0,0,0,-1" />
+                        </Trigger>
+
+                        <Trigger Property="IsSelected" Value="False">
+                            <Setter Property="Background" TargetName="Border" Value="{StaticResource BackgroundBrush}" />
+                            <Setter Property="Margin" TargetName="content" Value="8,2" />
+                            <Setter Property="Margin" TargetName="root" Value="4,0,0,0" />
+                        </Trigger>
+                        <MultiTrigger>
+                            <MultiTrigger.Conditions>
+                                <Condition Property="IsSelected" Value="False" />
+                                <Condition Property="IsMouseOver" Value="True" />
+                            </MultiTrigger.Conditions>
+                            <MultiTrigger.Setters>
+                                <Setter Property="Background" TargetName="Border" Value="{StaticResource BackgroundLight2Brush}" />
+                            </MultiTrigger.Setters>
+                        </MultiTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <LinearGradientBrush x:Key="TabItem.MouseOver.Background" EndPoint="0,1" StartPoint="0,0">
+        <GradientStop Color="{StaticResource HighlightColourLight2}" Offset="0.0" />
+        <GradientStop Color="{StaticResource HighlightColour}" Offset="1.0" />
+    </LinearGradientBrush>
+    <SolidColorBrush x:Key="TabItem.MouseOver.Border" Color="{StaticResource SelectColourBorder}" />
+    <SolidColorBrush x:Key="TabItem.Selected.Background" Color="#FFFFFF" />
+    <SolidColorBrush x:Key="TabItem.Selected.Border" Color="#ACACAC" />
+    <SolidColorBrush x:Key="TabItem.Disabled.Background" Color="#F0F0F0" />
+    <SolidColorBrush x:Key="TabItem.Disabled.Border" Color="#D9D9D9" />
+
+    <Style x:Key="JATabControl" TargetType="TabControl">
+        <Style.Resources>
+            <Style BasedOn="{StaticResource JATabItem}" TargetType="TabItem">
+                <Setter Property="BorderBrush" Value="{StaticResource BackgroundLight5Brush}" />
+            </Style>
+        </Style.Resources>
+        <Setter Property="BorderBrush" Value="{StaticResource BackgroundLight5Brush}" />
+        <Setter Property="Background" Value="{StaticResource BackgroundLight1Brush}" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type TabControl}">
+                    <Grid x:Name="templateRoot"
+                          ClipToBounds="true"
+                          KeyboardNavigation.TabNavigation="Local"
+                          SnapsToDevicePixels="true">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition x:Name="ColumnDefinition0" />
+                            <ColumnDefinition x:Name="ColumnDefinition1" Width="0" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition x:Name="RowDefinition0" Height="Auto" />
+                            <RowDefinition x:Name="RowDefinition1" Height="*" />
+                        </Grid.RowDefinitions>
+                        <TabPanel x:Name="headerPanel"
+                                  Background="Transparent"
+                                  Grid.Column="0"
+                                  Grid.Row="0"
+                                  IsItemsHost="true"
+                                  KeyboardNavigation.TabIndex="1"
+                                  Panel.ZIndex="1" />
+                        <Border x:Name="contentPanel"
+                                Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                Grid.Column="0"
+                                Grid.Row="1"
+                                KeyboardNavigation.DirectionalNavigation="Contained"
+                                KeyboardNavigation.TabIndex="2"
+                                KeyboardNavigation.TabNavigation="Local">
+                            <ContentPresenter x:Name="PART_SelectedContentHost"
+                                              ContentSource="SelectedContent"
+                                              Margin="{TemplateBinding Padding}"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                        </Border>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="TabStripPlacement" Value="Bottom">
+                            <Setter Property="Grid.Row" TargetName="headerPanel" Value="1" />
+                            <Setter Property="Grid.Row" TargetName="contentPanel" Value="0" />
+                            <Setter Property="Height" TargetName="RowDefinition0" Value="*" />
+                            <Setter Property="Height" TargetName="RowDefinition1" Value="Auto" />
+                            <Setter Property="Margin" TargetName="headerPanel" Value="2,0,2,2" />
+                        </Trigger>
+                        <Trigger Property="TabStripPlacement" Value="Left">
+                            <Setter Property="Grid.Row" TargetName="headerPanel" Value="0" />
+                            <Setter Property="Grid.Row" TargetName="contentPanel" Value="0" />
+                            <Setter Property="Grid.Column" TargetName="headerPanel" Value="0" />
+                            <Setter Property="Grid.Column" TargetName="contentPanel" Value="1" />
+                            <Setter Property="Width" TargetName="ColumnDefinition0" Value="Auto" />
+                            <Setter Property="Width" TargetName="ColumnDefinition1" Value="*" />
+                            <Setter Property="Height" TargetName="RowDefinition0" Value="*" />
+                            <Setter Property="Height" TargetName="RowDefinition1" Value="0" />
+                            <Setter Property="Margin" TargetName="headerPanel" Value="2,2,0,2" />
+                        </Trigger>
+                        <Trigger Property="TabStripPlacement" Value="Right">
+                            <Setter Property="Grid.Row" TargetName="headerPanel" Value="0" />
+                            <Setter Property="Grid.Row" TargetName="contentPanel" Value="0" />
+                            <Setter Property="Grid.Column" TargetName="headerPanel" Value="1" />
+                            <Setter Property="Grid.Column" TargetName="contentPanel" Value="0" />
+                            <Setter Property="Width" TargetName="ColumnDefinition0" Value="*" />
+                            <Setter Property="Width" TargetName="ColumnDefinition1" Value="Auto" />
+                            <Setter Property="Height" TargetName="RowDefinition0" Value="*" />
+                            <Setter Property="Height" TargetName="RowDefinition1" Value="0" />
+                            <Setter Property="Margin" TargetName="headerPanel" Value="0,2,2,2" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="TextElement.Foreground" TargetName="templateRoot" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#endregion-->
+
 </ResourceDictionary>

@@ -1,0 +1,80 @@
+﻿<UserControl x:Class="Remoting_Wizard.ViewModels.CustomTitleBar"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             xmlns:converter="clr-namespace:Remoting_Wizard.Converters"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Remoting_Wizard.ViewModels"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Background="{Binding BackgroundColour, Converter={StaticResource StringToBrushConverter}}"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Style BasedOn="{StaticResource JAButton}" TargetType="Button">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="BorderThickness" Value="0" />
+                <Setter Property="Border.CornerRadius" Value="0" />
+            </Style>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+        <Button Command="{Binding MinimiseCommand}"
+                Height="31"
+                VerticalAlignment="Top"
+                Width="44"
+                WindowChrome.IsHitTestVisibleInChrome="True">
+            <Canvas Height="27" Width="10">
+                <Line Stroke="{StaticResource SystemAccentColorBrush}"
+                      X1="0"
+                      X2="10"
+                      Y1="14"
+                      Y2="14" />
+            </Canvas>
+        </Button>
+
+        <Button Command="{Binding RestoreUpDownCommand}"
+                Height="31"
+                Margin="2,0"
+                VerticalAlignment="Top"
+                Width="44"
+                WindowChrome.IsHitTestVisibleInChrome="True">
+            <StackPanel>
+                <Canvas Height="7" Visibility="{Binding WindowMaximised, Converter={StaticResource BooleanToVisibiltyConverter}}" Width="10">
+                    <Rectangle Height="8"
+                               Margin="2,0,0,0"
+                               Stroke="{StaticResource SystemAccentColorBrush}"
+                               Width="8" />
+                    <Rectangle Fill="{StaticResource BackgroundBrush}"
+                               Height="8"
+                               Margin="0,2,0,0"
+                               Stroke="{StaticResource SystemAccentColorBrush}"
+                               Width="8" />
+                </Canvas>
+                <Canvas Height="7" Visibility="{Binding WindowMaximised, Converter={StaticResource InverseBooleanToVisibiltyConverter}}" Width="10">
+                    <Rectangle Height="10" Stroke="{StaticResource SystemAccentColorBrush}" Width="10" />
+                </Canvas>
+            </StackPanel>
+        </Button>
+
+        <Button Command="{Binding CloseCommand}"
+                Height="31"
+                VerticalAlignment="Top"
+                Width="44"
+                WindowChrome.IsHitTestVisibleInChrome="True">
+            <Canvas Height="7" Width="10">
+                <Line Stroke="{StaticResource SystemAccentColorBrush}"
+                      X1="0"
+                      X2="10"
+                      Y1="0"
+                      Y2="10" />
+                <Line Stroke="{StaticResource SystemAccentColorBrush}"
+                      X1="0"
+                      X2="10"
+                      Y1="10"
+                      Y2="0" />
+            </Canvas>
+        </Button>
+    </StackPanel>
+</UserControl>

@@ -1,12 +1,11 @@
 ﻿<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
-
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary Source="Colours.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style x:Key="JADataGrid" TargetType="DataGrid">
-        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Foreground" Value="{StaticResource TextBright1Brush}" />
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="BorderBrush" Value="{StaticResource BackgroundDark1Brush}" />
         <Setter Property="BorderThickness" Value="0" />
@@ -100,18 +99,17 @@
                         <Trigger Property="IsSelected" Value="True">
                             <Setter Property="Background" Value="LightSkyBlue" />
                             <Setter Property="BorderBrush" Value="LightSkyBlue" />
-                            <Setter Property="Foreground" Value="Black" />
+                            <Setter Property="Foreground" Value="{StaticResource TextInvertBrush}" />
                         </Trigger>
                         <Trigger Property="IsFocused" Value="True">
                             <Setter Property="Background" Value="#ff66ccff" />
                             <Setter Property="BorderBrush" Value="Black" />
                             <Setter Property="BorderThickness" Value="1" />
-                            <Setter Property="Foreground" Value="Black" />
+                            <Setter Property="Foreground" Value="{StaticResource TextInvertBrush}" />
                         </Trigger>
                     </Style.Triggers>
                 </Style>
             </Setter.Value>
         </Setter>
     </Style>
-
 </ResourceDictionary>

@@ -15,6 +15,8 @@
         <Setter Property="Foreground" Value="{StaticResource SystemAccentColorBrush}" />
         <Setter Property="BorderBrush" Value="{StaticResource BackgroundLight3Brush}" />
         <Setter Property="BorderThickness" Value="2" />
+        <Setter Property="Border.CornerRadius" Value="2" />
+        <Setter Property="Padding" Value="0" />
 
         <Setter Property="Template">
             <Setter.Value>
@@ -23,8 +25,8 @@
                             Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
-                            CornerRadius="4"
-                            SnapsToDevicePixels="true">
+                            CornerRadius="{TemplateBinding Border.CornerRadius}"
+                            SnapsToDevicePixels="False">
                         <ContentPresenter x:Name="contentPresenter"
                                           Focusable="False"
                                           HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
@@ -86,7 +88,6 @@
 
         </ControlTemplate.Triggers>
     </ControlTemplate>
-
 
     <Style x:Key="JAToggleButton" BasedOn="{StaticResource BaseStyle}" TargetType="{x:Type ToggleButton}">
         <Setter Property="SnapsToDevicePixels" Value="true" />

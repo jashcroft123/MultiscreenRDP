@@ -8,6 +8,15 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/JAStyles.xaml" />
+
+                <ResourceDictionary>
+                    <Style x:Key="JAWindow" BasedOn="{StaticResource BaseStyle}" TargetType="Window">
+                        <Setter Property="Background" Value="{StaticResource BackgroundBrush}" />
+                        <Setter Property="AllowsTransparency" Value="True" />
+                        <Setter Property="WindowStyle" Value="None" />
+                    </Style>
+                </ResourceDictionary>
+
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

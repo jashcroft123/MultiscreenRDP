@@ -1,28 +1,119 @@
 ﻿<Window x:Class="Remoting_Wizard.ViewModels.AddPCPopUp"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:prism="http://prismlibrary.com/"
-             prism:ViewModelLocator.AutoWireViewModel="True"
-			 mc:Ignorable="d" 
-			 d:DesignHeight="45" d:DesignWidth="80"
-             Height="300"
-             Width="300">
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="400"
+        Style="{StaticResource JAWindow}"
+        Width="400"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="31" ResizeBorderThickness="{x:Static SystemParameters.WindowResizeBorderThickness}" />
+    </WindowChrome.WindowChrome>
 
-    <StackPanel x:Name ="Main" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <UniformGrid Columns="2" Margin="10">
-            <Label Content="Alias:" Width="100"/>
-            <TextBox Text="{Binding ConfigPCs.Selected.Alias}"/>
-            
-            <Label Content="Name:"/>
-            <TextBox Text="{Binding ConfigPCs.Selected.Name}"/>
-            
-            <Label Content="User ID:"/>
-            <TextBox Text="{Binding ConfigPCs.Selected.UserID}"/>
-        </UniformGrid>
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style BasedOn="{StaticResource JAButton}" TargetType="Button">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="BorderThickness" Value="0" />
+                <Setter Property="Border.CornerRadius" Value="0" />
+            </Style>
+            <Style BasedOn="{StaticResource JALabel}" TargetType="Label" />
+            <Style BasedOn="{StaticResource JATextbox}" TargetType="TextBox" />
+        </ResourceDictionary>
+    </Window.Resources>
 
-        <Button Content="Save and Close" Command="{Binding SaveAndCloseCommand}"/>
-    </StackPanel>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button Command="{Binding MinimiseCommand}"
+                    Height="31"
+                    VerticalAlignment="Top"
+                    Width="44"
+                    WindowChrome.IsHitTestVisibleInChrome="True">
+                <Canvas Height="27" Width="10">
+                    <Line Stroke="{StaticResource SystemAccentColorBrush}"
+                          X1="0"
+                          X2="10"
+                          Y1="14"
+                          Y2="14" />
+                </Canvas>
+            </Button>
+
+            <Button Command="{Binding RestoreUpDownCommand}"
+                    Height="31"
+                    Margin="2,0"
+                    VerticalAlignment="Top"
+                    Width="44"
+                    WindowChrome.IsHitTestVisibleInChrome="True">
+                <StackPanel>
+                    <Canvas Height="7" Visibility="{Binding WindowMaximised, Converter={StaticResource BooleanToVisibiltyConverter}}" Width="10">
+                        <Rectangle Height="8"
+                                   Margin="2,0,0,0"
+                                   Stroke="{StaticResource SystemAccentColorBrush}"
+                                   Width="8" />
+                        <Rectangle Fill="{StaticResource BackgroundBrush}"
+                                   Height="8"
+                                   Margin="0,2,0,0"
+                                   Stroke="{StaticResource SystemAccentColorBrush}"
+                                   Width="8" />
+                    </Canvas>
+                    <Canvas Height="7" Visibility="{Binding WindowMaximised, Converter={StaticResource InverseBooleanToVisibiltyConverter}}" Width="10">
+                        <Rectangle Height="10" Stroke="{StaticResource SystemAccentColorBrush}" Width="10" />
+                    </Canvas>
+                </StackPanel>
+            </Button>
+
+            <Button Command="{Binding CloseCommand}"
+                    Height="31"
+                    VerticalAlignment="Top"
+                    Width="44"
+                    WindowChrome.IsHitTestVisibleInChrome="True">
+                <Canvas Height="7" Width="10">
+                    <Line Stroke="{StaticResource SystemAccentColorBrush}"
+                          X1="0"
+                          X2="10"
+                          Y1="0"
+                          Y2="10" />
+                    <Line Stroke="{StaticResource SystemAccentColorBrush}"
+                          X1="0"
+                          X2="10"
+                          Y1="10"
+                          Y2="0" />
+                </Canvas>
+            </Button>
+        </StackPanel>
+
+        <StackPanel x:Name="Main"
+                    Grid.Row="1"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <ContentControl prism:RegionManager.RegionName="PopupTitlebar"
+                            x:Name="TitleBar"
+                            Grid.Row="0"
+                            HorizontalAlignment="Stretch"
+                            Margin="0"
+                            VerticalAlignment="Top" />
+
+            <UniformGrid Columns="2" Margin="10">
+                <Label Content="Alias:" Width="100" />
+                <TextBox Text="{Binding ConfigPCs.Selected.Alias}" />
+
+                <Label Content="Name:" />
+                <TextBox Text="{Binding ConfigPCs.Selected.Name}" />
+
+                <Label Content="User ID:" />
+                <TextBox Text="{Binding ConfigPCs.Selected.UserID}" />
+            </UniformGrid>
+
+            <Button Command="{Binding SaveAndCloseCommand}" Content="Save and Close" />
+        </StackPanel>
+    </Grid>
 </Window>
+

@@ -1,4 +1,4 @@
-﻿using Prism.Regions;
+﻿using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,17 +17,21 @@ using System.Windows.Shapes;
 namespace Remoting_Wizard.ViewModels
 {
     /// <summary>
-    /// Interaction logic for AddPCPopUp.xaml
+    /// Interaction logic for CustomTitleBar.xaml
     /// </summary>
-    public partial class AddPCPopUp : Window
+    public partial class CustomTitleBar : UserControl
     {
-        private IRegionManager _RegionManager { get; set; }
-
-        public AddPCPopUp(IRegionManager regionManager)
+        public CustomTitleBar()
         {
-            _RegionManager = regionManager;
             InitializeComponent();
-            this.Topmost = true;
+        }
+
+        private void TitleBar_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                {
+                    Application.Current.MainWindow.DragMove();
+                }
         }
     }
 }

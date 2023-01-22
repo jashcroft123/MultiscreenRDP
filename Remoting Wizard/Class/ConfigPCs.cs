@@ -24,10 +24,53 @@ namespace Remoting_Wizard.Class
             set { SetProperty(ref _PCs, value); }
         }
 
+        private ObservableCollection<string> _DistinctAliases;
+        public ObservableCollection<string> DistinctAliases
+        {
+            get { return _DistinctAliases; }
+            set { SetProperty(ref _DistinctAliases, value); }
+        }
+        private string _SelectedAlias;
+        public string SelectedAlias
+        {
+            get { return _SelectedAlias; }
+            set { SetProperty(ref _SelectedAlias, value); }
+        }
+
+
+        private ObservableCollection<string> _UserNames;
+        public ObservableCollection<string> UserNames
+        {
+            get { return _UserNames; }
+            set { SetProperty(ref _UserNames, value); }
+        }
+        private string _SelectedUserName;
+        public string SelectedUserName
+        {
+            get { return _SelectedUserName; }
+            set { SetProperty(ref _SelectedUserName, value); }
+        }
+
 
         public ConfigPCs(List<PC> list)
         {
             PCs = new ObservableCollection<PC>(list);
+
+            this.PropertyChanged += ConfigPCs_PropertyChanged;
+        }
+
+        private void ConfigPCs_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == nameof(PCs) || e.PropertyName == nameof(Selected))
+            {
+                DistinctAliases = new ObservableCollection<string>(PCs.Select(x => x.Alias).Distinct());
+            }
+            if (e.PropertyName == nameof(SelectedAlias))
+            {
+                //get all the user names for the selected Alias from the list of PCs
+                UserNames = new ObservableCollection<string>(PCs.Where(x => x.Alias == SelectedAlias).Select(x => x.UserID));
+                SelectedUserName = UserNames[0];
+            }
         }
     }
 }

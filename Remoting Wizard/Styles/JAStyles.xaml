@@ -5,5 +5,6 @@
         <ResourceDictionary Source="ItemControls.xaml" />
         <ResourceDictionary Source="Boxes.xaml" />
         <ResourceDictionary Source="Buttons.xaml" />
+        <ResourceDictionary Source="Converters.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

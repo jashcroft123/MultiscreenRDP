@@ -17,11 +17,13 @@
             <Style BasedOn="{StaticResource JAComboBox}" TargetType="ComboBox" />
             <Style BasedOn="{StaticResource JAToggleButton}" TargetType="ToggleButton" />
             <Style BasedOn="{StaticResource JAButton}" TargetType="Button" />
+            <Style BasedOn="{StaticResource JATabItem}" TargetType="TabItem"/>
+            <Style BasedOn="{StaticResource JATabControl}" TargetType="TabControl"/>
         </ResourceDictionary>
     </UserControl.Resources>
 
     <Grid Margin="20,5" VerticalAlignment="Top">
-        <TabControl Background="Transparent" BorderThickness="0.5" Margin="0,10,0,0">
+        <TabControl Margin="0,10,0,0">
 
             <TabItem Header="Connect">
                 <StackPanel HorizontalAlignment="Center" Margin="20">
@@ -50,13 +52,14 @@
                                    Width="150" />
 
                             <ComboBox x:Name="ComboBoxPCs"
-                                      ItemsSource="{Binding Alias}"
+                                      FontSize="24"
+                                      ItemsSource="{Binding ConfigPCs.DistinctAliases}"
                                       MinWidth="260"
                                       SelectedIndex="0"
-                                      SelectedItem="{Binding SelectedAlias, Mode=TwoWay}" />
+                                      SelectedItem="{Binding ConfigPCs.SelectedAlias, Mode=TwoWay}" />
                         </StackPanel>
 
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" Visibility="{Binding ConfigPCs.UserNames.Count, Converter={StaticResource MinCountToVisibilityConverter}, ConverterParameter=1}">
                             <Label Content="User Name:"
                                    HorizontalAlignment="Right"
                                    HorizontalContentAlignment="Right"
@@ -64,10 +67,11 @@
                                    Width="150" />
 
                             <ComboBox x:Name="ComboBoxUsernames"
-                                      ItemsSource="{Binding Usernames}"
+                                      FontSize="24"
+                                      ItemsSource="{Binding ConfigPCs.UserNames}"
                                       MinWidth="260"
                                       SelectedIndex="0"
-                                      SelectedItem="{Binding SelectedUserName, Mode=TwoWay}" />
+                                      SelectedItem="{Binding ConfigPCs.SelectedUserName, Mode=TwoWay}" />
                         </StackPanel>
                     </StackPanel>
 
@@ -148,6 +152,7 @@
 
                             <!--<TextBlock Text="{Binding PrimaryScreenID, StringFormat='Primary Screen ID: {0}'}" Style="{StaticResource MslTextBlock}"/>-->
                         </Border>
+
                         <Button x:Name="StartRemote"
                                 Command="{Binding BtnRemoteConnect}"
                                 Content="Connect"

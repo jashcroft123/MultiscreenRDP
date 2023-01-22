@@ -4,15 +4,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:prism="http://prismlibrary.com/"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Background="{StaticResource BackgroundBrush}"
-        Height="450"
-        Title="MainWindow"
-        Width="800"
+        MaxHeight="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Height}"
+        MaxWidth="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}"
+        Style="{StaticResource JAWindow}"
+        Title="Remoting Wizard"
+        WindowStartupLocation=" CenterScreen"
+        WindowState="Normal"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
-    <Grid>
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="31" ResizeBorderThickness="{x:Static SystemParameters.WindowResizeBorderThickness}" />
+    </WindowChrome.WindowChrome>
+
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions />
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="31" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <ContentControl prism:RegionManager.RegionName="TitleBar"
+                        x:Name="TitleBar"
+                        Grid.Row="0"
+                        HorizontalAlignment="Stretch"
+                        Margin="0"
+                        VerticalAlignment="Top" />
+
         <ContentControl prism:RegionManager.RegionName="MainRegion"
                         x:Name="ShellContentControl"
+                        Grid.Row="1"
                         HorizontalAlignment="Stretch"
                         Margin="0"
                         VerticalAlignment="Stretch" />

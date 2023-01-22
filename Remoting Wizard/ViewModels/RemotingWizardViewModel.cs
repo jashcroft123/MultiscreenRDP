@@ -1,11 +1,14 @@
 ﻿using Microsoft.VisualBasic.FileIO;
 using Prism.Commands;
+using Prism.Common;
 using Prism.Ioc;
 using Prism.Mvvm;
+using Prism.Regions;
 using Remoting_Wizard.Class;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Globalization;
 using System.IO;
@@ -163,7 +166,6 @@ namespace Remoting_Wizard.ViewModels
 
         private EventHandler SelectedPCUpdate;
 
-
         public RemotingWizardViewModel(ConfigPCs configPCs)
         {
             ConfigPCs = configPCs;
@@ -254,7 +256,6 @@ namespace Remoting_Wizard.ViewModels
             File.WriteAllText($@"{rDPPath}\Connection.RDP", rdpSB.ToString());
             await RunCMDCommand($"/C mstsc \"{rDPPath}\\Connection.RDP\"");
 
-            //minimise MSL
             Application.Current.MainWindow.WindowState = WindowState.Minimized;
         }
 
@@ -283,8 +284,15 @@ namespace Remoting_Wizard.ViewModels
         private async Task EditRow()
         {
             var window = ContainerLocator.Current.Resolve<AddPCPopUp>();
-            window = new AddPCPopUp();
+            //if (window != null)
+            //{
+            //    MvvmHelpers.AutowireViewModel(window);
+            //    RegionManager.SetRegionManager(window, _containerExtension.Resolve<IRegionManager>());
+            //    RegionManager.UpdateRegions();
+            //    InitializeShell(shell);
+            //}
             window.Show();
+            var RegionManager = ContainerLocator.Current.Resolve<IRegionManager>();
 
             TaskCompletionSource tcs = new TaskCompletionSource();
             window.Closed += (s, e) => tcs.TrySetResult();
