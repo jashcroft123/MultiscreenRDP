@@ -6,7 +6,7 @@
     <autoResourcePackage qualifier="DXFeatureLevel" />
     <omitSchemaFromResourcePacks />
   </packaging>
-  <index root="\" startIndexAt="C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\bin\AnyCPU\Release\resources.pri">
+  <index root="\" startIndexAt="C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\resources.pri">
     <default>
       <qualifier name="Language" value="en-US" />
       <qualifier name="Contrast" value="standard" />

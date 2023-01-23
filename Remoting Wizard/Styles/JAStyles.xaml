@@ -7,5 +7,6 @@
         <ResourceDictionary Source="Buttons.xaml" />
         <ResourceDictionary Source="Bars.xaml" />
         <ResourceDictionary Source="Converters.xaml" />
+        <ResourceDictionary Source="JAWindowStyle.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

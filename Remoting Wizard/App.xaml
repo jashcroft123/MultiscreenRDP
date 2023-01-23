@@ -1,4 +1,5 @@
 ﻿<prism:PrismApplication x:Class="Remoting_Wizard.App"
+                        xmlns:JA="clr-namespace:Remoting_Wizard.Styles"
                         xmlns:local="clr-namespace:Remoting_Wizard"
                         xmlns:prism="http://prismlibrary.com/"
                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -9,14 +10,9 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/JAStyles.xaml" />
 
-                <ResourceDictionary>
-                    <Style x:Key="JAWindow" BasedOn="{StaticResource BaseStyle}" TargetType="Window">
-                        <Setter Property="Background" Value="{StaticResource BackgroundBrush}" />
-                        <Setter Property="AllowsTransparency" Value="True" />
-                        <Setter Property="WindowStyle" Value="None" />
-                    </Style>
-                </ResourceDictionary>
-
+                <!--<ResourceDictionary>
+                    <Style BasedOn="{StaticResource JAWindowStyle}" TargetType="JA:JAWindow" />
+                </ResourceDictionary>-->
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

@@ -1,13 +1,15 @@
-﻿<Window x:Class="Remoting_Wizard.ViewModels.AddPCPopUp"
-        prism:ViewModelLocator.AutoWireViewModel="True"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:prism="http://prismlibrary.com/"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Height="400"
-        Style="{StaticResource JAWindow}"
-        Width="400"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+﻿<ja:JAWindow x:Class="Remoting_Wizard.ViewModels.AddPCPopUp"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ja="clr-namespace:Remoting_Wizard.Styles"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             BorderThickness="0"
+             Height="400"
+             Style="{StaticResource JAWindowStyle}"
+             Width="400"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <WindowChrome.WindowChrome>
         <WindowChrome CaptionHeight="31" ResizeBorderThickness="{x:Static SystemParameters.WindowResizeBorderThickness}" />
@@ -115,5 +117,5 @@
             <Button Command="{Binding SaveAndCloseCommand}" Content="Save and Close" />
         </StackPanel>
     </Grid>
-</Window>
+</ja:JAWindow>
 

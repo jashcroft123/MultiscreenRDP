@@ -1,1 +1,1 @@
-C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\RemotingWizardPackage.wapproj;neutral
+C:\devops\MultiscreenRDP\RemotingWizardPackage\RemotingWizardPackage.wapproj;neutral

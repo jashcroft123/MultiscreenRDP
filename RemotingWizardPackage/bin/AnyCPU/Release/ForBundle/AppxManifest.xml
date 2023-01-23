@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="e3f27202-d180-4e51-9603-ec3c57fe71e2" Publisher="CN=Renishaw plc, O=Renishaw plc, L=Wotton-under-Edge, C=GB" Version="1.1.11.0" ProcessorArchitecture="neutral" />
+  <Identity Name="e3f27202-d180-4e51-9603-ec3c57fe71e2" Publisher="CN=Renishaw plc, O=Renishaw plc, L=Wotton-under-Edge, C=GB" Version="2.0.0.0" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>Remoting Wizard</DisplayName>
     <PublisherDisplayName>ja151016</PublisherDisplayName>
@@ -48,12 +48,12 @@
     <iot:Capability Name="systemManagement" />
   </Capabilities>
   <build:Metadata>
-    <build:Item Name="Microsoft.Build.DesktopBridge.Tasks.dll" Version="4.6.30319.200" />
+    <build:Item Name="Microsoft.Build.DesktopBridge.Tasks.dll" Version="17.3.32727.363" />
     <build:Item Name="TargetFrameworkMoniker" Value=".NETFramework,Version=v4.5.1" />
     <build:Item Name="VisualStudio" Version="17.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2022" />
     <build:Item Name="OperatingSystem" Version="10.0.19041.1 (WinBuild.160101.0800)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="17.0.32113.165" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="17.3.32728.75" />
     <build:Item Name="ProjectGUID" Value="8adad8d1-ba30-41d9-8123-23c5e7920cf6" />
     <build:Item Name="makepri.exe" Version="10.0.22000.194 (WinBuild.160101.0800)" />
   </build:Metadata>

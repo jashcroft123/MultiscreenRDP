@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("app.config")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/pcs.csv")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/remoteconnectiontemplate.txt")]
 

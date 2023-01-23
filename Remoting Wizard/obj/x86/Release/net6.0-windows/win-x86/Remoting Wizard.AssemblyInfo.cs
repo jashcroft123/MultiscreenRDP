@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Remoting Wizard")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("2.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0-R")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Remoting Wizard")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Remoting Wizard")]
 [assembly: System.Reflection.AssemblyVersionAttribute("2.0.0.0")]

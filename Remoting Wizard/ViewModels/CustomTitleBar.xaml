@@ -11,11 +11,7 @@
 
     <UserControl.Resources>
         <ResourceDictionary>
-            <Style BasedOn="{StaticResource JAButton}" TargetType="Button">
-                <Setter Property="Background" Value="Transparent" />
-                <Setter Property="BorderThickness" Value="0" />
-                <Setter Property="Border.CornerRadius" Value="0" />
-            </Style>
+            <Style BasedOn="{StaticResource JAMenuButton}" TargetType="Button" />
         </ResourceDictionary>
     </UserControl.Resources>
 

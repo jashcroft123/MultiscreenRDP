@@ -1,19 +1,21 @@
-﻿<Window x:Class="Remoting_Wizard.MainWindow"
-        mc:Ignorable="d"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:prism="http://prismlibrary.com/"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        MaxHeight="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Height}"
-        MaxWidth="{Binding Source={x:Static SystemParameters.WorkArea}, Path=Width}"
-        Style="{StaticResource JAWindow}"
-        Title="Remoting Wizard"
-        WindowStartupLocation=" CenterScreen"
-        WindowState="Normal"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+﻿<ja:JAWindow x:Class="Remoting_Wizard.MainWindow"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ja="clr-namespace:Remoting_Wizard.Styles"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             MaxHeight="{DynamicResource {x:Static SystemParameters.MaximizedPrimaryScreenHeightKey}}"
+             Style="{StaticResource JAWindowStyle}"
+             Title="Remoting Wizard"
+             WindowState="Maximized"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="31" ResizeBorderThickness="{x:Static SystemParameters.WindowResizeBorderThickness}" />
+        <WindowChrome CaptionHeight="31"
+                      CornerRadius="0"
+                      GlassFrameThickness="0"
+                      ResizeBorderThickness="{x:Static SystemParameters.WindowResizeBorderThickness}"
+                      UseAeroCaptionButtons="False" />
     </WindowChrome.WindowChrome>
 
     <Grid ShowGridLines="False">
@@ -38,5 +40,5 @@
                         Margin="0"
                         VerticalAlignment="Stretch" />
     </Grid>
-</Window>
+</ja:JAWindow>
 

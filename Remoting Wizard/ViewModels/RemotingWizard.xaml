@@ -24,197 +24,195 @@
     </UserControl.Resources>
 
     <Grid Margin="20,5" VerticalAlignment="Top">
-        <ScrollViewer Height="640" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-            <!--  This needs to be linked to window size  -->
-            <TabControl Margin="0,10,0,0">
-                <TabItem Header="Connect">
-                    <StackPanel HorizontalAlignment="Center" Margin="20">
-                        <StackPanel>
-                            <StackPanel Orientation="Horizontal">
-                                <Label Content="Modes:"
-                                       HorizontalAlignment="Right"
-                                       HorizontalContentAlignment="Right"
-                                       Margin="0,0,10,5"
-                                       Width="150" />
+        <!--<Viewbox >-->
+        <!--  This needs to be linked to window size  -->
+        <TabControl Margin="0,10,0,0">
+            <TabItem Header="Connect">
+                <StackPanel HorizontalAlignment="Center" Margin="20">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="Modes:"
+                                   HorizontalAlignment="Right"
+                                   HorizontalContentAlignment="Right"
+                                   Margin="0,0,10,5"
+                                   Width="150" />
 
-                                <ComboBox x:Name="ComboBoxMode"
-                                          DisplayMemberPath="Mode"
-                                          FontSize="24"
-                                          ItemsSource="{Binding Modes}"
-                                          MinWidth="260"
-                                          SelectedIndex="0"
-                                          SelectedItem="{Binding SelectedMode, Mode=TwoWay}" />
-                            </StackPanel>
-
-                            <StackPanel Orientation="Horizontal">
-                                <Label Content="PC:"
-                                       HorizontalAlignment="Right"
-                                       HorizontalContentAlignment="Right"
-                                       Margin="0,0,10,5"
-                                       Width="150" />
-
-                                <ComboBox x:Name="ComboBoxPCs"
-                                          FontSize="24"
-                                          ItemsSource="{Binding ConfigPCs.DistinctAliases}"
-                                          MinWidth="260"
-                                          SelectedIndex="0"
-                                          SelectedItem="{Binding ConfigPCs.SelectedAlias, Mode=TwoWay}" />
-                            </StackPanel>
-
-                            <StackPanel Orientation="Horizontal" Visibility="{Binding ConfigPCs.UserNames.Count, Converter={StaticResource MinCountToVisibilityConverter}, ConverterParameter=1}">
-                                <Label Content="User Name:"
-                                       HorizontalAlignment="Right"
-                                       HorizontalContentAlignment="Right"
-                                       Margin="0,0,10,5"
-                                       Width="150" />
-
-                                <ComboBox x:Name="ComboBoxUsernames"
-                                          FontSize="24"
-                                          ItemsSource="{Binding ConfigPCs.UserNames}"
-                                          MinWidth="260"
-                                          SelectedIndex="0"
-                                          SelectedItem="{Binding ConfigPCs.SelectedUserName, Mode=TwoWay}" />
-                            </StackPanel>
+                            <ComboBox x:Name="ComboBoxMode"
+                                      DisplayMemberPath="Mode"
+                                      FontSize="24"
+                                      ItemsSource="{Binding Modes}"
+                                      MinWidth="260"
+                                      SelectedIndex="0"
+                                      SelectedItem="{Binding SelectedMode, Mode=TwoWay}" />
                         </StackPanel>
 
-                        <!--#region Remote Connection-->
-                        <StackPanel Visibility="{Binding SelectedMode, Converter={StaticResource ModeToVisibiltyConverter}, ConverterParameter='Remote Connection'}">
-                            <Border BorderBrush="Gray"
-                                    BorderThickness="2.5"
-                                    CornerRadius="10"
-                                    Height="Auto"
-                                    Margin="10"
-                                    Width="Auto">
-                                <Grid Margin="15">
-                                    <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="50" />
-                                        <ColumnDefinition Width="{Binding MaxWidth}" />
-                                        <ColumnDefinition Width="50" />
-                                    </Grid.ColumnDefinitions>
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="2*" />
-                                        <RowDefinition Height="10*" />
-                                    </Grid.RowDefinitions>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="PC:"
+                                   HorizontalAlignment="Right"
+                                   HorizontalContentAlignment="Right"
+                                   Margin="0,0,10,5"
+                                   Width="150" />
 
-                                    <Label Content="Select Screens" Grid.Column="1" Grid.Row="0" />
-
-                                    <Button x:Name="Refresh"
-                                            Background="Transparent"
-                                            BorderThickness="0"
-                                            Command="{Binding BtnRefresh}"
-                                            Content="⟳"
-                                            Foreground="{StaticResource SystemAccentColorBrush}"
-                                            Grid.Column="2"
-                                            Grid.Row="0"
-                                            HorizontalAlignment="Right"
-                                            HorizontalContentAlignment="Right" />
-
-                                    <ScrollViewer Grid.Column="1"
-                                                  Grid.Row="1"
-                                                  Height="250"
-                                                  HorizontalScrollBarVisibility="Disabled"
-                                                  VerticalScrollBarVisibility="Auto">
-                                        <ItemsControl x:Name="Screens"
-                                                      Background="Transparent"
-                                                      BorderThickness="0"
-                                                      HorizontalAlignment="Center"
-                                                      ItemsSource="{Binding Screens, UpdateSourceTrigger=PropertyChanged}"
-                                                      VerticalAlignment="Center">
-                                            <ItemsControl.ItemsPanel>
-                                                <ItemsPanelTemplate>
-                                                    <Canvas Height="{Binding MaxHeight}" Width="{Binding MaxWidth}" />
-                                                </ItemsPanelTemplate>
-                                            </ItemsControl.ItemsPanel>
-
-                                            <ItemsControl.ItemContainerStyle>
-                                                <Style TargetType="ContentPresenter">
-                                                    <Setter Property="Canvas.Left" Value="{Binding Path=LeftLocation}" />
-                                                    <Setter Property="Canvas.Top" Value="{Binding Path=BottomLocation}" />
-                                                </Style>
-                                            </ItemsControl.ItemContainerStyle>
-
-                                            <ItemsControl.ItemTemplate>
-                                                <DataTemplate>
-                                                    <ToggleButton Content="screen"
-                                                                  Height="{Binding Height}"
-                                                                  IsChecked="{Binding Selected, Mode=TwoWay}"
-                                                                  VerticalAlignment="Top"
-                                                                  Width="{Binding Width}">
-                                                        <i:Interaction.Triggers>
-                                                            <i:EventTrigger EventName="MouseRightButtonUp">
-                                                                <i:InvokeCommandAction Command="{Binding RightClick}" CommandParameter="{Binding ID}" />
-                                                            </i:EventTrigger>
-                                                        </i:Interaction.Triggers>
-                                                    </ToggleButton>
-                                                </DataTemplate>
-                                            </ItemsControl.ItemTemplate>
-                                        </ItemsControl>
-                                    </ScrollViewer>
-                                </Grid>
-
-                                <!--<TextBlock Text="{Binding PrimaryScreenID, StringFormat='Primary Screen ID: {0}'}" Style="{StaticResource MslTextBlock}"/>-->
-                            </Border>
-
-                            <Button x:Name="StartRemote"
-                                    Command="{Binding BtnRemoteConnect}"
-                                    Content="Connect"
-                                    FontSize="24"
-                                    Height="75"
-                                    Width="275" />
+                            <ComboBox x:Name="ComboBoxPCs"
+                                      FontSize="24"
+                                      ItemsSource="{Binding ConfigPCs.DistinctAliases}"
+                                      MinWidth="260"
+                                      SelectedIndex="0"
+                                      SelectedItem="{Binding ConfigPCs.SelectedAlias, Mode=TwoWay}" />
                         </StackPanel>
-                        <!--#endregion-->
 
-                        <!--#region C-Drive-->
-                        <StackPanel Visibility="{Binding SelectedMode, Converter={StaticResource ModeToVisibiltyConverter}, ConverterParameter='C-Drive'}">
-                            <Button x:Name="StartCDrive"
-                                    Command="{Binding BtnCDriveConnect}"
-                                    Content="Open C Drive"
-                                    FontSize="24"
-                                    Height="76"
-                                    Margin="10"
-                                    Width="275" />
+                        <StackPanel Orientation="Horizontal" Visibility="{Binding ConfigPCs.UserNames.Count, Converter={StaticResource MinCountToVisibilityConverter}, ConverterParameter=1}">
+                            <Label Content="User Name:"
+                                   HorizontalAlignment="Right"
+                                   HorizontalContentAlignment="Right"
+                                   Margin="0,0,10,5"
+                                   Width="150" />
+
+                            <ComboBox x:Name="ComboBoxUsernames"
+                                      FontSize="24"
+                                      ItemsSource="{Binding ConfigPCs.UserNames}"
+                                      MinWidth="260"
+                                      SelectedIndex="0"
+                                      SelectedItem="{Binding ConfigPCs.SelectedUserName, Mode=TwoWay}" />
                         </StackPanel>
-                        <!--#endregion-->
-
                     </StackPanel>
-                </TabItem>
 
-                <TabItem Header="Config">
-                    <DockPanel>
-                        <DataGrid x:Name="ConfigData"
-                                  AlternationCount="2"
-                                  Background="Transparent"
-                                  ColumnHeaderHeight="50"
-                                  ColumnWidth="*"
-                                  DockPanel.Dock="Left"
-                                  Height="550"
-                                  IsReadOnly="True"
-                                  ItemsSource="{Binding ConfigPCs.PCs, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
-                                  Margin="10,20,0,10"
-                                  RowHeaderWidth="0"
-                                  SelectedIndex="0"
-                                  SelectedItem="{Binding ConfigPCs.Selected}"
-                                  Style="{StaticResource JADataGrid}"
-                                  VerticalScrollBarVisibility="Auto"
-                                  Width="1000">
-                            <DataGrid.ContextMenu>
-                                <ContextMenu>
-                                    <MenuItem Click="Insert_OnClick" Header="Insert" />
+                    <!--#region Remote Connection-->
+                    <StackPanel Visibility="{Binding SelectedMode, Converter={StaticResource ModeToVisibiltyConverter}, ConverterParameter='Remote Connection'}">
+                        <Border BorderBrush="Gray"
+                                BorderThickness="2.5"
+                                CornerRadius="10"
+                                Height="Auto"
+                                Margin="10"
+                                Width="Auto">
+                            <Grid Margin="15">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50" />
+                                    <ColumnDefinition Width="{Binding MaxWidth}" />
+                                    <ColumnDefinition Width="50" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="2*" />
+                                    <RowDefinition Height="10*" />
+                                </Grid.RowDefinitions>
 
-                                    <MenuItem Click="Duplicate_OnClick" Header="Duplicate" />
+                                <Label Content="Select Screens"
+                                       Grid.Column="1"
+                                       Grid.Row="0"
+                                       HorizontalAlignment="Center" />
 
-                                    <MenuItem Click="Edit_OnClick" CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=Parent}" Header="Edit" />
+                                <Button x:Name="Refresh"
+                                        Background="Transparent"
+                                        BorderThickness="0"
+                                        Command="{Binding BtnRefresh}"
+                                        Content="⟳"
+                                        Foreground="{StaticResource SystemAccentColorBrush}"
+                                        Grid.Column="2"
+                                        Grid.Row="0"
+                                        Height="35"
+                                        HorizontalAlignment="Right"
+                                        Width="35" />
 
-                                    <MenuItem Click="DeleteRow_OnClick" Header="Delete" />
-                                </ContextMenu>
-                            </DataGrid.ContextMenu>
-                            <DataGrid.InputBindings>
-                                <KeyBinding Command="{Binding SavePressed}" Key="Tab" />
-                            </DataGrid.InputBindings>
-                        </DataGrid>
-                    </DockPanel>
-                </TabItem>
-            </TabControl>
-        </ScrollViewer>
+                                <Viewbox Grid.Column="1" Grid.Row="1" Height="250">
+
+                                    <ItemsControl x:Name="Screens"
+                                                  Background="Transparent"
+                                                  BorderThickness="0"
+                                                  HorizontalAlignment="Center"
+                                                  ItemsSource="{Binding Screens, UpdateSourceTrigger=PropertyChanged}"
+                                                  VerticalAlignment="Center">
+                                        <ItemsControl.ItemsPanel>
+                                            <ItemsPanelTemplate>
+                                                <Canvas Height="{Binding MaxHeight}" Width="{Binding MaxWidth}" />
+                                            </ItemsPanelTemplate>
+                                        </ItemsControl.ItemsPanel>
+
+                                        <ItemsControl.ItemContainerStyle>
+                                            <Style TargetType="ContentPresenter">
+                                                <Setter Property="Canvas.Left" Value="{Binding Path=LeftLocation}" />
+                                                <Setter Property="Canvas.Top" Value="{Binding Path=BottomLocation}" />
+                                            </Style>
+                                        </ItemsControl.ItemContainerStyle>
+
+                                        <ItemsControl.ItemTemplate>
+                                            <DataTemplate>
+                                                <ToggleButton Content="screen"
+                                                              Height="{Binding Height}"
+                                                              IsChecked="{Binding Selected, Mode=TwoWay}"
+                                                              VerticalAlignment="Top"
+                                                              Width="{Binding Width}">
+                                                    <i:Interaction.Triggers>
+                                                        <i:EventTrigger EventName="MouseRightButtonUp">
+                                                            <i:InvokeCommandAction Command="{Binding RightClick}" CommandParameter="{Binding ID}" />
+                                                        </i:EventTrigger>
+                                                    </i:Interaction.Triggers>
+                                                </ToggleButton>
+                                            </DataTemplate>
+                                        </ItemsControl.ItemTemplate>
+                                    </ItemsControl>
+                                </Viewbox>
+                            </Grid>
+
+                            <!--<TextBlock Text="{Binding PrimaryScreenID, StringFormat='Primary Screen ID: {0}'}" Style="{StaticResource MslTextBlock}"/>-->
+                        </Border>
+
+                        <Button x:Name="StartRemote"
+                                Command="{Binding BtnRemoteConnect}"
+                                Content="Connect"
+                                FontSize="24"
+                                Height="75"
+                                Width="275" />
+                    </StackPanel>
+                    <!--#endregion-->
+
+                    <!--#region C-Drive-->
+                    <StackPanel Visibility="{Binding SelectedMode, Converter={StaticResource ModeToVisibiltyConverter}, ConverterParameter='C-Drive'}">
+                        <Button x:Name="StartCDrive"
+                                Command="{Binding BtnCDriveConnect}"
+                                Content="Open C Drive"
+                                FontSize="24"
+                                Height="76"
+                                Margin="10"
+                                Width="275" />
+                    </StackPanel>
+                    <!--#endregion-->
+
+                </StackPanel>
+            </TabItem>
+
+            <TabItem Header="Config">
+                <DockPanel>
+                    <DataGrid x:Name="ConfigData"
+                              AlternationCount="2"
+                              Background="Transparent"
+                              ColumnHeaderHeight="50"
+                              ColumnWidth="*"
+                              DockPanel.Dock="Left"
+                              Height="550"
+                              IsReadOnly="True"
+                              ItemsSource="{Binding ConfigPCs.PCs, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                              Margin="10,20,0,10"
+                              RowHeaderWidth="0"
+                              SelectedIndex="0"
+                              SelectedItem="{Binding ConfigPCs.Selected}"
+                              Style="{StaticResource JADataGrid}"
+                              VerticalScrollBarVisibility="Auto"
+                              Width="1000">
+                        <DataGrid.ContextMenu>
+                            <ContextMenu>
+                                <MenuItem Click="Insert_OnClick" Header="Insert" />
+
+                                <MenuItem Click="Duplicate_OnClick" Header="Duplicate" />
+
+                                <MenuItem Click="Edit_OnClick" CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=Parent}" Header="Edit" />
+
+                                <MenuItem Click="DeleteRow_OnClick" Header="Delete" />
+                            </ContextMenu>
+                        </DataGrid.ContextMenu>
+                    </DataGrid>
+                </DockPanel>
+            </TabItem>
+        </TabControl>
+        <!--</Viewbox>-->
     </Grid>
 </UserControl>

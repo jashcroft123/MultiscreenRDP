@@ -50,6 +50,9 @@
     <Page Update="Styles\JAStyles.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Styles\JAWindowStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Styles\Texts.xaml">
       <SubType>Designer</SubType>
     </Page>

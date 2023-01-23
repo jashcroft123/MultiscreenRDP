@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Release\net6.0-windows\
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Release\net6.0-windows\
 Remoting_Wizard
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
-C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\App.xaml
-556240393
-3340989222
-23-1445717649
-2172045455344
-EngineeringPanel\CSV Manager\Views\CSVManager.xaml;Process\ObjectInheritence\Views\Inheritence.xaml;Process\RemoteFileManager\Views\RemoteFiles.xaml;Process\Selection\Views\SelectApp.xaml;Process\Wizard\Views\RemotingWizard.xaml;
+C:\devops\MultiscreenRDP\Remoting Wizard\App.xaml
+141216017263
+2-763388151
+261440378710
+2011510034543
+MainWindow.xaml;Styles\Bars.xaml;Styles\Boxes.xaml;Styles\Buttons.xaml;Styles\Colours.xaml;Styles\Converters.xaml;Styles\Fonts.xaml;Styles\ItemControls.xaml;Styles\JAStyles.xaml;Styles\Texts.xaml;Styles\TextStyles.xaml;ViewModels\AddPCPopUp.xaml;ViewModels\CustomTitleBar.xaml;ViewModels\RemotingWizard.xaml;
 
-False
+True
 

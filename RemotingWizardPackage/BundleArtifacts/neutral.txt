@@ -1,2 +1,6 @@
-MainPackage=C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_1.1.11.0_AnyCPU.msix
-SymbolPackage=C:\devops\CGPD\C#\C#RemotingWizard\RemotingWizardPackage\obj\Release\Symbols\RemotingWizardPackage_1.1.11.0_AnyCPU.appxsym
+MainPackage=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_2.0.0.0_AnyCPU.msix
+SymbolPackage=C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\Symbols\RemotingWizardPackage_2.0.0.0_AnyCPU.appxsym
+ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_2.0.0.0_scale-100.msix
+ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_2.0.0.0_scale-125.msix
+ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_2.0.0.0_scale-150.msix
+ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_2.0.0.0_scale-400.msix

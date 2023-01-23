@@ -1,4 +1,5 @@
 ﻿using Prism.Regions;
+using Remoting_Wizard.Styles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,7 @@ namespace Remoting_Wizard.ViewModels
     /// <summary>
     /// Interaction logic for AddPCPopUp.xaml
     /// </summary>
-    public partial class AddPCPopUp : Window
+    public partial class AddPCPopUp : JAWindow
     {
         private IRegionManager _RegionManager { get; set; }
 
@@ -27,7 +28,7 @@ namespace Remoting_Wizard.ViewModels
         {
             _RegionManager = regionManager;
             InitializeComponent();
-            this.Topmost = true;
+            //this.Topmost = true;
         }
     }
 }

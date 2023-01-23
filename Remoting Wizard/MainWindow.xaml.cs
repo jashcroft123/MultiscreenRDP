@@ -1,7 +1,9 @@
 ﻿using Prism.Regions;
+using Remoting_Wizard.Styles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,7 +24,7 @@ namespace Remoting_Wizard
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : JAWindow
     {
         /// <summary>
         /// The RegionManager that should be used for navigation within the shell

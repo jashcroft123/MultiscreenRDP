@@ -57,6 +57,14 @@
         </Setter>
     </Style>
 
+    <!--#region Menu Button-->
+    <Style x:Key="JAMenuButton" BasedOn="{StaticResource JAButton}" TargetType="Button">
+        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Border.CornerRadius" Value="0" />
+    </Style>
+    <!--#endregion-->
+
     <!--  Toggle Button  -->
     <ControlTemplate x:Key="Toggle" TargetType="{x:Type ToggleButton}">
         <Border x:Name="border"
