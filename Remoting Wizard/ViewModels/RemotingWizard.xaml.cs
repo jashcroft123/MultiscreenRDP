@@ -19,30 +19,30 @@ namespace Remoting_Wizard.ViewModels
             InitializeComponent();
         }
 
-        private void Insert_OnClick(object sender, RoutedEventArgs e)
-        {
-            var vm = (RemotingWizardViewModel)this.DataContext;
-            vm.InsertRowPressed.Execute(ConfigData.SelectedIndex);
-        }
+        //private void Insert_OnClick(object sender, RoutedEventArgs e)
+        //{
+        //    var vm = (RemotingWizardViewModel)this.DataContext;
+        //    vm.InsertRowPressed.Execute(ConfigData.SelectedIndex);
+        //}
 
-        private void Duplicate_OnClick(object sender, RoutedEventArgs e)
-        {
-            var vm = (RemotingWizardViewModel)this.DataContext;
-            (int, PC) temp = (ConfigData.SelectedIndex, (PC)ConfigData.SelectedItem);
-            vm.DuplicateRowPressed.Execute(temp);
-        }
+        //private void Duplicate_OnClick(object sender, RoutedEventArgs e)
+        //{
+        //    var vm = (RemotingWizardViewModel)this.DataContext;
+        //    (int, PC) temp = (ConfigData.SelectedIndex, (PC)ConfigData.SelectedItem);
+        //    vm.DuplicateRowPressed.Execute(temp);
+        //}
 
-        private void Edit_OnClick(object sender, RoutedEventArgs e)
-        {
-            var temp = ConfigData.SelectedItem as PC;
-            var vm = (RemotingWizardViewModel)this.DataContext;
-            vm.EditPressed.Execute();
-        }
+        //private void Edit_OnClick(object sender, RoutedEventArgs e)
+        //{
+        //    var temp = ConfigData.SelectedItem as PC;
+        //    var vm = (RemotingWizardViewModel)this.DataContext;
+        //    vm.EditPressed.Execute();
+        //}
 
-        private void DeleteRow_OnClick(object sender, RoutedEventArgs e)
-        {
-            var vm = (RemotingWizardViewModel)this.DataContext;
-            vm.DeleteRow(ConfigData.SelectedIndex);
-        }
+        //private void DeleteRow_OnClick(object sender, RoutedEventArgs e)
+        //{
+        //    var vm = (RemotingWizardViewModel)this.DataContext;
+        //    vm.DeleteRow(ConfigData.SelectedIndex);
+        //}
     }
 }

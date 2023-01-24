@@ -10,6 +10,8 @@ namespace Remoting_Wizard.Class
 {
     public class ConfigPCs : BindableBase
     {
+
+        #region Bindable Properties
         private PC _Selected;
         public PC Selected
         {
@@ -50,6 +52,16 @@ namespace Remoting_Wizard.Class
             get { return _SelectedUserName; }
             set { SetProperty(ref _SelectedUserName, value); }
         }
+        #endregion
+
+        #region Public Properties
+
+        #endregion
+
+        #region Private Properties
+
+        #endregion
+
 
 
         public ConfigPCs(List<PC> list)
@@ -59,6 +71,7 @@ namespace Remoting_Wizard.Class
             this.PropertyChanged += ConfigPCs_PropertyChanged;
         }
 
+        #region Private Properties
         private void ConfigPCs_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             if (e.PropertyName == nameof(PCs) || e.PropertyName == nameof(Selected))
@@ -77,5 +90,6 @@ namespace Remoting_Wizard.Class
                 Selected = PCs.First(x => x.UserID == SelectedUserName && x.Name == pcName);
             }
         }
+        #endregion
     }
 }

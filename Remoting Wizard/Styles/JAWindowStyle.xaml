@@ -1,4 +1,5 @@
-﻿<ResourceDictionary xmlns:local="clr-namespace:Remoting_Wizard.Styles" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+﻿<ResourceDictionary xmlns:local="clr-namespace:Remoting_Wizard.Styles" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
 
     <ResourceDictionary.MergedDictionaries>
@@ -21,10 +22,8 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:JAWindow}">
 
-                    <Border x:Name="border"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}"
-                            Padding="{TemplateBinding Padding}">
+                    <Border x:Name="border" BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}" Padding="{TemplateBinding Padding}">
                         <Grid x:Name="root">
                             <Grid x:Name="LayoutRoot" Background="{TemplateBinding Background}">
                                 <Grid x:Name="PART_MainContentGrid">

@@ -1,6 +1,10 @@
-﻿<ResourceDictionary xmlns:cnvt="clr-namespace:Remoting_Wizard.Converters" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+﻿<ResourceDictionary xmlns:cnvt="clr-namespace:Remoting_Wizard.Converters"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
 
     <cnvt:BooleanToVisibiltyConverter x:Key="BooleanToVisibiltyConverter" />
     <cnvt:InverseBooleanToVisibiltyConverter x:Key="InverseBooleanToVisibiltyConverter" />
+    <cnvt:IntToScaledIntConverter x:Key="IntToScaledIntConverter" />
+    <cnvt:BooleanToColourConverter x:Key="BooleanToColourConverter" />
 </ResourceDictionary>

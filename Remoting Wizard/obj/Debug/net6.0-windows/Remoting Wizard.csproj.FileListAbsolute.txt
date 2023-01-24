@@ -154,3 +154,5 @@ C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\Cus
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\CustomTitleBar.baml
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Styles\Converters.baml
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Styles\JAWindowStyle.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\MultiscreenRDP.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\MultiscreenRDP.baml

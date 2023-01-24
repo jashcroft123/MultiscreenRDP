@@ -48,7 +48,7 @@ namespace Remoting_Wizard
             var RegionManager = Container.Resolve<IRegionManager>();
 
             //Add views to main window
-            var mainContent = Container.Resolve<RemotingWizard>();
+            var mainContent = Container.Resolve<MultiscreenRDP>();
             var titleBar = Container.Resolve<CustomTitleBar>();
             _ = RegionManager.AddToRegion("MainRegion", mainContent)
                              .AddToRegion("TitleBar", titleBar);

@@ -1,4 +1,5 @@
-﻿<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+﻿<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
 
     <ResourceDictionary.MergedDictionaries>
@@ -21,17 +22,12 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Button">
-                    <Border x:Name="border"
-                            Background="{TemplateBinding Background}"
-                            BorderBrush="{TemplateBinding BorderBrush}"
-                            BorderThickness="{TemplateBinding BorderThickness}"
-                            CornerRadius="{TemplateBinding Border.CornerRadius}"
-                            SnapsToDevicePixels="False">
-                        <ContentPresenter x:Name="contentPresenter"
-                                          Focusable="False"
+                    <Border x:Name="border" Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="{TemplateBinding Border.CornerRadius}" SnapsToDevicePixels="False">
+                        <ContentPresenter x:Name="contentPresenter" Focusable="False"
                                           HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          Margin="{TemplateBinding Padding}"
-                                          RecognizesAccessKey="True"
+                                          Margin="{TemplateBinding Padding}" RecognizesAccessKey="True"
                                           SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
                                           VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
                     </Border>
@@ -67,17 +63,12 @@
 
     <!--  Toggle Button  -->
     <ControlTemplate x:Key="Toggle" TargetType="{x:Type ToggleButton}">
-        <Border x:Name="border"
-                Background="{TemplateBinding Background}"
-                BorderBrush="{TemplateBinding BorderBrush}"
-                BorderThickness="{TemplateBinding BorderThickness}"
-                CornerRadius="4"
-                SnapsToDevicePixels="true">
-            <ContentPresenter x:Name="contentPresenter"
-                              Focusable="False"
+        <Border x:Name="border" Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                CornerRadius="4" SnapsToDevicePixels="true">
+            <ContentPresenter x:Name="contentPresenter" Focusable="False"
                               HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                              Margin="{TemplateBinding Padding}"
-                              RecognizesAccessKey="True"
+                              Margin="{TemplateBinding Padding}" RecognizesAccessKey="True"
                               SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
                               VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
         </Border>
@@ -108,19 +99,15 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
                     <Grid>
-                        <ToggleButton x:Name="Button"
-                                      ClickMode="Release"
+                        <ToggleButton x:Name="Button" ClickMode="Release"
                                       Command="{Binding Path=Command, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}"
                                       CommandParameter="{Binding Path=CommandParameter, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}"
                                       Content="{Binding Path=Content, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}"
-                                      Focusable="false"
+                                      Focusable="false" FontSize="{TemplateBinding FontSize}" Foreground="{TemplateBinding Foreground}"
                                       Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}"
-                                      HorizontalAlignment="Center"
-                                      HorizontalContentAlignment="Center"
+                                      HorizontalAlignment="Center" HorizontalContentAlignment="Center"
                                       IsChecked="{Binding Path=IsChecked, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}, UpdateSourceTrigger=PropertyChanged}"
-                                      Template="{StaticResource Toggle}"
-                                      VerticalAlignment="Stretch"
-                                      VerticalContentAlignment="Center"
+                                      Template="{StaticResource Toggle}" VerticalAlignment="Stretch" VerticalContentAlignment="Center"
                                       Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}" />
                     </Grid>
                 </ControlTemplate>

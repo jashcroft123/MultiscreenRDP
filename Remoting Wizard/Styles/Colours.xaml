@@ -1,5 +1,4 @@
-﻿<ResourceDictionary xmlns:conv="clr-namespace:Remoting_Wizard.Converters"
-                    xmlns:local="clr-namespace:Remoting_Wizard.Styles"
+﻿<ResourceDictionary xmlns:conv="clr-namespace:Remoting_Wizard.Converters" xmlns:local="clr-namespace:Remoting_Wizard.Styles"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
@@ -13,25 +12,42 @@
     <SolidColorBrush x:Key="ForegroundVeryLightBrush" Color="White" />
 
     <!--  Backgrounds  -->
-    <SolidColorBrush x:Key="BackgroundLight5Brush" Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight5Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="BackgroundLight4Brush" Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight4Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="BackgroundLight3Brush" Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight3Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="BackgroundLight2Brush" Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight2Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="BackgroundLight1Brush" Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight1Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="BackgroundBrush" Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundBrush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="BackgroundDark1Brush" Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark1Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="BackgroundDark2Brush" Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark2Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="BackgroundDark3Brush" Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark3Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="BackgroundDark4Brush" Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark4Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundLight5Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight5Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundLight4Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight4Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundLight3Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight3Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundLight2Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight2Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundLight1Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight1Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundBrush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundBrush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundDark1Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark1Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundDark2Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark2Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundDark3Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark3Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundDark4Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark4Brush}, Converter={StaticResource StringToColorConverter}}" />
 
     <!--  Headers and Text  -->
-    <SolidColorBrush x:Key="SystemAccentColorLight3Brush" Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorLight3Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="SystemAccentColorLight2Brush" Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorLight2Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="SystemAccentColorLight1Brush" Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorLight1Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="SystemAccentColorBrush" Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorBrush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="SystemAccentColorDark1Brush" Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark1Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="SystemAccentColorDark2Brush" Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark2Brush}, Converter={StaticResource StringToColorConverter}}" />
-    <SolidColorBrush x:Key="SystemAccentColorDark3Brush" Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark3Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorLight3Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorLight3Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorLight2Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorLight2Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorLight1Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorLight1Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorBrush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorBrush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorDark1Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark1Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorDark2Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark2Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorDark3Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark3Brush}, Converter={StaticResource StringToColorConverter}}" />
 
     <!--  Fill Colours  -->
     <SolidColorBrush x:Key="HighlightBrush" Color="White" />

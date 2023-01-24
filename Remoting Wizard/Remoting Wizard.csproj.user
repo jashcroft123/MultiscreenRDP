@@ -18,6 +18,9 @@
     <Compile Update="ViewModels\CustomTitleBar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ViewModels\MultiscreenRDP.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ViewModels\RemotingWizard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -63,6 +66,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewModels\CustomTitleBar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewModels\MultiscreenRDP.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewModels\RemotingWizard.xaml">

@@ -21,363 +21,362 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using static Remoting_Wizard.Class.Screen;
 
 namespace Remoting_Wizard.ViewModels
 {
     public class RemotingWizardViewModel : BindableBase
     {
-        #region Delegates
-        public DelegateCommand BtnRemoteConnect { get; set; }
-        public DelegateCommand BtnCDriveConnect { get; set; }
-        public DelegateCommand BtnConfig { get; set; }
-        public DelegateCommand<int?> InsertRowPressed { get; set; }
-        public DelegateCommand SavePressed { get; set; }
-        public DelegateCommand EditPressed { get; set; }
-        public DelegateCommand BtnRefresh { get; set; }
-        public DelegateCommand PCSelected { get; set; }
-        public DelegateCommand<object> DuplicateRowPressed { get; set; }
-        #endregion
+        //    #region Delegates
+        //    public DelegateCommand BtnRemoteConnect { get; set; }
+        //    public DelegateCommand BtnCDriveConnect { get; set; }
+        //    public DelegateCommand BtnConfig { get; set; }
+        //    public DelegateCommand<int?> InsertRowPressed { get; set; }
+        //    public DelegateCommand SavePressed { get; set; }
+        //    public DelegateCommand EditPressed { get; set; }
+        //    public DelegateCommand BtnRefresh { get; set; }
+        //    public DelegateCommand PCSelected { get; set; }
+        //    public DelegateCommand<object> DuplicateRowPressed { get; set; }
+        //    #endregion
 
-        #region Bindables
-        private int _MaxHeight;
-        public int MaxHeight
-        {
-            get { return _MaxHeight; }
-            set { SetProperty(ref _MaxHeight, value); }
-        }
+        //    #region Bindables
+        //    private int _MaxHeight;
+        //    public int MaxHeight
+        //    {
+        //        get { return _MaxHeight; }
+        //        set { SetProperty(ref _MaxHeight, value); }
+        //    }
 
-        private int _MaxWidth;
-        public int MaxWidth
-        {
-            get { return _MaxWidth; }
-            set { SetProperty(ref _MaxWidth, value); }
-        }
-
-
-        private string _SelectedUserName;
-        public string SelectedUserName
-        {
-            get { return _SelectedUserName; }
-            set { SetProperty(ref _SelectedUserName, value); }
-        }
-
-        private ObservableCollection<string> _Usernames;
-        public ObservableCollection<string> Usernames
-        {
-            get { return _Usernames; }
-            set { SetProperty(ref _Usernames, value); }
-        }
-
-        private string _SelectedAlias;
-        public string SelectedAlias
-        {
-            get { return _SelectedAlias; }
-            set
-            {
-                SetProperty(ref _SelectedAlias, value);
-                SelectedPCUpdate.Invoke(this, new EventArgs());
-            }
-        }
-
-        private ObservableCollection<string> _Alias;
-        public ObservableCollection<string> Alias
-        {
-            get
-            {
-                if (_Alias?.Count > 0)
-                    return new ObservableCollection<string>(_Alias.Distinct());
-
-                return _Alias;
-            }
-            set { SetProperty(ref _Alias, value); }
-        }
-
-        private ObservableCollection<ConnectionModes> _Modes;
-        /// <summary>
-        /// Mode Selection for UI Combobox
-        /// </summary>
-        public ObservableCollection<ConnectionModes> Modes
-        {
-            get { return _Modes; }
-            set { SetProperty(ref _Modes, value); }
-        }
-
-        private ConnectionModes _SelectedMode;
-        /// <summary>
-        /// Mode Selection for UI Combobox
-        /// </summary>
-        public ConnectionModes SelectedMode
-        {
-            get { return _SelectedMode; }
-            set { SetProperty(ref _SelectedMode, value); }
-        }
-
-        private ObservableCollection<Screen> _Screens;
-        /// <summary>
-        /// Screens to use for item control
-        /// </summary>
-        public ObservableCollection<Screen> Screens
-        {
-            get { return _Screens; }
-            set { SetProperty(ref _Screens, value); }
-        }
-
-        private ConfigPCs _ConfigPCs;
-        /// <summary>
-        /// CSV Manager
-        /// </summary>
-        public ConfigPCs ConfigPCs
-        {
-            get { return _ConfigPCs; }
-            set { SetProperty(ref _ConfigPCs, value); }
-        }
-
-        private int _PrimaryScreenID;
-        public int PrimaryScreenID
-        {
-            get { return _PrimaryScreenID; }
-            set { SetProperty(ref _PrimaryScreenID, value); }
-        }
-
-        private List<PC> _PCs;
-        public List<PC> PCs
-        {
-            get { return _PCs; }
-            set
-            {
-                _PCs = value;
-                Alias = new ObservableCollection<string>(from x in PCs
-                                                         select x.Alias);
-            }
-        }
-        #endregion
-
-        private PC SelectedPC
-        {
-            get
-            {
-                var temp = (from x in PCs
-                            where x.Alias == SelectedAlias && x.UserID == SelectedUserName
-                            select x).First();
-                return temp;
-            }
-        }
-
-        private EventHandler SelectedPCUpdate;
-
-        public RemotingWizardViewModel(ConfigPCs configPCs)
-        {
-            ConfigPCs = configPCs;
-            PCs = new List<PC>(ConfigPCs.PCs);
-
-            BtnRemoteConnect = new DelegateCommand(async () => await BtnPCConnectPressed());
-            BtnCDriveConnect = new DelegateCommand(async () => await BtnCDriveConnectPressed());
-            BtnRefresh = new DelegateCommand(async () => await RefreshScreensPressed());
-            SelectedPCUpdate += UpdateSelectedPC;
+        //    private int _MaxWidth;
+        //    public int MaxWidth
+        //    {
+        //        get { return _MaxWidth; }
+        //        set { SetProperty(ref _MaxWidth, value); }
+        //    }
 
 
-            InsertRowPressed = new DelegateCommand<int?>(async (i) => await InsertRow(i));
-            SavePressed = new DelegateCommand(SaveCSV);
-            DuplicateRowPressed = new DelegateCommand<object>(async (obj) => await DuplicateRow(obj));
-            EditPressed = new DelegateCommand(async () => await EditRow());
+        //    private string _SelectedUserName;
+        //    public string SelectedUserName
+        //    {
+        //        get { return _SelectedUserName; }
+        //        set { SetProperty(ref _SelectedUserName, value); }
+        //    }
 
-            Modes = new ObservableCollection<ConnectionModes>();
-            Modes.Add(new ConnectionModes("Remote Connection"));
-            Modes.Add(new ConnectionModes("C-Drive"));
+        //    private ObservableCollection<string> _Usernames;
+        //    public ObservableCollection<string> Usernames
+        //    {
+        //        get { return _Usernames; }
+        //        set { SetProperty(ref _Usernames, value); }
+        //    }
 
-            ConfigPCs.PCs = new(CSV.ReadCSV());
-            Screens = new();
-            CurrentDisplays();
-        }
+        //    private string _SelectedAlias;
+        //    public string SelectedAlias
+        //    {
+        //        get { return _SelectedAlias; }
+        //        set
+        //        {
+        //            SetProperty(ref _SelectedAlias, value);
+        //            SelectedPCUpdate.Invoke(this, new EventArgs());
+        //        }
+        //    }
 
-        private void OpenFileExplorer(string Args)
-        {
-            System.Diagnostics.Process pro = new();
+        //    private ObservableCollection<string> _Alias;
+        //    public ObservableCollection<string> Alias
+        //    {
+        //        get
+        //        {
+        //            if (_Alias?.Count > 0)
+        //                return new ObservableCollection<string>(_Alias.Distinct());
 
-            pro.StartInfo.FileName = "explorer.exe";
-            pro.StartInfo.Arguments = Args;
+        //            return _Alias;
+        //        }
+        //        set { SetProperty(ref _Alias, value); }
+        //    }
 
-            pro.Start();
-            Application.Current.MainWindow.WindowState = WindowState.Minimized;
-        }
+        //    private ObservableCollection<ConnectionModes> _Modes;
+        //    /// <summary>
+        //    /// Mode Selection for UI Combobox
+        //    /// </summary>
+        //    public ObservableCollection<ConnectionModes> Modes
+        //    {
+        //        get { return _Modes; }
+        //        set { SetProperty(ref _Modes, value); }
+        //    }
 
-        private async Task BtnCDriveConnectPressed()
-        {
-            //Set user ID for login \\Uknml12329\c$
-            OpenFileExplorer($@"\\{SelectedPC.Name}\C$");
-        }
+        //    private ConnectionModes _SelectedMode;
+        //    /// <summary>
+        //    /// Mode Selection for UI Combobox
+        //    /// </summary>
+        //    public ConnectionModes SelectedMode
+        //    {
+        //        get { return _SelectedMode; }
+        //        set { SetProperty(ref _SelectedMode, value); }
+        //    }
 
-        private void UpdateSelectedPC(object sender, EventArgs args)
-        {
-            var temp = from x in PCs
-                       where x.Alias == SelectedAlias
-                       select x.UserID;
+        //    private ObservableCollection<Screen> _Screens;
+        //    /// <summary>
+        //    /// Screens to use for item control
+        //    /// </summary>
+        //    public ObservableCollection<Screen> Screens
+        //    {
+        //        get { return _Screens; }
+        //        set { SetProperty(ref _Screens, value); }
+        //    }
 
-            Usernames = new ObservableCollection<string>(temp);
-        }
+        //    private ConfigPCs _ConfigPCs;
+        //    /// <summary>
+        //    /// CSV Manager
+        //    /// </summary>
+        //    public ConfigPCs ConfigPCs
+        //    {
+        //        get { return _ConfigPCs; }
+        //        set { SetProperty(ref _ConfigPCs, value); }
+        //    }
 
-        private async Task BtnPCConnectPressed()
-        {
-            //get selected pc details
-            var selectedPC = ConfigPCs.Selected;
+        //    private int _PrimaryScreenID;
+        //    public int PrimaryScreenID
+        //    {
+        //        get { return _PrimaryScreenID; }
+        //        set { SetProperty(ref _PrimaryScreenID, value); }
+        //    }
 
-            //Get selected screens
-            List<Screen> SelectedScreens = new(Screens.Where(x => x.Selected.Equals(true)));
-            SelectedScreens = SelectedScreens.OrderBy(x => x.SelectedPrimary != true).ToList();
-            string s = "session bpp:i:32 " +
-                        " rdgiskdcproxy:i:0 " +
-                        "kdcproxyname:s: " +
-                        "drivestoredirect:s: " +
-                        "screen mode id:i:2";
+        //    private List<PC> _PCs;
+        //    public List<PC> PCs
+        //    {
+        //        get { return _PCs; }
+        //        set
+        //        {
+        //            _PCs = value;
+        //            Alias = new ObservableCollection<string>(from x in PCs
+        //                                                     select x.Alias);
+        //        }
+        //    }
+        //    #endregion
 
-            //string rdpBasePath = AppDomain.CurrentDomain.BaseDirectory + @"Data\RemoteConnection";
-            StringBuilder rdpSB = new();
+        //    private PC SelectedPC
+        //    {
+        //        get
+        //        {
+        //            var temp = (from x in PCs
+        //                        where x.Alias == SelectedAlias && x.UserID == SelectedUserName
+        //                        select x).First();
+        //            return temp;
+        //        }
+        //    }
 
-            //Build RDP script
-            rdpSB.AppendLine($"full address:s:{selectedPC.Name}");
-            //string RDPTemplate = string.Format(File.ReadAllText(rdpBasePath + "template.txt"));
-            rdpSB.AppendLine(s);
-            rdpSB.AppendLine($"username: s: {selectedPC.UserID}");
-            rdpSB.AppendLine($"use multimon:i:{Convert.ToInt32(SelectedScreens.Count > 1)}");
+        //    private EventHandler SelectedPCUpdate;
 
-            string joinedIDs = string.Join(",", SelectedScreens.Select(x => x.ID));
-            rdpSB.AppendLine($"selectedmonitors:s:{joinedIDs}");
+        //    public RemotingWizardViewModel(ConfigPCs configPCs)
+        //    {
+        //        ConfigPCs = configPCs;
+        //        PCs = new List<PC>(ConfigPCs.PCs);
 
-            //Save RDP and connect
-            string rDPPath = $@"{Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData)}\Remoting Wizard";
+        //        BtnRemoteConnect = new DelegateCommand(async () => await BtnPCConnectPressed());
+        //        BtnCDriveConnect = new DelegateCommand(async () => await BtnCDriveConnectPressed());
+        //        BtnRefresh = new DelegateCommand(async () => await RefreshScreensPressed());
+        //        SelectedPCUpdate += UpdateSelectedPC;
 
-            DirectoryInfo directoryInfo = new DirectoryInfo(rDPPath);
-            if (!directoryInfo.Exists)
-            {
-                directoryInfo.Create();
-            }
 
-            File.WriteAllText($@"{rDPPath}\Connection.RDP", rdpSB.ToString());
-            await RunCMDCommand($"/C mstsc \"{rDPPath}\\Connection.RDP\"");
+        //        InsertRowPressed = new DelegateCommand<int?>(async (i) => await InsertRow(i));
+        //        SavePressed = new DelegateCommand(SaveCSV);
+        //        DuplicateRowPressed = new DelegateCommand<object>(async (obj) => await DuplicateRow(obj));
+        //        EditPressed = new DelegateCommand(async () => await EditRow());
 
-            Application.Current.MainWindow.WindowState = WindowState.Minimized;
-        }
+        //        Modes = new ObservableCollection<ConnectionModes>();
+        //        Modes.Add(new ConnectionModes("Remote Connection"));
+        //        Modes.Add(new ConnectionModes("C-Drive"));
 
-        private async Task RefreshScreensPressed()
-        {
-            RegisterRightClick(false);
-            await CurrentDisplays();
-        }
+        //        ConfigPCs.PCs = new(CSV.ReadCSV());
+        //        Screens = new();
+        //        CurrentDisplays();
+        //    }
 
-        public async Task DuplicateRow(object row)
-        {
-            var newRow = ((int index, PC pc))row;
-            ConfigPCs.PCs.Insert(newRow.index + 1,
-                             new PC(newRow.pc.Alias, newRow.pc.Name, newRow.pc.UserID)); //add blank row to data grid
-        }
+        //    private void OpenFileExplorer(string Args)
+        //    {
+        //        System.Diagnostics.Process pro = new();
 
-        private async Task InsertRow(int? index)
-        {
-            if (index.Value < 0)
-            {
-                index = 0;
-            }
-            ConfigPCs.PCs.Insert(index.Value, new PC(string.Empty, string.Empty, string.Empty));
-        }
+        //        pro.StartInfo.FileName = "explorer.exe";
+        //        pro.StartInfo.Arguments = Args;
 
-        private async Task EditRow()
-        {
-            var window = ContainerLocator.Current.Resolve<AddPCPopUp>();
-            //if (window != null)
-            //{
-            //    MvvmHelpers.AutowireViewModel(window);
-            //    RegionManager.SetRegionManager(window, _containerExtension.Resolve<IRegionManager>());
-            //    RegionManager.UpdateRegions();
-            //    InitializeShell(shell);
-            //}
-            window.Show();
-            var RegionManager = ContainerLocator.Current.Resolve<IRegionManager>();
+        //        pro.Start();
+        //        Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        //    }
 
-            TaskCompletionSource tcs = new TaskCompletionSource();
-            window.Closed += (s, e) => tcs.TrySetResult();
+        //    private async Task BtnCDriveConnectPressed()
+        //    {
+        //        //Set user ID for login \\Uknml12329\c$
+        //        OpenFileExplorer($@"\\{SelectedPC.Name}\C$");
+        //    }
 
-            await tcs.Task;
-            SaveCSV();
-        }
+        //    private void UpdateSelectedPC(object sender, EventArgs args)
+        //    {
+        //        var temp = from x in PCs
+        //                   where x.Alias == SelectedAlias
+        //                   select x.UserID;
 
-        public void DeleteRow(int index)
-        {
-            ConfigPCs.PCs.RemoveAt(index);
-            SaveCSV();
-        }
+        //        Usernames = new ObservableCollection<string>(temp);
+        //    }
 
-        private void SaveCSV()
-        {
-            CSV.ExportCsv(new List<PC>(ConfigPCs.PCs));
-        }
+        //    private async Task BtnPCConnectPressed()
+        //    {
+        //        //get selected pc details
+        //        var selectedPC = ConfigPCs.Selected;
 
-        private async Task RunCMDCommand(string Args)
-        {
-            System.Diagnostics.Process p = new System.Diagnostics.Process();
+        //        //Get selected screens
+        //        List<Screen> SelectedScreens = new(Screens.Where(x => x.Selected.Equals(true)));
+        //        SelectedScreens = SelectedScreens.OrderBy(x => x.SelectedPrimary != true).ToList();
+        //        string s = "session bpp:i:32 " +
+        //                    " rdgiskdcproxy:i:0 " +
+        //                    "kdcproxyname:s: " +
+        //                    "drivestoredirect:s: " +
+        //                    "screen mode id:i:2";
 
-            p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
-            p.StartInfo.FileName = "cmd.exe";
+        //        //string rdpBasePath = AppDomain.CurrentDomain.BaseDirectory + @"Data\RemoteConnection";
+        //        StringBuilder rdpSB = new();
 
-            p.StartInfo.Arguments = Args;
-            p.StartInfo.CreateNoWindow = true;
-            p.StartInfo.RedirectStandardOutput = true;
-            p.StartInfo.RedirectStandardInput = true;
+        //        //Build RDP script
+        //        rdpSB.AppendLine($"full address:s:{selectedPC.Name}");
+        //        //string RDPTemplate = string.Format(File.ReadAllText(rdpBasePath + "template.txt"));
+        //        rdpSB.AppendLine(s);
+        //        rdpSB.AppendLine($"username: s: {selectedPC.UserID}");
+        //        rdpSB.AppendLine($"use multimon:i:{Convert.ToInt32(SelectedScreens.Count > 1)}");
 
-            await Task.Run(p.Start);
+        //        string joinedIDs = string.Join(",", SelectedScreens.Select(x => x.ID));
+        //        rdpSB.AppendLine($"selectedmonitors:s:{joinedIDs}");
 
-            p.StandardInput.Flush();
-            p.StandardInput.Close();
-        }
+        //        //Save RDP and connect
+        //        string rDPPath = $@"{Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData)}\Remoting Wizard";
 
-        private async Task CurrentDisplays()
-        {
-            Screens.Clear();
-            int trueBottom = (int)Monitor.AllMonitors.Min(x => x.Bounds.Top); //Bottom and top are flipped from Monitor
-            int trueLeft = (int)Monitor.AllMonitors.Min(x => x.Bounds.Left);
+        //        DirectoryInfo directoryInfo = new DirectoryInfo(rDPPath);
+        //        if (!directoryInfo.Exists)
+        //        {
+        //            directoryInfo.Create();
+        //        }
 
-            foreach (Monitor monitor in Monitor.AllMonitors)
-            {
-                //Get monitor ID and put into the format that would be output cmd from "mstsc /l"
-                int ID = int.Parse(Regex.Match(monitor.Name, @"\d+").Value) - 1;
+        //        File.WriteAllText($@"{rDPPath}\Connection.RDP", rdpSB.ToString());
+        //        await RunCMDCommand($"/C mstsc \"{rDPPath}\\Connection.RDP\"");
 
-                //For each monitor avaliable get width height and bottom left corner location
-                Screens.Add(new Screen(
-                    ID, (int)monitor.Bounds.Width, (int)monitor.Bounds.Height, (int)monitor.Bounds.X + Math.Abs(trueLeft),
-                    (int)monitor.Bounds.Y + Math.Abs(trueBottom), (int)Math.Abs(monitor.Bounds.Bottom) + Math.Abs(trueBottom),
-                    (int)monitor.Bounds.Right + Math.Abs(trueLeft), false, monitor.IsPrimary)
-                    );
-            }
-            Screens = new ObservableCollection<Screen>(Screens.OrderBy(x => x.LeftLocation));
+        //        Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        //    }
 
-            MaxHeight = Screens.Max(x => x.TopLocation);
-            MaxWidth = Screens.Max(x => x.RightLocation);
+        //    private async Task RefreshScreensPressed()
+        //    {
+        //        RegisterRightClick(false);
+        //        await CurrentDisplays();
+        //    }
 
-            RegisterRightClick();
-        }
+        //    public async Task DuplicateRow(object row)
+        //    {
+        //        var newRow = ((int index, PC pc))row;
+        //        ConfigPCs.PCs.Insert(newRow.index + 1,
+        //                         new PC(newRow.pc.Alias, newRow.pc.Name, newRow.pc.UserID)); //add blank row to data grid
+        //    }
 
-        private void RightClicked(object sender, RightClickArg e)
-        {
-            //CurrentDisplays();
-            PrimaryScreenID = e.SenderID;
-            Screens.Where(x => x.ID == e.SenderID).FirstOrDefault().Selected = true;
+        //    private async Task InsertRow(int? index)
+        //    {
+        //        if (index.Value < 0)
+        //        {
+        //            index = 0;
+        //        }
+        //        ConfigPCs.PCs.Insert(index.Value, new PC(string.Empty, string.Empty, string.Empty));
+        //    }
 
-            foreach (Screen screen in Screens)
-            {
-                screen.SelectedPrimary = screen.ID == e.SenderID;
+        //    private async Task EditRow()
+        //    {
+        //        var window = ContainerLocator.Current.Resolve<AddPCPopUp>();
+        //        //if (window != null)
+        //        //{
+        //        //    MvvmHelpers.AutowireViewModel(window);
+        //        //    RegionManager.SetRegionManager(window, _containerExtension.Resolve<IRegionManager>());
+        //        //    RegionManager.UpdateRegions();
+        //        //    InitializeShell(shell);
+        //        //}
+        //        window.Show();
+        //        var RegionManager = ContainerLocator.Current.Resolve<IRegionManager>();
 
-            }
-        }
+        //        TaskCompletionSource tcs = new TaskCompletionSource();
+        //        window.Closed += (s, e) => tcs.TrySetResult();
 
-        private void RegisterRightClick(bool register = true)
-        {
-            foreach (Screen screen in Screens)
-            {
-                if (register)
-                    screen.ScreenRightClick += RightClicked;
-                else
-                    screen.ScreenRightClick -= RightClicked;
-            }
-        }
+        //        await tcs.Task;
+        //        SaveCSV();
+        //    }
+
+        //    public void DeleteRow(int index)
+        //    {
+        //        ConfigPCs.PCs.RemoveAt(index);
+        //        SaveCSV();
+        //    }
+
+        //    private void SaveCSV()
+        //    {
+        //        CSV.ExportCsv(new List<PC>(ConfigPCs.PCs));
+        //    }
+
+        //    private async Task RunCMDCommand(string Args)
+        //    {
+        //        System.Diagnostics.Process p = new System.Diagnostics.Process();
+
+        //        p.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+        //        p.StartInfo.FileName = "cmd.exe";
+
+        //        p.StartInfo.Arguments = Args;
+        //        p.StartInfo.CreateNoWindow = true;
+        //        p.StartInfo.RedirectStandardOutput = true;
+        //        p.StartInfo.RedirectStandardInput = true;
+
+        //        await Task.Run(p.Start);
+
+        //        p.StandardInput.Flush();
+        //        p.StandardInput.Close();
+        //    }
+
+        //    private async Task CurrentDisplays()
+        //    {
+        //        Screens.Clear();
+        //        int trueBottom = (int)Monitor.AllMonitors.Min(x => x.Bounds.Top); //Bottom and top are flipped from Monitor
+        //        int trueLeft = (int)Monitor.AllMonitors.Min(x => x.Bounds.Left);
+
+        //        foreach (Monitor monitor in Monitor.AllMonitors)
+        //        {
+        //            //Get monitor ID and put into the format that would be output cmd from "mstsc /l"
+        //            int ID = int.Parse(Regex.Match(monitor.Name, @"\d+").Value) - 1;
+
+        //            //For each monitor avaliable get width height and bottom left corner location
+        //            Screens.Add(new Screen(
+        //                ID, (int)monitor.Bounds.Width, (int)monitor.Bounds.Height, (int)monitor.Bounds.X + Math.Abs(trueLeft),
+        //                (int)monitor.Bounds.Y + Math.Abs(trueBottom), (int)Math.Abs(monitor.Bounds.Bottom) + Math.Abs(trueBottom),
+        //                (int)monitor.Bounds.Right + Math.Abs(trueLeft), false)
+        //                );
+        //        }
+        //        Screens = new ObservableCollection<Screen>(Screens.OrderBy(x => x.LeftLocation));
+
+        //        MaxHeight = Screens.Max(x => x.TopLocation);
+        //        MaxWidth = Screens.Max(x => x.RightLocation);
+
+        //        RegisterRightClick();
+        //    }
+
+        //    private void RightClicked(object sender, RightClickArg e)
+        //    {
+        //        //CurrentDisplays();
+        //        PrimaryScreenID = e.SenderID;
+        //        Screens.Where(x => x.ID == e.SenderID).FirstOrDefault().Selected = true;
+
+        //        foreach (Screen screen in Screens)
+        //        {
+        //            screen.SelectedPrimary = screen.ID == e.SenderID;
+
+        //        }
+        //    }
+
+        //    private void RegisterRightClick(bool register = true)
+        //    {
+        //        foreach (Screen screen in Screens)
+        //        {
+        //            if (register)
+        //                screen.ScreenRightClick += RightClicked;
+        //            else
+        //                screen.ScreenRightClick -= RightClicked;
+        //        }
+        //    }
     }
 }

@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Remoting_Wizard.Class
 {
+    /// <summary>
+    /// What the F is going on in here?? :'(
+    /// </summary>
     public class ConnectionModes : BindableBase
     {
         private string _Mode;
