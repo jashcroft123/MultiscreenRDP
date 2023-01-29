@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="Remoting_Wizard.ViewModels.DialogMenuItems.ConfigurationDialog"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Remoting_Wizard.ViewModels.DialogMenuItems"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <UserControl.Resources>
+        <ResourceDictionary />
+    </UserControl.Resources>
+
+    <Grid x:Name="Main" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock FontSize="100" Grid.Row="0" Text="ConfigurationDialog" />
+
+    </Grid>
+</UserControl>

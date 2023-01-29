@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\devops\MultiscreenRDP\Remoting Wizard\App.xaml
-16-1612486333
+18-302114397
 2-763388151
-301307415204
+34-1001631308
 2011510034543
-MainWindow.xaml;Styles\Bars.xaml;Styles\Boxes.xaml;Styles\Buttons.xaml;Styles\Colours.xaml;Styles\Converters.xaml;Styles\Fonts.xaml;Styles\ItemControls.xaml;Styles\JAStyles.xaml;Styles\JAWindowStyle.xaml;Styles\Texts.xaml;Styles\TextStyles.xaml;ViewModels\AddPCPopUp.xaml;ViewModels\CustomTitleBar.xaml;ViewModels\MultiscreenRDP.xaml;ViewModels\RemotingWizard.xaml;
+MainWindow.xaml;Styles\Bars.xaml;Styles\Boxes.xaml;Styles\Buttons.xaml;Styles\Colours.xaml;Styles\Converters.xaml;Styles\Fonts.xaml;Styles\ItemControls.xaml;Styles\JAStyles.xaml;Styles\JAWindowStyle.xaml;Styles\Texts.xaml;Styles\TextStyles.xaml;ViewModels\AddPCPopUp.xaml;ViewModels\CustomTitleBar.xaml;ViewModels\DialogMenuItems\ConfigurationDialog.xaml;ViewModels\DialogMenuItems\ConfigurePCs.xaml;ViewModels\MultiscreenRDP.xaml;ViewModels\RemotingWizard.xaml;
 
 False
 

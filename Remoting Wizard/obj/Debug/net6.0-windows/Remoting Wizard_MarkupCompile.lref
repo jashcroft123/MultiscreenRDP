@@ -8,4 +8,6 @@ FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\AddPCPopUp.xaml;;
 FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\CustomTitleBar.xaml;;
 FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\MultiscreenRDP.xaml;;
 FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\RemotingWizard.xaml;;
+FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\DialogMenuItems\ConfigurePCs.xaml;;
+FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\DialogMenuItems\ConfigurationDialog.xaml;;
 

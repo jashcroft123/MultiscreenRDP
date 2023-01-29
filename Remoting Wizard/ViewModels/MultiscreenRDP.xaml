@@ -18,13 +18,49 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid x:Name="Main" HorizontalAlignment="Center" VerticalAlignment="Top">
+    <Grid x:Name="Main" HorizontalAlignment="Center" ShowGridLines="True"
+          VerticalAlignment="Top">
         <Grid.RowDefinitions>
+            <RowDefinition Height="34" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <StackPanel>
+        <Menu Grid.Row="0" Height="34">
+            <MenuItem>
+                <MenuItem.Header x:Uid="Hamburger Menu">
+                    <Canvas Height="29" VerticalAlignment="Center" Width="20">
+                        <Line Stroke="{StaticResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
+                              X2="20" Y1="5" Y2="5" />
+                        <Line Stroke="{StaticResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
+                              X2="20" Y1="12" Y2="12" />
+                        <Line Stroke="{StaticResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
+                              X2="20" Y1="19" Y2="19" />
+                    </Canvas>
+                </MenuItem.Header>
+                <MenuItem Command="{Binding OpenPCConfigCommand}" Header="Setup PCs" />
+                <MenuItem Command="{Binding PreferencesCommand}" Header="Preferences" />
+            </MenuItem>
+        </Menu>
+
+        <StackPanel Grid.Row="1">
             <ComboBox Name="ModeComboBox" SelectedIndex="0" />
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="PC:" HorizontalAlignment="Right" HorizontalContentAlignment="Right"
+                       Margin="0,0,10,5" Width="150" />
+
+                <ComboBox x:Name="ComboBoxPCs" FontSize="24" ItemsSource="{Binding ConfigPCs.DistinctAliases}"
+                          MinWidth="260" SelectedIndex="0" SelectedItem="{Binding ConfigPCs.SelectedAlias, Mode=TwoWay}" />
+            </StackPanel>
+
+            <!--<StackPanel Orientation="Horizontal"
+                        Visibility="{Binding ConfigPCs.UserNames.Count, Converter={StaticResource MinCountToVisibilityConverter}, ConverterParameter=1}">
+                <Label Content="User Name:" HorizontalAlignment="Right" HorizontalContentAlignment="Right"
+                       Margin="0,0,10,5" Width="150" />
+
+                <ComboBox x:Name="ComboBoxUsernames" FontSize="24" ItemsSource="{Binding ConfigPCs.UserNames}"
+                          MinWidth="260" SelectedIndex="0" SelectedItem="{Binding ConfigPCs.SelectedUserName, Mode=TwoWay}" />
+            </StackPanel>-->
 
             <Border BorderBrush="Gray" BorderThickness="2.5" CornerRadius="10"
                     Height="Auto" Margin="10" Width="Auto">

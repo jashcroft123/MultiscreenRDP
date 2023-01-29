@@ -5,7 +5,53 @@
         <ResourceDictionary Source="Colours.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
-    <!--  Progress Bar  -->
+    <!--#region Menu Bar-->
+    <Style x:Key="JAMenu" TargetType="{x:Type Menu}">
+        <Setter Property="Background" Value="Transparent" />
+    </Style>
+
+    <SolidColorBrush x:Key="Menu.Static.Foreground" Color="White" />
+    <SolidColorBrush x:Key="Menu.Static.Background" Color="Black" />
+    <SolidColorBrush x:Key="Menu.Static.Border" Color="Transparent" />
+    <Style x:Key="JAMenuItem" TargetType="{x:Type MenuItem}">
+        <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+        <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+        <Setter Property="Background" Value="Black" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="ScrollViewer.PanningMode" Value="Both" />
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
+        <Setter Property="Template" Value="{DynamicResource MenuItemControlTemplate1}" />
+        <Style.Triggers>
+            <Trigger Property="Role" Value="TopLevelHeader">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="BorderBrush" Value="Transparent" />
+                <Setter Property="Foreground" Value="{StaticResource Menu.Static.Foreground}" />
+                <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey ResourceId=TopLevelHeaderTemplateKey, TypeInTargetAssembly={x:Type MenuItem}}}" />
+                <Setter Property="Padding" Value="6,0" />
+            </Trigger>
+            <Trigger Property="Role" Value="TopLevelItem">
+                <Setter Property="Background" Value="{StaticResource Menu.Static.Background}" />
+                <Setter Property="BorderBrush" Value="{StaticResource Menu.Static.Border}" />
+                <Setter Property="Foreground" Value="{StaticResource Menu.Static.Foreground}" />
+                <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey ResourceId=TopLevelItemTemplateKey, TypeInTargetAssembly={x:Type MenuItem}}}" />
+                <Setter Property="Padding" Value="6,0" />
+            </Trigger>
+            <Trigger Property="Role" Value="SubmenuHeader">
+                <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey ResourceId=SubmenuHeaderTemplateKey, TypeInTargetAssembly={x:Type MenuItem}}}" />
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Background" Value="Pink" />
+            </Trigger>
+            <Trigger Property="IsKeyboardFocusWithin" Value="true">
+                <Setter Property="Background" Value="HotPink" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region Progress Bar-->
     <Style x:Key="JAProgressBar" TargetType="{x:Type ProgressBar}">
         <Setter Property="HorizontalAlignment" Value="Center" />
         <Setter Property="VerticalAlignment" Value="Center" />
@@ -24,7 +70,9 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <!--#endregion-->
 
+    <!--#region Scrollbar-->
     <!--  A Style that affects all Scroll Bars  -->
     <!--  ScrollViewer ScrollBar Repeat Buttons (at each end)  -->
     <Style x:Key="ScrollBarLineButton" TargetType="{x:Type RepeatButton}">
@@ -173,7 +221,9 @@
             </Trigger>
         </Style.Triggers>
     </Style>
+    <!--#endregion-->
 
+    <!--#region Scroll Viewer-->
     <!--  Style for overall  ScrollViewer  -->
     <Style x:Key="JAScrollViewer" TargetType="{x:Type ScrollViewer}">
         <Setter Property="OverridesDefaultStyle" Value="True" />
@@ -206,5 +256,6 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <!--#endregion-->
 
 </ResourceDictionary>

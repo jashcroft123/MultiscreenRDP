@@ -4,6 +4,7 @@ using Prism.Mvvm;
 using Prism.Regions;
 using Remoting_Wizard.Class;
 using Remoting_Wizard.Styles;
+using Remoting_Wizard.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Remoting_Wizard.ViewModels
+namespace Remoting_Wizard.Archive
 {
     public class AddPCPopUpViewModel : BindableBase
     {
@@ -92,7 +93,7 @@ namespace Remoting_Wizard.ViewModels
         }
         private void RestoreUpDown()
         {
-            Application.Current.MainWindow.WindowState = (Application.Current.MainWindow.WindowState == WindowState.Normal) ? WindowState.Maximized : WindowState.Normal;
+            Application.Current.MainWindow.WindowState = Application.Current.MainWindow.WindowState == WindowState.Normal ? WindowState.Maximized : WindowState.Normal;
         }
         private void Minimise()
         {

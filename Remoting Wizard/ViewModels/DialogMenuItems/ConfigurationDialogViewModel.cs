@@ -1,0 +1,69 @@
+﻿using Prism.Commands;
+using Prism.Mvvm;
+using Prism.Services.Dialogs;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Remoting_Wizard.ViewModels.DialogMenuItems
+{
+    public class ConfigurationDialogViewModel : BindableBase, IDialogAware
+    {
+        #region Bindable Properties
+
+        #endregion
+
+        #region Delegate Commands
+
+        #endregion
+
+        #region Public Properties
+        public string Title => throw new NotImplementedException();
+        #endregion
+
+        #region Private Properties
+        #endregion
+
+        public ConfigurationDialogViewModel()
+        {
+
+        }
+
+        protected void CloseDialog(string parameter)
+        {
+            ButtonResult result = ButtonResult.None;
+
+            if (parameter?.ToLower() == "true")
+                result = ButtonResult.OK;
+            else if (parameter?.ToLower() == "false")
+                result = ButtonResult.Cancel;
+
+            RaiseRequestClose(new DialogResult(result));
+        }
+
+        public event Action<IDialogResult> RequestClose;
+        public void RaiseRequestClose(IDialogResult dialogResult)
+        {
+            RequestClose?.Invoke(dialogResult);
+        }
+
+        public bool CanCloseDialog()
+        {
+            return true;
+        }
+
+        public void OnDialogClosed()
+        {
+
+        }
+
+        public void OnDialogOpened(IDialogParameters parameters)
+        {
+        }
+        #region Private Methods
+
+        #endregion
+    }
+}

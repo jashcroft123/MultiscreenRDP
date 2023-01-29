@@ -18,10 +18,16 @@
     <Compile Update="ViewModels\CustomTitleBar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ViewModels\DialogMenuItems\ConfigurationDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ViewModels\DialogMenuItems\ConfigurePCs.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="ViewModels\MultiscreenRDP.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ViewModels\RemotingWizard.xaml.cs">
+    <Compile Update="Archive\RemotingWizard.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -68,10 +74,16 @@
     <Page Update="ViewModels\CustomTitleBar.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="ViewModels\DialogMenuItems\ConfigurationDialog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewModels\DialogMenuItems\ConfigurePCs.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="ViewModels\MultiscreenRDP.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="ViewModels\RemotingWizard.xaml">
+    <Page Update="Archive\RemotingWizard.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

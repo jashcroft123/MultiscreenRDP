@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
+using System.Text.RegularExpressions;
 
 namespace Remoting_Wizard.Class
 {
@@ -94,9 +95,10 @@ namespace Remoting_Wizard.Class
                         info.rcWork.left, info.rcWork.top,
                         info.rcWork.right - info.rcWork.left,
                         info.rcWork.bottom - info.rcWork.top);
-            Name = new string(info.szDevice).TrimEnd((char)0);
 
-            
+            var name = new string(info.szDevice).TrimEnd((char)0);
+            var id = int.Parse(Regex.Match(name, @"\d+").Value) - 1;
+            Name = id.ToString();
         }
 
         public static ObservableCollection<Monitor> AllMonitors

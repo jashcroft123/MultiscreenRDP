@@ -27,7 +27,7 @@ namespace Remoting_Wizard.Converters
             if (value == null) return Colors.HotPink;
 
             var boolVal = (bool)value;
-            return boolVal ? DarkThemeColours.Green : Colors.Red;
+            return boolVal ? DarkThemeColours.Green : DarkThemeColours.Red;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

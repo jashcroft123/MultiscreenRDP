@@ -22,7 +22,7 @@ using System.Windows.Data;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
-namespace Remoting_Wizard.ViewModels
+namespace Remoting_Wizard.Archive
 {
     public class RemotingWizardViewModel : BindableBase
     {
