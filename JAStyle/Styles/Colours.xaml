@@ -1,0 +1,111 @@
+﻿<ResourceDictionary xmlns:conv="clr-namespace:JAStyles.Converters" xmlns:local="clr-namespace:JAStyles.Styles"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <!--  Converters  -->
+    <conv:StringToColorConverter x:Key="StringToColorConverter" />
+    <conv:StringToBrushConverter x:Key="StringToBrushConverter" />
+
+
+    <!--#region Brushes-->
+    <!--  Foregrounds  -->
+    <SolidColorBrush x:Key="ForegroundVeryLightBrush" Color="White" />
+
+    <!--  Backgrounds  -->
+    <SolidColorBrush x:Key="BackgroundLight5Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight5Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundLight4Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight4Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundLight3Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight3Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundLight2Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight2Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundLight1Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundLight1Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundBrush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundBrush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundDark1Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark1Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundDark2Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark2Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundDark3Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark3Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="BackgroundDark4Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.BackgroundDark4Brush}, Converter={StaticResource StringToColorConverter}}" />
+
+    <!--  Headers and Text  -->
+    <SolidColorBrush x:Key="SystemAccentColorLight3Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorLight3Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorLight2Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorLight2Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorLight1Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorLight1Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorBrush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorBrush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorDark1Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark1Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorDark2Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark2Brush}, Converter={StaticResource StringToColorConverter}}" />
+    <SolidColorBrush x:Key="SystemAccentColorDark3Brush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark3Brush}, Converter={StaticResource StringToColorConverter}}" />
+
+    <!--  Fill Colours  -->
+    <SolidColorBrush x:Key="HighlightBrush" Color="White" />
+
+    <SolidColorBrush x:Key="TextBright1Brush" Color="White" />
+    <SolidColorBrush x:Key="TextBrush" Color="LightGray" />
+    <SolidColorBrush x:Key="TextDim1Brush" Color="Gray" />
+    <SolidColorBrush x:Key="TextInvertBrush" Color="Black" />
+
+
+    <!--  Transparent  -->
+    <SolidColorBrush x:Key="TransparentBrush" Color="Transparent" />
+    <!--#endregion-->
+
+
+
+    <!--#region Colours-->
+    <!--  Backgrounds  -->
+    <Color x:Key="BackgroundLight4">#484848</Color>
+    <Color x:Key="BackgroundLight3">#3C3C3C</Color>
+    <Color x:Key="BackgroundLight2">#333333</Color>
+    <Color x:Key="BackgroundLight1">#2A2A2A</Color>
+    <Color x:Key="Background">#212121</Color>
+    <Color x:Key="BackgroundDark1">#1C1C1C</Color>
+    <Color x:Key="BackgroundDark2">#131313</Color>
+    <Color x:Key="BackgroundDark3">#0F0F0F</Color>
+    <Color x:Key="BackgroundDark4">#000000</Color>
+
+
+    <!--  Headers and Text  -->
+    <Color x:Key="SystemAccentColourLight3">#ffc030</Color>
+    <Color x:Key="SystemAccentColourLight2">#ffb331</Color>
+    <Color x:Key="SystemAccentColourLight1">#ffa632</Color>
+    <Color x:Key="SystemAccentColour">#FF9933</Color>
+    <Color x:Key="SystemAccentColourDark1">#cc7a28</Color>
+    <Color x:Key="SystemAccentColourDark2">#995b1e</Color>
+    <Color x:Key="SystemAccentColourDark3">#653c14</Color>
+
+
+    <!--  Highlight Colour  -->
+    <Color x:Key="HighlightColourLight2">#f5f2f0</Color>
+    <Color x:Key="HighlightColourLight1">#faece3</Color>
+    <Color x:Key="HighlightColour">#f5e3d7</Color>
+    <Color x:Key="HighlightColourDark1">#e8d3c5</Color>
+    <Color x:Key="HighlightColourDark2">#e3c9b8</Color>
+
+    <Color x:Key="SelectColourBorder">#dba874</Color>
+
+    <!--  Fill Colours  -->
+    <!--
+    <Color x:Key="PassGreen">#8EE43F</Color>
+    <Color x:Key="FailRed">#FF626D</Color>
+    <Color x:Key="Blue">#33BBFF</Color>
+    <Color x:Key="LightBlue">#7AD9F5</Color>
+
+    -->
+    <!--  Transparent  -->
+    <!--
+    <Color x:Key="Transparent">Transparent</Color>-->
+    <!--#endregion-->
+</ResourceDictionary>

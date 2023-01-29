@@ -1,13 +1,8 @@
 ﻿
 FC:\devops\MultiscreenRDP\Remoting Wizard\App.xaml;;
-FC:\devops\MultiscreenRDP\Remoting Wizard\MainWindow.xaml;;
-FC:\devops\MultiscreenRDP\Remoting Wizard\Styles\Colours.xaml;;
-FC:\devops\MultiscreenRDP\Remoting Wizard\Styles\Converters.xaml;;
-FC:\devops\MultiscreenRDP\Remoting Wizard\Styles\JAWindowStyle.xaml;;
-FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\AddPCPopUp.xaml;;
+FC:\devops\MultiscreenRDP\Remoting Wizard\Archive\RemotingWizard.xaml;;
 FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\CustomTitleBar.xaml;;
-FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\MultiscreenRDP.xaml;;
-FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\RemotingWizard.xaml;;
-FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\DialogMenuItems\ConfigurePCs.xaml;;
 FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\DialogMenuItems\ConfigurationDialog.xaml;;
+FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\DialogMenuItems\ConfigurePCs.xaml;;
+FC:\devops\MultiscreenRDP\Remoting Wizard\ViewModels\MultiscreenRDP.xaml;;
 

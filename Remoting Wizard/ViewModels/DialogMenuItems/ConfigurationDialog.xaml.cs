@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Remoting_Wizard.Class;
+using Remoting_Wizard.Configuration;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +25,19 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
         public ConfigurationDialog()
         {
             InitializeComponent();
+            this.Loaded += MultiscreenRDP_Loaded;
+            ColourSchemeComboBox.SelectionChanged += ModeComboBox_SelectionChanged;
         }
+
+        private void ModeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //throw new NotImplementedException();
+        }
+
+        private void MultiscreenRDP_Loaded(object sender, RoutedEventArgs e)
+        {
+            ColourSchemeComboBox.ItemsSource = Enum.GetValues(typeof(ColourSchemeEnum)).Cast<ColourSchemeEnum>();
+        }
+
     }
 }

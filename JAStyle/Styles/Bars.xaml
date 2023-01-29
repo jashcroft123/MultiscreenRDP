@@ -1,0 +1,257 @@
+﻿<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <!--#region Menu Bar-->
+    <Style x:Key="JAMenu" TargetType="{x:Type Menu}">
+        <Setter Property="Background" Value="Transparent" />
+    </Style>
+
+    <SolidColorBrush x:Key="Menu.Static.Foreground" Color="White" />
+    <SolidColorBrush x:Key="Menu.Static.Background" Color="Black" />
+    <SolidColorBrush x:Key="Menu.Static.Border" Color="Transparent" />
+    <Style x:Key="JAMenuItem" TargetType="{x:Type MenuItem}">
+        <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+        <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
+        <Setter Property="Background" Value="Black" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Foreground" Value="White" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="ScrollViewer.PanningMode" Value="Both" />
+        <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
+        <Setter Property="Template" Value="{DynamicResource MenuItemControlTemplate1}" />
+        <Style.Triggers>
+            <Trigger Property="Role" Value="TopLevelHeader">
+                <Setter Property="Background" Value="Transparent" />
+                <Setter Property="BorderBrush" Value="Transparent" />
+                <Setter Property="Foreground" Value="{StaticResource Menu.Static.Foreground}" />
+                <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey ResourceId=TopLevelHeaderTemplateKey, TypeInTargetAssembly={x:Type MenuItem}}}" />
+                <Setter Property="Padding" Value="6,0" />
+            </Trigger>
+            <Trigger Property="Role" Value="TopLevelItem">
+                <Setter Property="Background" Value="{StaticResource Menu.Static.Background}" />
+                <Setter Property="BorderBrush" Value="{StaticResource Menu.Static.Border}" />
+                <Setter Property="Foreground" Value="{StaticResource Menu.Static.Foreground}" />
+                <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey ResourceId=TopLevelItemTemplateKey, TypeInTargetAssembly={x:Type MenuItem}}}" />
+                <Setter Property="Padding" Value="6,0" />
+            </Trigger>
+            <Trigger Property="Role" Value="SubmenuHeader">
+                <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey ResourceId=SubmenuHeaderTemplateKey, TypeInTargetAssembly={x:Type MenuItem}}}" />
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter Property="Background" Value="Pink" />
+            </Trigger>
+            <Trigger Property="IsKeyboardFocusWithin" Value="true">
+                <Setter Property="Background" Value="HotPink" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region Progress Bar-->
+    <Style x:Key="JAProgressBar" TargetType="{x:Type ProgressBar}">
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Height" Value="5" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ProgressBar}">
+                    <Grid MinHeight="5" MinWidth="200">
+                        <Border x:Name="PART_Track" Background="{StaticResource BackgroundLight1Brush}"
+                                BorderBrush="{StaticResource BackgroundVeryLightBrush}" BorderThickness="1" CornerRadius="2" />
+                        <Border x:Name="PART_Indicator" Background="{StaticResource SystemAccentColorBrush}"
+                                BorderBrush="{StaticResource SystemAccentColorBrush}" BorderThickness="1" CornerRadius="2"
+                                HorizontalAlignment="Left" Margin="0,1,0,1" />
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region Scrollbar-->
+    <!--  A Style that affects all Scroll Bars  -->
+    <!--  ScrollViewer ScrollBar Repeat Buttons (at each end)  -->
+    <Style x:Key="ScrollBarLineButton" TargetType="{x:Type RepeatButton}">
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="Focusable" Value="false" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RepeatButton}">
+                    <Border Background="{StaticResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
+                            BorderThickness="1" CornerRadius="2" Margin="1"
+                            Name="Border">
+                        <Path Data="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}"
+                              Fill="{StaticResource BackgroundBrush}" HorizontalAlignment="Center" Name="Path"
+                              VerticalAlignment="Center" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="Fill" TargetName="Path" Value="{StaticResource SystemAccentColorBrush}" />
+                        </Trigger>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Foreground" Value="{StaticResource BackgroundLight1Brush}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--
+        ScrollViewer ScrollBar Repeat Buttons (The part in the middle,
+        not the thumb the long area between the buttons )
+    -->
+    <Style x:Key="ScrollBarPageButton" TargetType="{x:Type RepeatButton}">
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="IsTabStop" Value="false" />
+        <Setter Property="Focusable" Value="false" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type RepeatButton}">
+                    <Border Background="{StaticResource TransparentBrush}" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--
+        ScrollViewer ScrollBar Thumb, that part that can be dragged
+        up/down or left/right Buttons
+    -->
+    <Style x:Key="ScrollBarThumb" TargetType="{x:Type Thumb}">
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="IsTabStop" Value="false" />
+        <Setter Property="Focusable" Value="false" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Thumb}">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{x:Null}" BorderThickness="1"
+                            CornerRadius="2" Name="Border" />
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsDragging" Value="true">
+                            <Setter Property="Background" TargetName="Border" Value="{StaticResource SystemAccentColorBrush}" />
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <ControlTemplate x:Key="VerticalScrollBar" TargetType="{x:Type ScrollBar}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition MaxHeight="18" />
+                <RowDefinition Height="0.00001*" />
+                <RowDefinition MaxHeight="18" />
+            </Grid.RowDefinitions>
+            <Border Background="{x:Null}" BorderBrush="{StaticResource BackgroundLight1Brush}" BorderThickness="1"
+                    CornerRadius="2" Grid.RowSpan="3" />
+            <RepeatButton Command="ScrollBar.LineUpCommand" Content="M 0 4 L 8 4 L 4 0 Z" Grid.Row="0"
+                          Height="18" Style="{StaticResource ScrollBarLineButton}" />
+            <Track Grid.Row="1" IsDirectionReversed="true" Name="PART_Track">
+                <Track.DecreaseRepeatButton>
+                    <RepeatButton Command="ScrollBar.PageUpCommand" Style="{StaticResource ScrollBarPageButton}" />
+                </Track.DecreaseRepeatButton>
+                <Track.Thumb>
+                    <Thumb Background="{StaticResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
+                           Margin="1,0,1,0" Opacity="0.6" Style="{StaticResource ScrollBarThumb}" />
+                </Track.Thumb>
+                <Track.IncreaseRepeatButton>
+                    <RepeatButton Command="ScrollBar.PageDownCommand" Style="{StaticResource ScrollBarPageButton}" />
+                </Track.IncreaseRepeatButton>
+            </Track>
+            <RepeatButton Command="ScrollBar.LineDownCommand" Content="M 0 0 L 4 4 L 8 0 Z" Grid.Row="3"
+                          Height="18" Style="{StaticResource ScrollBarLineButton}" />
+        </Grid>
+    </ControlTemplate>
+
+    <!--  HorizontalScrollBar Template using the previously created Templates  -->
+    <ControlTemplate x:Key="HorizontalScrollBar" TargetType="{x:Type ScrollBar}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MaxWidth="18" />
+                <ColumnDefinition Width="0.00001*" />
+                <ColumnDefinition MaxWidth="18" />
+            </Grid.ColumnDefinitions>
+            <Border Background="{x:Null}" BorderBrush="{StaticResource BackgroundLight1Brush}" BorderThickness="1"
+                    CornerRadius="2" Grid.ColumnSpan="3" />
+            <RepeatButton Command="ScrollBar.LineLeftCommand" Content="M 4 0 L 4 8 L 0 4 Z" Grid.Column="0"
+                          Style="{StaticResource ScrollBarLineButton}" Width="18" />
+            <Track Grid.Column="1" IsDirectionReversed="False" Name="PART_Track">
+                <Track.DecreaseRepeatButton>
+                    <RepeatButton Command="ScrollBar.PageLeftCommand" Style="{StaticResource ScrollBarPageButton}" />
+                </Track.DecreaseRepeatButton>
+                <Track.Thumb>
+                    <Thumb Background="{StaticResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
+                           Margin="0,1,0,1" Style="{StaticResource ScrollBarThumb}" />
+                </Track.Thumb>
+                <Track.IncreaseRepeatButton>
+                    <RepeatButton Command="ScrollBar.PageRightCommand" Style="{StaticResource ScrollBarPageButton}" />
+                </Track.IncreaseRepeatButton>
+            </Track>
+            <RepeatButton Command="ScrollBar.LineRightCommand" Content="M 0 0 L 4 4 L 0 8 Z" Grid.Column="3"
+                          Style="{StaticResource ScrollBarLineButton}" Width="18" />
+        </Grid>
+    </ControlTemplate>
+
+    <!--  Style for overall  ScrollBar  -->
+    <Style x:Key="JAScrollBar" TargetType="{x:Type ScrollBar}">
+        <Setter Property="SnapsToDevicePixels" Value="True" />
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Style.Triggers>
+            <Trigger Property="Orientation" Value="Horizontal">
+                <Setter Property="Width" Value="Auto" />
+                <Setter Property="Height" Value="15" />
+                <Setter Property="Template" Value="{StaticResource HorizontalScrollBar}" />
+            </Trigger>
+
+            <Trigger Property="Orientation" Value="Vertical">
+                <Setter Property="Width" Value="15" />
+                <Setter Property="Height" Value="Auto" />
+                <Setter Property="Template" Value="{StaticResource VerticalScrollBar}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <!--#endregion-->
+
+    <!--#region Scroll Viewer-->
+    <!--  Style for overall  ScrollViewer  -->
+    <Style x:Key="JAScrollViewer" TargetType="{x:Type ScrollViewer}">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type ScrollViewer}">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <ScrollContentPresenter Grid.Column="0" Grid.Row="0" />
+
+                        <ScrollBar Grid.Column="1" Grid.Row="0" Maximum="{TemplateBinding ScrollableHeight}"
+                                   Name="PART_VerticalScrollBar" Style="{StaticResource JAScrollBar}"
+                                   Value="{TemplateBinding VerticalOffset}" ViewportSize="{TemplateBinding ViewportHeight}"
+                                   Visibility="{TemplateBinding ComputedVerticalScrollBarVisibility}" />
+                        <ScrollBar Grid.Column="0" Grid.Row="1" Maximum="{TemplateBinding ScrollableWidth}"
+                                   Name="PART_HorizontalScrollBar" Orientation="Horizontal" Style="{StaticResource JAScrollBar}"
+                                   Value="{TemplateBinding HorizontalOffset}" ViewportSize="{TemplateBinding ViewportWidth}"
+                                   Visibility="{TemplateBinding ComputedHorizontalScrollBarVisibility}" />
+
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--#endregion-->
+
+</ResourceDictionary>

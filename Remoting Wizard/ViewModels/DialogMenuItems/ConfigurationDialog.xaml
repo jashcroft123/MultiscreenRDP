@@ -1,13 +1,19 @@
 ﻿<UserControl x:Class="Remoting_Wizard.ViewModels.DialogMenuItems.ConfigurationDialog"
              prism:ViewModelLocator.AutoWireViewModel="True"
+             prism:Dialog.WindowStyle="{DynamicResource DialogStyleTheme}"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Remoting_Wizard.ViewModels.DialogMenuItems"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <UserControl.Resources>
-        <ResourceDictionary />
+        <ResourceDictionary>
+            <Style BasedOn="{StaticResource JALabel}" TargetType="Label" />
+            <Style BasedOn="{StaticResource JAButton}" TargetType="Button" />
+            <Style BasedOn="{StaticResource JAComboBox}" TargetType="ComboBox" />
+        </ResourceDictionary>
     </UserControl.Resources>
 
     <Grid x:Name="Main" HorizontalAlignment="Center" VerticalAlignment="Top">
@@ -15,7 +21,22 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <TextBlock FontSize="100" Grid.Row="0" Text="ConfigurationDialog" />
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Colour Theme" Foreground="HotPink" />
+                <ComboBox x:Name="ColourSchemeComboBox" SelectedValue="{Binding Settings.ColourScheme}" />
+            </StackPanel>
 
+            <StackPanel Orientation="Horizontal">
+                <Label Content="Accent Colour" Foreground="HotPink" />
+                <xctk:ColorPicker Height="50" SelectedColor="{Binding Settings.AccentColour}" Width="50" />
+            </StackPanel>
+
+
+
+
+
+            <Button Command="{Binding SaveSettingsCommand}" Content="Save" />
+        </StackPanel>
     </Grid>
 </UserControl>

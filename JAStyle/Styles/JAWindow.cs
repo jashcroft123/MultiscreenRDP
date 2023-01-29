@@ -1,12 +1,11 @@
-﻿using Remoting_Wizard;
-using System;
+﻿using System;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Interop;
 
-namespace Remoting_Wizard.Styles
+namespace JAStyles.Styles
 {
     public partial class JAWindow : Window
     {

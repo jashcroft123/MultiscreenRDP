@@ -1,5 +1,5 @@
 ﻿using Prism.Regions;
-using Remoting_Wizard.Styles;
+using JAStyles.Styles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace Remoting_Wizard.ViewModels
 {

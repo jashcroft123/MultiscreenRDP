@@ -1,9 +1,9 @@
-﻿using Prism.Commands;
+﻿using JAStyles.Styles;
+using Prism.Commands;
 using Prism.Ioc;
 using Prism.Mvvm;
 using Prism.Regions;
 using Remoting_Wizard.Class;
-using Remoting_Wizard.Styles;
 using Remoting_Wizard.ViewModels;
 using System;
 using System.Collections.Generic;

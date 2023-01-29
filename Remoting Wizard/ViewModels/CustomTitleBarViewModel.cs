@@ -1,6 +1,6 @@
-﻿using Prism.Commands;
+﻿using JAStyles.Styles;
+using Prism.Commands;
 using Prism.Mvvm;
-using Remoting_Wizard.Styles;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,0 +1,69 @@
+﻿<ResourceDictionary xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Fonts.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style x:Key="JALabel" BasedOn="{StaticResource BaseStyle}" TargetType="Label">
+        <Setter Property="HorizontalContentAlignment" Value="Left" />
+        <Setter Property="VerticalContentAlignment" Value="Top" />
+        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Label">
+                    <Border>
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True"
+                                          VerticalAlignment="{TemplateBinding VerticalAlignment}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="false">
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <SolidColorBrush Color="Gray" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--  Input text  -->
+    <Style x:Key="JATextbox" BasedOn="{StaticResource BaseStyle}" TargetType="{x:Type TextBox}">
+        <Setter Property="FontSize" Value="{StaticResource Medium}" />
+        <Setter Property="Padding" Value="3,16,3,4" />
+        <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Width" Value="Auto" />
+        <Setter Property="Height" Value="Auto" />
+        <Setter Property="TextWrapping" Value="Wrap" />
+        <Setter Property="CharacterCasing" Value="Upper" />
+        <Setter Property="Foreground" Value="{StaticResource SystemAccentColorBrush}" />
+        <Setter Property="CaretBrush" Value="{StaticResource SystemAccentColorBrush}" />
+        <Setter Property="SelectionBrush" Value="{StaticResource SystemAccentColorBrush}" />
+        <Setter Property="BorderBrush" Value="{StaticResource SystemAccentColorBrush}" />
+        <Setter Property="BorderThickness" Value="0,0,0,1" />
+        <Setter Property="Margin" Value="0,0,0,8" />
+        <Setter Property="Background" Value="{x:Null}" />
+        <Setter Property="Focusable" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TextBox">
+                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}" Name="Bd" SnapsToDevicePixels="true">
+                        <ScrollViewer Background="{TemplateBinding Background}" Foreground="{TemplateBinding Foreground}"
+                                      Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsEnabled" Value="False">
+                            <Setter Property="Background" Value="{x:Null}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

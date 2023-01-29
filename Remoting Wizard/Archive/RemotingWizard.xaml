@@ -1,15 +1,16 @@
 ﻿<UserControl x:Class="Remoting_Wizard.ViewModels.RemotingWizard" prism:ViewModelLocator.AutoWireViewModel="True"
-             xmlns:Binding="clr-namespace:Remoting_Wizard.Converters"
+             xmlns:cvtr="clr-namespace:Remoting_Wizard.Converters"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:ja="clr-namespace:JAStyles.Converters;assembly=JAStyles"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <UserControl.Resources>
         <ResourceDictionary>
-            <Binding:ModeToVisibiltyConverter x:Key="ModeToVisibiltyConverter" />
-            <Binding:MinCountToVisibilityConverter x:Key="MinCountToVisibilityConverter" />
+            <cvtr:ModeToVisibiltyConverter x:Key="ModeToVisibiltyConverter" />
+            <ja:MinCountToVisibilityConverter x:Key="MinCountToVisibilityConverter" />
 
             <Style BasedOn="{StaticResource JALabel}" TargetType="Label" />
             <Style BasedOn="{StaticResource JAComboBox}" TargetType="ComboBox" />

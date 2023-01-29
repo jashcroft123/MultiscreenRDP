@@ -1,17 +1,15 @@
-﻿using CsvHelper.Configuration.Attributes;
-using Prism.Commands;
+﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Services.Dialogs;
 using Remoting_Wizard.Class;
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Timers;
+using System.Windows;
+using System.Windows.Media;
 
 namespace Remoting_Wizard.ViewModels
 {
@@ -42,7 +40,6 @@ namespace Remoting_Wizard.ViewModels
         IDialogService _DialogService;
         #endregion
 
-
         public MultiscreenRDPViewModel(ConfigPCs configPCs, IDialogService dialogService)
         {
             ConfigPCs = configPCs;
@@ -51,7 +48,25 @@ namespace Remoting_Wizard.ViewModels
             OpenPCConfigCommand = new DelegateCommand(OpenPCConfig);
             RemoteConnectCommand = new DelegateCommand(async () => await RemoteConnect());
             PreferencesCommand = new DelegateCommand(Preferences);
+
+            var timer = new Timer(1000);
+            timer.Start();
+            timer.Elapsed += Timer_Elapsed;
             //Screens = new ObservableCollection<Monitor>(Monitor.AllMonitors);
+        }
+
+        private int counter;
+        private void Timer_Elapsed(object? sender, ElapsedEventArgs e)
+        {
+            counter++;
+            var temp = new SolidColorBrush(System.Windows.Media.Colors.HotPink);
+            if (counter%2 > 0)
+            {
+                temp = new SolidColorBrush(System.Windows.Media.Colors.Red);
+            }
+
+
+            Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorBrush"] = temp;
         }
 
 

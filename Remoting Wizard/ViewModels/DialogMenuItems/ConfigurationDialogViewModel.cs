@@ -1,6 +1,7 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Services.Dialogs;
+using Remoting_Wizard.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,23 +13,31 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
     public class ConfigurationDialogViewModel : BindableBase, IDialogAware
     {
         #region Bindable Properties
+        private ConfigurationSettings _Settings;
+        public ConfigurationSettings Settings
+        {
+            get { return _Settings; }
+            set { SetProperty(ref _Settings, value); }
+        }
 
         #endregion
 
         #region Delegate Commands
+        public DelegateCommand SaveSettingsCommand { get; private set; }
 
         #endregion
 
         #region Public Properties
-        public string Title => throw new NotImplementedException();
+        public string Title => "Preferences";
         #endregion
 
         #region Private Properties
         #endregion
 
-        public ConfigurationDialogViewModel()
+        public ConfigurationDialogViewModel(ConfigurationSettings settings)
         {
-
+            Settings = settings;
+            SaveSettingsCommand = new DelegateCommand(SaveSettings);
         }
 
         protected void CloseDialog(string parameter)
@@ -61,8 +70,15 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
 
         public void OnDialogOpened(IDialogParameters parameters)
         {
+
         }
+
         #region Private Methods
+        private void SaveSettings()
+        {
+            Properties.Settings.Default.ColourScheme = Settings.ColourScheme.ToString();
+            Properties.Settings.Default.Save();
+        }
 
         #endregion
     }

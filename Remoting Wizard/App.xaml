@@ -1,14 +1,14 @@
-﻿<prism:PrismApplication x:Class="Remoting_Wizard.App"
-                        xmlns:JA="clr-namespace:Remoting_Wizard.Styles"
-                        xmlns:local="clr-namespace:Remoting_Wizard"
-                        xmlns:prism="http://prismlibrary.com/"
-                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+﻿<prism:PrismApplication x:Class="Remoting_Wizard.App" xmlns:local="clr-namespace:Remoting_Wizard"
+                        xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Styles/JAStyles.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/JAStyles;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/JAStyles;component/Styles/JAStyles.xaml" />
+
+                <!--<ResourceDictionary Source="Styles/JAStyles.xaml" />-->
 
                 <!--<ResourceDictionary>
                     <Style BasedOn="{StaticResource JAWindowStyle}" TargetType="JA:JAWindow" />

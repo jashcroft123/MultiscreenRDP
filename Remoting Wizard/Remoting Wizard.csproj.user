@@ -12,9 +12,6 @@
     <Compile Update="MainWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ViewModels\AddPCPopUp.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="ViewModels\CustomTitleBar.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -33,42 +30,6 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\Bars.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\Boxes.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\Buttons.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\Colours.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\Converters.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\Fonts.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\ItemControls.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\JAStyles.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\JAWindowStyle.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\Texts.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="Styles\TextStyles.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ViewModels\AddPCPopUp.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewModels\CustomTitleBar.xaml">

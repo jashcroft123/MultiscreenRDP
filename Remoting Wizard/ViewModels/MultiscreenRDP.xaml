@@ -46,8 +46,8 @@
             <ComboBox Name="ModeComboBox" SelectedIndex="0" />
 
             <StackPanel Orientation="Horizontal">
-                <Label Content="PC:" HorizontalAlignment="Right" HorizontalContentAlignment="Right"
-                       Margin="0,0,10,5" Width="150" />
+                <Label Content="PC:" Foreground="{DynamicResource SystemAccentColorBrush}" HorizontalAlignment="Right"
+                       HorizontalContentAlignment="Right" Margin="0,0,10,5" Width="150" />
 
                 <ComboBox x:Name="ComboBoxPCs" FontSize="24" ItemsSource="{Binding ConfigPCs.DistinctAliases}"
                           MinWidth="260" SelectedIndex="0" SelectedItem="{Binding ConfigPCs.SelectedAlias, Mode=TwoWay}" />

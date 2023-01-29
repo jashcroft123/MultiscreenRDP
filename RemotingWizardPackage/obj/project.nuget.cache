@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "G0PqUFw9NHBRknbjknY6FhAj6KCCyEfxcDmtOF3UpcPT+DRRPQbCOmgGglrUSAeZHomlMX+I1Pz/EF71We9dOQ==",
+  "dgSpecHash": "k5IxUvFxKmXERyZ3li9fyHMOhvbWVIwlcTQXYe1YtEzGM5Q/PsDL82TWIivBPOreGhegTDCHDDMLIDzwsqiGgQ==",
   "success": true,
   "projectFilePath": "C:\\devops\\MultiscreenRDP\\RemotingWizardPackage\\RemotingWizardPackage.wapproj",
   "expectedPackageFiles": [
     "C:\\Users\\ja151016\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\ja151016\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
     "C:\\Users\\ja151016\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.0.0\\microsoft.bcl.asyncinterfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\ja151016\\.nuget\\packages\\microsoft.bcl.hashcode\\1.0.0\\microsoft.bcl.hashcode.1.0.0.nupkg.sha512",
     "C:\\Users\\ja151016\\.nuget\\packages\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
@@ -75,6 +76,16 @@
     "C:\\Users\\ja151016\\.nuget\\packages\\unity.container\\5.11.11\\unity.container.5.11.11.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Extended.Wpf.Toolkit 4.5.0' was restored using '.NETCoreApp,Version=v3.1, .NETCoreApp,Version=v3.0, .NETCoreApp,Version=v2.0, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, net7.0-windows10.0.19041, .NETFramework,Version=v4.6.1' instead of the project target framework 'UAP,Version=v10.0.17763'. This package may not be fully compatible with your project.",
+      "libraryId": "Extended.Wpf.Toolkit",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17763"
+      ]
+    },
     {
       "code": "NU1701",
       "level": "Warning",
