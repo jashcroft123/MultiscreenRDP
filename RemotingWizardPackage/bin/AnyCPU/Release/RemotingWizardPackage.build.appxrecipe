@@ -237,6 +237,9 @@
     <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Data\RemoteConnectionTemplate.txt">
       <PackagePath>Remoting Wizard\Data\RemoteConnectionTemplate.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\App.config">
+      <PackagePath>Remoting Wizard\App.config</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.exe">
       <PackagePath>Remoting Wizard\Remoting Wizard.exe</PackagePath>
     </AppxPackagedFile>
@@ -248,9 +251,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.runtimeconfig.json">
       <PackagePath>Remoting Wizard\Remoting Wizard.runtimeconfig.json</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.dll.config">
-      <PackagePath>Remoting Wizard\Remoting Wizard.dll.config</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.CSharp.dll">
       <PackagePath>Remoting Wizard\Microsoft.CSharp.dll</PackagePath>
@@ -1755,6 +1755,21 @@
     <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\CsvHelper.dll">
       <PackagePath>Remoting Wizard\CsvHelper.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Xceed.Wpf.AvalonDock.NET5.dll">
+      <PackagePath>Remoting Wizard\Xceed.Wpf.AvalonDock.NET5.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll">
+      <PackagePath>Remoting Wizard\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll">
+      <PackagePath>Remoting Wizard\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll">
+      <PackagePath>Remoting Wizard\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Xceed.Wpf.Toolkit.NET5.dll">
+      <PackagePath>Remoting Wizard\Xceed.Wpf.Toolkit.NET5.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.Xaml.Behaviors.dll">
       <PackagePath>Remoting Wizard\Microsoft.Xaml.Behaviors.dll</PackagePath>
     </AppxPackagedFile>
@@ -1772,6 +1787,45 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Unity.Container.dll">
       <PackagePath>Remoting Wizard\Unity.Container.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\de\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\es\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\it\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll">
+      <PackagePath>Remoting Wizard\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\JAStyles.dll">
+      <PackagePath>Remoting Wizard\JAStyles.dll</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

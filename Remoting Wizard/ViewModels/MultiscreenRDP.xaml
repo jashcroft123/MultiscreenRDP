@@ -79,9 +79,9 @@
                            Grid.Row="0" HorizontalAlignment="Center" />
 
                     <Button x:Name="Refresh" Background="Transparent" BorderThickness="0"
-                            Command="{Binding BtnRefresh}" Content="⟳" Foreground="{StaticResource SystemAccentColorBrush}"
-                            Grid.Column="2" Grid.Row="0" Height="35"
-                            HorizontalAlignment="Right" Width="35" />
+                            Command="{Binding RefreshMontiorsCommand}" Content="⟳"
+                            Foreground="{StaticResource SystemAccentColorBrush}" Grid.Column="2" Grid.Row="0"
+                            Height="35" HorizontalAlignment="Right" Width="35" />
                     <Viewbox Grid.Column="1" Grid.Row="1" Margin="25"
                              MaxHeight="200" MaxWidth="400">
                         <ItemsControl x:Name="CanvasMonitorButtons" Background="Transparent" BorderThickness="0"

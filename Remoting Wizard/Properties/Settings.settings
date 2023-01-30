@@ -5,5 +5,8 @@
     <Setting Name="ColourScheme" Type="System.String" Scope="User">
       <Value Profile="(Default)">Dark</Value>
     </Setting>
+    <Setting Name="AfterConnectionAction" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Shutdown</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

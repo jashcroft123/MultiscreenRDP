@@ -93,6 +93,7 @@ Remoting Wizard\api-ms-win-crt-stdio-l1-1-0.dll
 Remoting Wizard\api-ms-win-crt-string-l1-1-0.dll
 Remoting Wizard\api-ms-win-crt-time-l1-1-0.dll
 Remoting Wizard\api-ms-win-crt-utility-l1-1-0.dll
+Remoting Wizard\App.config
 Remoting Wizard\clretwrc.dll
 Remoting Wizard\clrjit.dll
 Remoting Wizard\coreclr.dll
@@ -105,6 +106,7 @@ Remoting Wizard\dbgshim.dll
 Remoting Wizard\DirectWriteForwarder.dll
 Remoting Wizard\hostfxr.dll
 Remoting Wizard\hostpolicy.dll
+Remoting Wizard\JAStyles.dll
 Remoting Wizard\Microsoft.CSharp.dll
 Remoting Wizard\Microsoft.DiaSymReader.Native.x86.dll
 Remoting Wizard\Microsoft.VisualBasic.Core.dll
@@ -144,7 +146,6 @@ Remoting Wizard\Prism.Wpf.dll
 Remoting Wizard\ReachFramework.dll
 Remoting Wizard\Remoting Wizard.deps.json
 Remoting Wizard\Remoting Wizard.dll
-Remoting Wizard\Remoting Wizard.dll.config
 Remoting Wizard\Remoting Wizard.exe
 Remoting Wizard\Remoting Wizard.runtimeconfig.json
 Remoting Wizard\System.AppContext.dll
@@ -342,3 +343,8 @@ Remoting Wizard\vcruntime140_cor3.dll
 Remoting Wizard\WindowsBase.dll
 Remoting Wizard\WindowsFormsIntegration.dll
 Remoting Wizard\wpfgfx_cor3.dll
+Remoting Wizard\Xceed.Wpf.AvalonDock.NET5.dll
+Remoting Wizard\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+Remoting Wizard\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+Remoting Wizard\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+Remoting Wizard\Xceed.Wpf.Toolkit.NET5.dll

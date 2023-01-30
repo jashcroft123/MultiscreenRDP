@@ -562,7 +562,6 @@ C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\bin\x86\Release\net6.0-window
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Remoting Wizard.exe
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Data\PCs.csv
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Data\RemoteConnectionTemplate.txt
-C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Remoting Wizard.dll.config
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Remoting Wizard.deps.json
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Remoting Wizard.runtimeconfig.json
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Remoting Wizard.dll
@@ -1076,29 +1075,15 @@ C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\zh-Hant\WindowsFormsIntegration.resources.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Remoting Wizard.csproj.AssemblyReference.cache
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\MainWindow.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Styles\Bars.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Styles\Boxes.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Styles\Buttons.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Styles\Fonts.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Styles\ItemControls.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Styles\JAStyles.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Styles\Texts.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Styles\TextStyles.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\AddPCPopUp.baml
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\MainWindow.g.cs
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\AddPCPopUp.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\CustomTitleBar.g.cs
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\RemotingWizard.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\App.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Remoting Wizard_Content.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\GeneratedInternalTypeHelper.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Remoting Wizard_MarkupCompile.cache
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Remoting Wizard_MarkupCompile.lref
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\App.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Styles\Colours.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Styles\Converters.baml
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\CustomTitleBar.baml
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\RemotingWizard.baml
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Remoting Wizard.g.resources
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Remoting Wizard.GeneratedMSBuildEditorConfig.editorconfig
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Remoting Wizard.AssemblyInfoInputs.cache
@@ -1110,3 +1095,31 @@ C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Remoting Wizard.pdb
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Remoting Wizard.genruntimeconfig.cache
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ref\Remoting Wizard.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\App.config
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Xceed.Wpf.AvalonDock.NET5.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\Xceed.Wpf.Toolkit.NET5.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\JAStyles.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\x86\Release\net6.0-windows\win-x86\JAStyles.pdb
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Archive\RemotingWizard.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\DialogMenuItems\ConfigurationDialog.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\DialogMenuItems\ConfigurePCs.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\MultiscreenRDP.g.cs
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\Archive\RemotingWizard.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\DialogMenuItems\ConfigurationDialog.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\DialogMenuItems\ConfigurePCs.baml
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\x86\Release\net6.0-windows\win-x86\ViewModels\MultiscreenRDP.baml

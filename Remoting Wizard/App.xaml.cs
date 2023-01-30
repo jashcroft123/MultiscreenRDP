@@ -49,10 +49,10 @@ namespace Remoting_Wizard
 
         protected override void Initialize()
         {
-            SolidColorBrush test =(SolidColorBrush) this.Resources.MergedDictionaries[0]["SystemAccentColorBrush"];
-            var temp = new SolidColorBrush(System.Windows.Media.Colors.HotPink);
-            this.Resources.MergedDictionaries[0]["SystemAccentColorBrush"] = temp;
-            var test2 = this.Resources.MergedDictionaries[0]["SystemAccentColorBrush"];
+            //SolidColorBrush test =(SolidColorBrush) this.Resources.MergedDictionaries[0]["SystemAccentColorBrush"];
+            //var temp = new SolidColorBrush(System.Windows.Media.Colors.HotPink);
+            //this.Resources.MergedDictionaries[0]["SystemAccentColorBrush"] = temp;
+            //var test2 = this.Resources.MergedDictionaries[0]["SystemAccentColorBrush"];
 
 
             base.Initialize();
@@ -83,6 +83,7 @@ namespace Remoting_Wizard
         static void ReadAllSettings(ConfigurationSettings settings)
         {
             settings.ColourScheme = (ColourSchemeEnum) Enum.Parse(typeof(ColourSchemeEnum), Settings.Default.ColourScheme);
+            settings.AfterConnectionAction = (AfterConnectionActionEnum) Enum.Parse(typeof(AfterConnectionActionEnum), Settings.Default.AfterConnectionAction);
             //ConfigLocator.Load($@"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\{Assembly.GetCallingAssembly().GetName().Name}\App.config");
         }
     }

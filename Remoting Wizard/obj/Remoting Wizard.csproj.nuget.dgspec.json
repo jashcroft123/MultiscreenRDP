@@ -75,7 +75,7 @@
       }
     },
     "C:\\devops\\MultiscreenRDP\\Remoting Wizard\\Remoting Wizard.csproj": {
-      "version": "2.0.0",
+      "version": "2.2.0",
       "restore": {
         "projectUniqueName": "C:\\devops\\MultiscreenRDP\\Remoting Wizard\\Remoting Wizard.csproj",
         "projectName": "Remoting Wizard",

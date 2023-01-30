@@ -1,7 +1,10 @@
-﻿using Prism.Mvvm;
+﻿using Prism.Commands;
+using Prism.Mvvm;
 using Prism.Services.Dialogs;
 using Remoting_Wizard.Class;
 using System;
+using System.Linq;
+using System.Reflection.Metadata;
 
 namespace Remoting_Wizard.ViewModels.DialogMenuItems
 {
@@ -12,7 +15,9 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
         #endregion
 
         #region Delegate Commands
-
+        public DelegateCommand CloseCommand { get; private set; }
+        public DelegateCommand SaveCommand { get; private set; }
+        public DelegateCommand AddRowCommand { get; private set; }
         #endregion
 
         #region Public Properties
@@ -28,19 +33,19 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
         public ConfigurePCsViewModel(ConfigPCs configPCs)
         {
             ConfigPCs = configPCs;
+
+            CloseCommand = new DelegateCommand(Close);
+            SaveCommand = new DelegateCommand(Save);
+            AddRowCommand = new DelegateCommand(AddRow);
         }
 
-
-        protected void CloseDialog(string parameter)
+        public void OnDialogOpened(IDialogParameters parameters)
         {
-            ButtonResult result = ButtonResult.None;
 
-            if (parameter?.ToLower() == "true")
-                result = ButtonResult.OK;
-            else if (parameter?.ToLower() == "false")
-                result = ButtonResult.Cancel;
+        }
+        public void OnDialogClosed()
+        {
 
-            RaiseRequestClose(new DialogResult(result));
         }
 
         public event Action<IDialogResult> RequestClose;
@@ -48,23 +53,25 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
         {
             RequestClose?.Invoke(dialogResult);
         }
-
         public bool CanCloseDialog()
         {
             return true;
         }
 
-        public void OnDialogClosed()
-        {
-
-        }
-
-        public void OnDialogOpened(IDialogParameters parameters)
-        {
-        }
-
         #region Private Methods
-
+        private void Close()
+        {
+            RaiseRequestClose(new DialogResult());
+        }
+        private void Save()
+        {
+            CSV.ExportCsv(ConfigPCs.PCs.ToList());
+            RaiseRequestClose(new DialogResult());
+        }
+        private void AddRow()
+        {
+            ConfigPCs.PCs.Add(new PC());
+        }
         #endregion
     }
 }

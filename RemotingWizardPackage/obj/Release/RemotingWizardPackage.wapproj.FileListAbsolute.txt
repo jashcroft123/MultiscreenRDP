@@ -559,7 +559,6 @@ C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizar
 C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.dll
 C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.deps.json
 C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.runtimeconfig.json
-C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.dll.config
 C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Remoting Wizard.pdb
 C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Microsoft.CSharp.dll
 C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Microsoft.VisualBasic.Core.dll
@@ -1090,3 +1089,23 @@ C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\qualifiers.txt.interm
 C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\MultipleQualifiersPerDimensionFound.txt
 C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\ProjectArchitectures.txt
 C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\RemotingWizardPackage.wapproj.LastBuild.txt
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\App.config
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Xceed.Wpf.AvalonDock.NET5.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Xceed.Wpf.Toolkit.NET5.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\JAStyles.dll
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\JAStyles.pdb

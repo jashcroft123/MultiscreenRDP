@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Remoting_Wizard.Configuration
 {
-    internal enum AfterConnectionActionEnum
+    public enum AfterConnectionActionEnum
     {
         Shutdown,
         Minimise,

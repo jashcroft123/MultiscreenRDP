@@ -15,6 +15,7 @@ Remoting Wizard\cs\UIAutomationProvider.resources.dll
 Remoting Wizard\cs\UIAutomationTypes.resources.dll
 Remoting Wizard\cs\WindowsBase.resources.dll
 Remoting Wizard\cs\WindowsFormsIntegration.resources.dll
+Remoting Wizard\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
 Remoting Wizard\de\Microsoft.VisualBasic.Forms.resources.dll
 Remoting Wizard\de\PresentationCore.resources.dll
 Remoting Wizard\de\PresentationFramework.resources.dll
@@ -32,6 +33,7 @@ Remoting Wizard\de\UIAutomationProvider.resources.dll
 Remoting Wizard\de\UIAutomationTypes.resources.dll
 Remoting Wizard\de\WindowsBase.resources.dll
 Remoting Wizard\de\WindowsFormsIntegration.resources.dll
+Remoting Wizard\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
 Remoting Wizard\es\Microsoft.VisualBasic.Forms.resources.dll
 Remoting Wizard\es\PresentationCore.resources.dll
 Remoting Wizard\es\PresentationFramework.resources.dll
@@ -49,6 +51,7 @@ Remoting Wizard\es\UIAutomationProvider.resources.dll
 Remoting Wizard\es\UIAutomationTypes.resources.dll
 Remoting Wizard\es\WindowsBase.resources.dll
 Remoting Wizard\es\WindowsFormsIntegration.resources.dll
+Remoting Wizard\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
 Remoting Wizard\fr\Microsoft.VisualBasic.Forms.resources.dll
 Remoting Wizard\fr\PresentationCore.resources.dll
 Remoting Wizard\fr\PresentationFramework.resources.dll
@@ -66,6 +69,8 @@ Remoting Wizard\fr\UIAutomationProvider.resources.dll
 Remoting Wizard\fr\UIAutomationTypes.resources.dll
 Remoting Wizard\fr\WindowsBase.resources.dll
 Remoting Wizard\fr\WindowsFormsIntegration.resources.dll
+Remoting Wizard\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+Remoting Wizard\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
 Remoting Wizard\it\Microsoft.VisualBasic.Forms.resources.dll
 Remoting Wizard\it\PresentationCore.resources.dll
 Remoting Wizard\it\PresentationFramework.resources.dll
@@ -83,6 +88,7 @@ Remoting Wizard\it\UIAutomationProvider.resources.dll
 Remoting Wizard\it\UIAutomationTypes.resources.dll
 Remoting Wizard\it\WindowsBase.resources.dll
 Remoting Wizard\it\WindowsFormsIntegration.resources.dll
+Remoting Wizard\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
 Remoting Wizard\ja\Microsoft.VisualBasic.Forms.resources.dll
 Remoting Wizard\ja\PresentationCore.resources.dll
 Remoting Wizard\ja\PresentationFramework.resources.dll
@@ -100,6 +106,7 @@ Remoting Wizard\ja\UIAutomationProvider.resources.dll
 Remoting Wizard\ja\UIAutomationTypes.resources.dll
 Remoting Wizard\ja\WindowsBase.resources.dll
 Remoting Wizard\ja\WindowsFormsIntegration.resources.dll
+Remoting Wizard\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
 Remoting Wizard\ko\Microsoft.VisualBasic.Forms.resources.dll
 Remoting Wizard\ko\PresentationCore.resources.dll
 Remoting Wizard\ko\PresentationFramework.resources.dll
@@ -151,6 +158,8 @@ Remoting Wizard\pt-BR\UIAutomationProvider.resources.dll
 Remoting Wizard\pt-BR\UIAutomationTypes.resources.dll
 Remoting Wizard\pt-BR\WindowsBase.resources.dll
 Remoting Wizard\pt-BR\WindowsFormsIntegration.resources.dll
+Remoting Wizard\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+Remoting Wizard\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
 Remoting Wizard\ru\Microsoft.VisualBasic.Forms.resources.dll
 Remoting Wizard\ru\PresentationCore.resources.dll
 Remoting Wizard\ru\PresentationFramework.resources.dll
@@ -168,6 +177,8 @@ Remoting Wizard\ru\UIAutomationProvider.resources.dll
 Remoting Wizard\ru\UIAutomationTypes.resources.dll
 Remoting Wizard\ru\WindowsBase.resources.dll
 Remoting Wizard\ru\WindowsFormsIntegration.resources.dll
+Remoting Wizard\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+Remoting Wizard\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
 Remoting Wizard\tr\Microsoft.VisualBasic.Forms.resources.dll
 Remoting Wizard\tr\PresentationCore.resources.dll
 Remoting Wizard\tr\PresentationFramework.resources.dll
@@ -202,6 +213,7 @@ Remoting Wizard\zh-Hans\UIAutomationProvider.resources.dll
 Remoting Wizard\zh-Hans\UIAutomationTypes.resources.dll
 Remoting Wizard\zh-Hans\WindowsBase.resources.dll
 Remoting Wizard\zh-Hans\WindowsFormsIntegration.resources.dll
+Remoting Wizard\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
 Remoting Wizard\zh-Hant\Microsoft.VisualBasic.Forms.resources.dll
 Remoting Wizard\zh-Hant\PresentationCore.resources.dll
 Remoting Wizard\zh-Hant\PresentationFramework.resources.dll

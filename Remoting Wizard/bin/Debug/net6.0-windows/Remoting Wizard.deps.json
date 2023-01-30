@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Remoting Wizard/2.0.0": {
+      "Remoting Wizard/2.2.0": {
         "dependencies": {
           "CsvHelper": "30.0.1",
           "Extended.Wpf.Toolkit": "4.5.0",
@@ -164,7 +164,7 @@
     }
   },
   "libraries": {
-    "Remoting Wizard/2.0.0": {
+    "Remoting Wizard/2.2.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

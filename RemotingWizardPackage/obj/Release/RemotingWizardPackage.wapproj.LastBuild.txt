@@ -52,11 +52,11 @@ C:\devops\MultiscreenRDP\RemotingWizardPackage\Images\Wide310x150Logo.scale-400.
 C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\resources.pri
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Data\PCs.csv
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Data\RemoteConnectionTemplate.txt
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\App.config
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.exe
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.deps.json
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.runtimeconfig.json
-C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.dll.config
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.pdb
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.CSharp.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.VisualBasic.Core.dll
@@ -559,9 +559,28 @@ C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msix
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\WindowsBase.resources.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hant\WindowsFormsIntegration.resources.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\CsvHelper.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Xceed.Wpf.AvalonDock.NET5.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Xceed.Wpf.Toolkit.NET5.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Microsoft.Xaml.Behaviors.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Prism.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Prism.Unity.Wpf.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Prism.Wpf.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Unity.Abstractions.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Unity.Container.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\JAStyles.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\JAStyles.pdb

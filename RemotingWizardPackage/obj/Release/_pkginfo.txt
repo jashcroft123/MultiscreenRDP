@@ -1,1 +1,1 @@
-C:\devops\CGPD\Installers\RemotingWizardPackage_2.0.0.0_Test\RemotingWizardPackage_2.0.0.0_AnyCPU.msixbundle
+C:\devops\CGPD\Installers\RemotingWizardPackage_2.2.1.0_Test\RemotingWizardPackage_2.2.1.0_AnyCPU.msixbundle

@@ -11,6 +11,14 @@ namespace Remoting_Wizard.Configuration
 {
     public class ConfigurationSettings : BindableBase, IConfigurationSettings
     {
+        private AfterConnectionActionEnum _AfterConnectionAction;
+        public AfterConnectionActionEnum AfterConnectionAction
+        {
+            get { return _AfterConnectionAction; }
+            set { SetProperty(ref _AfterConnectionAction, value); }
+        }
+
+
         private ColourSchemeEnum _ColourScheme;
         public ColourSchemeEnum ColourScheme
         {
@@ -23,11 +31,7 @@ namespace Remoting_Wizard.Configuration
         public string AccentColour
         {
             get { return _AccentColour; }
-            set { SetProperty(ref _AccentColour, value);
-
-
-
-            }
+            set { SetProperty(ref _AccentColour, value); }
         }
     }
 }

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "4JMYMP0tTFpXQ3K990WHq0PYgPrRQ5s2X9gUXUDGpFCfD8ia6QUejw1nqmi3MraSUAeWhpm6sKCvdjld/mqDRw==",
+  "dgSpecHash": "ahDqkVPAgLWezSMdI3Ufgqf9FFbOn4kEzKCmouGvuNbv3a9lBWtbCVWSnyuNncZ6aMyoeRBfHk21RYTRJFnoUg==",
   "success": true,
   "projectFilePath": "C:\\devops\\MultiscreenRDP\\Remoting Wizard\\Remoting Wizard.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ja151016\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512",
+    "C:\\Users\\ja151016\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
     "C:\\Users\\ja151016\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.31\\microsoft.xaml.behaviors.wpf.1.1.31.nupkg.sha512",
     "C:\\Users\\ja151016\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\ja151016\\.nuget\\packages\\prism.unity\\8.1.97\\prism.unity.8.1.97.nupkg.sha512",

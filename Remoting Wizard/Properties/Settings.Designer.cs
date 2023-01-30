@@ -34,5 +34,17 @@ namespace Remoting_Wizard.Properties {
                 this["ColourScheme"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Shutdown")]
+        public string AfterConnectionAction {
+            get {
+                return ((string)(this["AfterConnectionAction"]));
+            }
+            set {
+                this["AfterConnectionAction"] = value;
+            }
+        }
     }
 }

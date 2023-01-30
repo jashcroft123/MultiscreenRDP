@@ -68,13 +68,6 @@ namespace Remoting_Wizard.ViewModels
         {
             WindowMaximised = Application.Current.MainWindow.WindowState == WindowState.Maximized;
             BackgroundColour = Application.Current.MainWindow.WindowState == WindowState.Maximized ? DarkThemeColours.BackgroundBrush : DarkThemeColours.BackgroundLight1Brush;
-
-            //if (Application.Current.MainWindow.WindowState == WindowState.Maximized)
-            //{
-            //    Application.Current.MainWindow.WindowStyle = WindowStyle.SingleBorderWindow;
-            //    Application.Current.MainWindow.WindowState = WindowState.Maximized;
-            //    Application.Current.MainWindow.WindowStyle = WindowStyle.None;
-            //}
         }
         private void Close()
         {

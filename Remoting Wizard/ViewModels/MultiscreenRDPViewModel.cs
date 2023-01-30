@@ -2,7 +2,9 @@
 using Prism.Mvvm;
 using Prism.Services.Dialogs;
 using Remoting_Wizard.Class;
+using Remoting_Wizard.Configuration;
 using System;
+using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -10,6 +12,8 @@ using System.Threading.Tasks;
 using System.Timers;
 using System.Windows;
 using System.Windows.Media;
+using System.Windows.Threading;
+using ConfigurationSettings = Remoting_Wizard.Configuration.ConfigurationSettings;
 
 namespace Remoting_Wizard.ViewModels
 {
@@ -28,6 +32,8 @@ namespace Remoting_Wizard.ViewModels
         public DelegateCommand RemoteConnectCommand { get; private set; }
         public DelegateCommand OpenPCConfigCommand { get; private set; }
         public DelegateCommand PreferencesCommand { get; private set; }
+        public DelegateCommand RefreshMontiorsCommand { get; private set; }
+
         #endregion
 
         #region Public Properties
@@ -38,35 +44,44 @@ namespace Remoting_Wizard.ViewModels
 
         #region Private Properties
         IDialogService _DialogService;
+        ConfigurationSettings _ConfigurationSettings;
         #endregion
 
-        public MultiscreenRDPViewModel(ConfigPCs configPCs, IDialogService dialogService)
+        public MultiscreenRDPViewModel(ConfigPCs configPCs, IDialogService dialogService, ConfigurationSettings configurationSettings)
         {
             ConfigPCs = configPCs;
             _DialogService = dialogService;
+            _ConfigurationSettings = configurationSettings;
 
             OpenPCConfigCommand = new DelegateCommand(OpenPCConfig);
             RemoteConnectCommand = new DelegateCommand(async () => await RemoteConnect());
             PreferencesCommand = new DelegateCommand(Preferences);
+            RefreshMontiorsCommand = new DelegateCommand(RefreshMontiors);
 
+            OriginalBrush = new SolidColorBrush(((SolidColorBrush?)Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorBrush"]).Color);
             var timer = new Timer(1000);
             timer.Start();
             timer.Elapsed += Timer_Elapsed;
             //Screens = new ObservableCollection<Monitor>(Monitor.AllMonitors);
         }
 
+        SolidColorBrush OriginalBrush = new SolidColorBrush(Colors.Orange);
         private int counter;
         private void Timer_Elapsed(object? sender, ElapsedEventArgs e)
         {
-            counter++;
-            var temp = new SolidColorBrush(System.Windows.Media.Colors.HotPink);
-            if (counter%2 > 0)
+            Application.Current.Dispatcher.Invoke(() =>
             {
-                temp = new SolidColorBrush(System.Windows.Media.Colors.Red);
-            }
+                var temp = new SolidColorBrush(System.Windows.Media.Colors.HotPink);
+                if (counter % 2 > 0)
+                {
+                    temp = OriginalBrush;
+                }
 
 
-            Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorBrush"] = temp;
+                Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorBrush"] = temp;
+
+            });
+            counter++;
         }
 
 
@@ -95,32 +110,15 @@ namespace Remoting_Wizard.ViewModels
             File.WriteAllText($@"{rDPPath}\Connection.RDP", s);
             await RunCMDCommand($"/C mstsc \"{rDPPath}\\Connection.RDP\"");
 
-        }
-
-        private async Task CurrentDisplays()
-        {
-            //Screens.Clear();
-            //int trueBottom = (int)Monitor.AllMonitors.Min(x => x.Bounds.Top); //Bottom and top are flipped from Monitor
-            //int trueLeft = (int)Monitor.AllMonitors.Min(x => x.Bounds.Left);
-
-            //foreach (Monitor monitor in Monitor.AllMonitors)
-            //{
-            //    //Get monitor ID and put into the format that would be output cmd from "mstsc /l"
-            //    int ID = int.Parse(Regex.Match(monitor.Name, @"\d+").Value) - 1;
-
-            //    //For each monitor avaliable get width height and bottom left corner location
-            //    Screens.Add(new Screen(
-            //        ID, (int)monitor.Bounds.Width, (int)monitor.Bounds.Height, (int)monitor.Bounds.X + Math.Abs(trueLeft),
-            //        (int)monitor.Bounds.Y + Math.Abs(trueBottom), (int)Math.Abs(monitor.Bounds.Bottom) + Math.Abs(trueBottom),
-            //        (int)monitor.Bounds.Right + Math.Abs(trueLeft), false, monitor.IsPrimary)
-            //        );
-            //}
-            //Screens = new ObservableCollection<Screen>(Screens.OrderBy(x => x.LeftLocation));
-
-            //MaxHeight = Screens.Max(x => x.TopLocation);
-            //MaxWidth = Screens.Max(x => x.RightLocation);
-
-            //RegisterRightClick();
+            switch (_ConfigurationSettings.AfterConnectionAction)
+            {
+                case AfterConnectionActionEnum.Minimise:
+                    Application.Current.MainWindow.WindowState = WindowState.Minimized;
+                    break;
+                case AfterConnectionActionEnum.Shutdown:
+                    Application.Current.Shutdown();
+                    break;
+            }
         }
 
         private async Task RunCMDCommand(string Args)
@@ -144,11 +142,15 @@ namespace Remoting_Wizard.ViewModels
         private void OpenPCConfig()
         {
             _DialogService.ShowDialog("ConfigurePCs");
+            ConfigPCs.PCs = new(CSV.ReadCSV());
         }
-
         private void Preferences()
         {
             _DialogService.ShowDialog("ConfigurationDialog");
+        }
+        private void RefreshMontiors()
+        {
+            Monitors = new Monitors();
         }
         #endregion
     }
