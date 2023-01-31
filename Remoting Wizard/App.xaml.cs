@@ -39,39 +39,27 @@ namespace Remoting_Wizard
         {
             //_ConfigHelper = new ConfigHelper($@"{Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData)}\Remoting Wizard");
             containerRegistry.RegisterSingleton<ConfigPCs>();
+            containerRegistry.RegisterSingleton<ApplicationColours>();
             containerRegistry.RegisterSingleton<ConfigurationSettings>();
 
             containerRegistry.RegisterDialog<ConfigurePCs, ConfigurePCsViewModel>();
             containerRegistry.RegisterDialog<ConfigurationDialog, ConfigurationDialogViewModel>();
         }
 
-        //public IRegionManager RegionManager { get; set; }
-
         protected override void Initialize()
         {
-            //SolidColorBrush test =(SolidColorBrush) this.Resources.MergedDictionaries[0]["SystemAccentColorBrush"];
-            //var temp = new SolidColorBrush(System.Windows.Media.Colors.HotPink);
-            //this.Resources.MergedDictionaries[0]["SystemAccentColorBrush"] = temp;
-            //var test2 = this.Resources.MergedDictionaries[0]["SystemAccentColorBrush"];
-
-
             base.Initialize();
             Application.Current.MainWindow.WindowState = WindowState.Maximized;
+
+            Container.Resolve<ApplicationColours>();
 
             var settingsClass = Container.Resolve<ConfigurationSettings>();
             ReadAllSettings(settingsClass);
 
-            //Add views to main window
-
-
-            //NavigateShell(typeof(RestHandler));
-
-            //Container.RegisterSingleton<CSV>();
-            //Container.RegisterSingleton<AddPCPopUp>();
-
             var config = Container.Resolve<ConfigPCs>((typeof(List<PC>), CSV.ReadCSV()));
             config.PCs = new(CSV.ReadCSV());
 
+            //Add views to main window
             var regionManager = Container.Resolve<IRegionManager>();
             var mainContent = Container.Resolve<MultiscreenRDP>();
             var titleBar = Container.Resolve<CustomTitleBar>();
@@ -82,9 +70,10 @@ namespace Remoting_Wizard
 
         static void ReadAllSettings(ConfigurationSettings settings)
         {
+            //read all settings into local class that we can manipulate
             settings.ColourScheme = (ColourSchemeEnum) Enum.Parse(typeof(ColourSchemeEnum), Settings.Default.ColourScheme);
+            settings.AccentColour =  Settings.Default.AccentColour;
             settings.AfterConnectionAction = (AfterConnectionActionEnum) Enum.Parse(typeof(AfterConnectionActionEnum), Settings.Default.AfterConnectionAction);
-            //ConfigLocator.Load($@"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\{Assembly.GetCallingAssembly().GetName().Name}\App.config");
         }
     }
 }

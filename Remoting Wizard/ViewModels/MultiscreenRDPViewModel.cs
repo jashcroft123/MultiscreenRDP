@@ -57,33 +57,7 @@ namespace Remoting_Wizard.ViewModels
             RemoteConnectCommand = new DelegateCommand(async () => await RemoteConnect());
             PreferencesCommand = new DelegateCommand(Preferences);
             RefreshMontiorsCommand = new DelegateCommand(RefreshMontiors);
-
-            OriginalBrush = new SolidColorBrush(((SolidColorBrush?)Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorBrush"]).Color);
-            var timer = new Timer(1000);
-            timer.Start();
-            timer.Elapsed += Timer_Elapsed;
-            //Screens = new ObservableCollection<Monitor>(Monitor.AllMonitors);
         }
-
-        SolidColorBrush OriginalBrush = new SolidColorBrush(Colors.Orange);
-        private int counter;
-        private void Timer_Elapsed(object? sender, ElapsedEventArgs e)
-        {
-            Application.Current.Dispatcher.Invoke(() =>
-            {
-                var temp = new SolidColorBrush(System.Windows.Media.Colors.HotPink);
-                if (counter % 2 > 0)
-                {
-                    temp = OriginalBrush;
-                }
-
-
-                Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorBrush"] = temp;
-
-            });
-            counter++;
-        }
-
 
         #region Private Methods
         private async Task RemoteConnect()

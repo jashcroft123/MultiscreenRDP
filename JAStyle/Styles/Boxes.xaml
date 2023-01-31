@@ -12,7 +12,7 @@
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="OverridesDefaultStyle" Value="true" />
         <Setter Property="FontSize" Value="{Binding Path=FontSize, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ComboBox}}}" />
-        <Setter Property="Foreground" Value="{StaticResource SystemAccentColorBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource SystemAccentColorBrush}" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ComboBoxItem}">
@@ -35,7 +35,7 @@
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsMouseOver" Value="True">
-                            <Setter Property="Background" TargetName="Border" Value="{StaticResource BackgroundLight1Brush}" />
+                            <Setter Property="Background" TargetName="Border" Value="{DynamicResource BackgroundLight1Brush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -49,16 +49,17 @@
                 <ColumnDefinition />
                 <ColumnDefinition Width="20" />
             </Grid.ColumnDefinitions>
-            <Border x:Name="Border" Background="{StaticResource TransparentBrush}"
-                    BorderBrush="{StaticResource SystemAccentColorBrush}" BorderThickness="0" CornerRadius="0"
+            <Border x:Name="Border" Background="{DynamicResource TransparentBrush}"
+                    BorderBrush="{DynamicResource SystemAccentColorBrush}" BorderThickness="0" CornerRadius="0"
                     Grid.ColumnSpan="2" />
-            <Path x:Name="Arrow" Data="M0,0 L0,2 L4,6 L8,2 L8,0 L4,4 z" Fill="{StaticResource SystemAccentColorBrush}"
-                  Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" />
+            <Path x:Name="Arrow" Data="M0,0 L0,2 L4,6 L8,2 L8,0 L4,4 z"
+                  Fill="{DynamicResource SystemAccentColorBrush}" Grid.Column="1" HorizontalAlignment="Center"
+                  VerticalAlignment="Center" />
         </Grid>
         <ControlTemplate.Triggers>
             <Trigger Property="ToggleButton.IsMouseOver" Value="true">
-                <Setter Property="Fill" TargetName="Arrow" Value="{StaticResource HighlightBrush}" />
-                <Setter Property="BorderBrush" TargetName="Border" Value="{StaticResource BackgroundLight1Brush}" />
+                <Setter Property="Fill" TargetName="Arrow" Value="{DynamicResource HighlightBrush}" />
+                <Setter Property="BorderBrush" TargetName="Border" Value="{DynamicResource BackgroundLight1Brush}" />
             </Trigger>
             <Trigger Property="ToggleButton.IsChecked" Value="true">
                 <Setter Property="Data" TargetName="Arrow" Value="M0,0 L0,2 L4,6 L8,2 L8,0 L4,4 z" />
@@ -87,10 +88,10 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ComboBox}">
                     <Grid>
-                        <TextBlock x:Name="ContentSite" Foreground="{StaticResource SystemAccentColorBrush}" IsHitTestVisible="False"
+                        <TextBlock x:Name="ContentSite" Foreground="{DynamicResource SystemAccentColorBrush}" IsHitTestVisible="False"
                                    Margin="10,3,35,3" Text="{TemplateBinding Text}" />
                         <TextBox x:Name="PART_EditableTextBox" Background="{x:Null}" Focusable="True"
-                                 Foreground="{StaticResource SystemAccentColorBrush}" HorizontalAlignment="Left"
+                                 Foreground="{DynamicResource SystemAccentColorBrush}" HorizontalAlignment="Left"
                                  IsReadOnly="{TemplateBinding IsReadOnly}" Margin="10,3,23,3" Style="{x:Null}"
                                  Template="{StaticResource ComboBoxTextBox}" VerticalAlignment="Center" Visibility="Hidden" />
 
@@ -99,8 +100,8 @@
 
                             <Grid MaxHeight="{TemplateBinding MaxDropDownHeight}" MinWidth="{TemplateBinding ActualWidth}"
                                   Name="DropDown" SnapsToDevicePixels="True">
-                                <Border x:Name="DropDownBorder" Background="{StaticResource BackgroundDark1Brush}"
-                                        BorderBrush="{StaticResource BackgroundLight1Brush}" BorderThickness="1" CornerRadius="1" />
+                                <Border x:Name="DropDownBorder" Background="{DynamicResource BackgroundDark1Brush}"
+                                        BorderBrush="{DynamicResource BackgroundLight1Brush}" BorderThickness="1" CornerRadius="1" />
                                 <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True" Style="{StaticResource JAScrollViewer}"
                                               VerticalScrollBarVisibility="Auto">
                                     <StackPanel IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Contained" Margin="0,0,5,0" />
@@ -117,7 +118,7 @@
                             <Setter Property="MinHeight" TargetName="DropDownBorder" Value="95" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Foreground" Value="{StaticResource ForegroundVeryLightBrush}" />
+                            <Setter Property="Foreground" Value="{DynamicResource ForegroundVeryLightBrush}" />
                         </Trigger>
                         <Trigger Property="IsGrouping" Value="true">
                             <Setter Property="ScrollViewer.CanContentScroll" Value="false" />

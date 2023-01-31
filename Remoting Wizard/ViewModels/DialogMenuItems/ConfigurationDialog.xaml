@@ -29,7 +29,7 @@
 
             <StackPanel Orientation="Horizontal">
                 <Label Content="Accent Colour" Foreground="HotPink" />
-                <xctk:ColorPicker Height="50" SelectedColor="{Binding Settings.AccentColour}" Width="50" />
+                <xctk:ColorPicker Height="50" SelectedColor="{Binding Settings.AccentColour}" SelectedColorChanged="ColorPicker_SelectedColorChanged" Width="50" />
             </StackPanel>
 
 

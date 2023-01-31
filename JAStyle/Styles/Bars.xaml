@@ -56,10 +56,10 @@
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ProgressBar}">
                     <Grid MinHeight="5" MinWidth="200">
-                        <Border x:Name="PART_Track" Background="{StaticResource BackgroundLight1Brush}"
-                                BorderBrush="{StaticResource BackgroundVeryLightBrush}" BorderThickness="1" CornerRadius="2" />
-                        <Border x:Name="PART_Indicator" Background="{StaticResource SystemAccentColorBrush}"
-                                BorderBrush="{StaticResource SystemAccentColorBrush}" BorderThickness="1" CornerRadius="2"
+                        <Border x:Name="PART_Track" Background="{DynamicResource BackgroundLight1Brush}"
+                                BorderBrush="{DynamicResource BackgroundVeryLightBrush}" BorderThickness="1" CornerRadius="2" />
+                        <Border x:Name="PART_Indicator" Background="{DynamicResource SystemAccentColorBrush}"
+                                BorderBrush="{DynamicResource SystemAccentColorBrush}" BorderThickness="1" CornerRadius="2"
                                 HorizontalAlignment="Left" Margin="0,1,0,1" />
                     </Grid>
                 </ControlTemplate>
@@ -78,19 +78,19 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type RepeatButton}">
-                    <Border Background="{StaticResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
+                    <Border Background="{DynamicResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
                             BorderThickness="1" CornerRadius="2" Margin="1"
                             Name="Border">
                         <Path Data="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}"
-                              Fill="{StaticResource BackgroundBrush}" HorizontalAlignment="Center" Name="Path"
+                              Fill="{DynamicResource BackgroundBrush}" HorizontalAlignment="Center" Name="Path"
                               VerticalAlignment="Center" />
                     </Border>
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsPressed" Value="true">
-                            <Setter Property="Fill" TargetName="Path" Value="{StaticResource SystemAccentColorBrush}" />
+                            <Setter Property="Fill" TargetName="Path" Value="{DynamicResource SystemAccentColorBrush}" />
                         </Trigger>
                         <Trigger Property="IsEnabled" Value="false">
-                            <Setter Property="Foreground" Value="{StaticResource BackgroundLight1Brush}" />
+                            <Setter Property="Foreground" Value="{DynamicResource BackgroundLight1Brush}" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>
@@ -132,7 +132,7 @@
                             CornerRadius="2" Name="Border" />
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsDragging" Value="true">
-                            <Setter Property="Background" TargetName="Border" Value="{StaticResource SystemAccentColorBrush}" />
+                            <Setter Property="Background" TargetName="Border" Value="{DynamicResource SystemAccentColorBrush}" />
                         </Trigger>
 
                     </ControlTemplate.Triggers>
@@ -149,7 +149,7 @@
                 <RowDefinition Height="0.00001*" />
                 <RowDefinition MaxHeight="18" />
             </Grid.RowDefinitions>
-            <Border Background="{x:Null}" BorderBrush="{StaticResource BackgroundLight1Brush}" BorderThickness="1"
+            <Border Background="{x:Null}" BorderBrush="{DynamicResource BackgroundLight1Brush}" BorderThickness="1"
                     CornerRadius="2" Grid.RowSpan="3" />
             <RepeatButton Command="ScrollBar.LineUpCommand" Content="M 0 4 L 8 4 L 4 0 Z" Grid.Row="0"
                           Height="18" Style="{StaticResource ScrollBarLineButton}" />
@@ -158,7 +158,7 @@
                     <RepeatButton Command="ScrollBar.PageUpCommand" Style="{StaticResource ScrollBarPageButton}" />
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
-                    <Thumb Background="{StaticResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
+                    <Thumb Background="{DynamicResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
                            Margin="1,0,1,0" Opacity="0.6" Style="{StaticResource ScrollBarThumb}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
@@ -178,7 +178,7 @@
                 <ColumnDefinition Width="0.00001*" />
                 <ColumnDefinition MaxWidth="18" />
             </Grid.ColumnDefinitions>
-            <Border Background="{x:Null}" BorderBrush="{StaticResource BackgroundLight1Brush}" BorderThickness="1"
+            <Border Background="{x:Null}" BorderBrush="{DynamicResource BackgroundLight1Brush}" BorderThickness="1"
                     CornerRadius="2" Grid.ColumnSpan="3" />
             <RepeatButton Command="ScrollBar.LineLeftCommand" Content="M 4 0 L 4 8 L 0 4 Z" Grid.Column="0"
                           Style="{StaticResource ScrollBarLineButton}" Width="18" />
@@ -187,7 +187,7 @@
                     <RepeatButton Command="ScrollBar.PageLeftCommand" Style="{StaticResource ScrollBarPageButton}" />
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
-                    <Thumb Background="{StaticResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
+                    <Thumb Background="{DynamicResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
                            Margin="0,1,0,1" Style="{StaticResource ScrollBarThumb}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>

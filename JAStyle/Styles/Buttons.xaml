@@ -11,9 +11,9 @@
     <Style x:Key="JAButton" BasedOn="{StaticResource BaseStyle}" TargetType="{x:Type Button}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="FontSize" Value="{StaticResource Medium}" />
-        <Setter Property="Background" Value="{StaticResource BackgroundLight2Brush}" />
-        <Setter Property="Foreground" Value="{StaticResource SystemAccentColorBrush}" />
-        <Setter Property="BorderBrush" Value="{StaticResource BackgroundLight3Brush}" />
+        <Setter Property="Background" Value="{DynamicResource BackgroundLight2Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource SystemAccentColorBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BackgroundLight3Brush}" />
         <Setter Property="BorderThickness" Value="2" />
         <Setter Property="Border.CornerRadius" Value="2" />
         <Setter Property="Padding" Value="0" />
@@ -33,13 +33,13 @@
 
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsDefaulted" Value="true">
-                            <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource HighlightBrush}" />
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource HighlightBrush}" />
                         </Trigger>
                         <Trigger Property="IsMouseOver" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource BackgroundLight3Brush}" />
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource BackgroundLight3Brush}" />
                         </Trigger>
                         <Trigger Property="IsPressed" Value="true">
-                            <Setter Property="Background" TargetName="border" Value="{StaticResource BackgroundLight1Brush}" />
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource BackgroundLight1Brush}" />
                         </Trigger>
                         <!--<Trigger Property="IsEnabled" Value="false">
                             <Setter Property="Background" TargetName="border" Value="{StaticResource Button.Disabled.Background}" />
@@ -73,15 +73,15 @@
         </Border>
         <ControlTemplate.Triggers>
             <Trigger Property="IsChecked" Value="true">
-                <Setter Property="BorderBrush" TargetName="border" Value="{StaticResource SystemAccentColorBrush}" />
+                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource SystemAccentColorBrush}" />
             </Trigger>
 
             <Trigger Property="IsMouseOver" Value="true">
-                <Setter Property="Background" TargetName="border" Value="{StaticResource BackgroundLight3Brush}" />
+                <Setter Property="Background" TargetName="border" Value="{DynamicResource BackgroundLight3Brush}" />
             </Trigger>
 
             <Trigger Property="IsPressed" Value="true">
-                <Setter Property="Background" TargetName="border" Value="{StaticResource BackgroundLight1Brush}" />
+                <Setter Property="Background" TargetName="border" Value="{DynamicResource BackgroundLight1Brush}" />
             </Trigger>
 
         </ControlTemplate.Triggers>
@@ -90,9 +90,9 @@
     <Style x:Key="JAToggleButton" BasedOn="{StaticResource BaseStyle}" TargetType="{x:Type ToggleButton}">
         <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="FontSize" Value="{StaticResource Medium}" />
-        <Setter Property="Background" Value="{StaticResource BackgroundLight2Brush}" />
-        <Setter Property="Foreground" Value="{StaticResource SystemAccentColorBrush}" />
-        <Setter Property="BorderBrush" Value="{StaticResource BackgroundLight3Brush}" />
+        <Setter Property="Background" Value="{DynamicResource BackgroundLight2Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource SystemAccentColorBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource BackgroundLight3Brush}" />
         <Setter Property="BorderThickness" Value="2" />
         <Setter Property="Template">
             <Setter.Value>

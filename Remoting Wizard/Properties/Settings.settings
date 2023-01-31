@@ -8,5 +8,8 @@
     <Setting Name="AfterConnectionAction" Type="System.String" Scope="User">
       <Value Profile="(Default)">Shutdown</Value>
     </Setting>
+    <Setting Name="AccentColour" Type="System.String" Scope="User">
+      <Value Profile="(Default)">#ff9a35</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

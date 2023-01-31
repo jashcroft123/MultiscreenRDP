@@ -2,7 +2,7 @@
                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="TextStyles.xaml" />
+        <ResourceDictionary Source="Texts.xaml" />
         <ResourceDictionary Source="ItemControls.xaml" />
         <ResourceDictionary Source="Boxes.xaml" />
         <ResourceDictionary Source="Buttons.xaml" />

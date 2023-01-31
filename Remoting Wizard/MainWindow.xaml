@@ -2,7 +2,7 @@
              xmlns:ja="clr-namespace:JAStyles.Styles;assembly=JAStyles"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             Style="{StaticResource JAWindowStyle}" Title="Remoting Wizard" 
+             Style="{DynamicResource JAWindowStyle}" Title="Remoting Wizard" 
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <WindowChrome.WindowChrome>

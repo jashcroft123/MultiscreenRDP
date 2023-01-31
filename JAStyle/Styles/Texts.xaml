@@ -8,7 +8,7 @@
     <Style x:Key="JALabel" BasedOn="{StaticResource BaseStyle}" TargetType="Label">
         <Setter Property="HorizontalContentAlignment" Value="Left" />
         <Setter Property="VerticalContentAlignment" Value="Top" />
-        <Setter Property="Foreground" Value="{StaticResource TextBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
 
         <Setter Property="Template">
             <Setter.Value>
@@ -41,10 +41,10 @@
         <Setter Property="Height" Value="Auto" />
         <Setter Property="TextWrapping" Value="Wrap" />
         <Setter Property="CharacterCasing" Value="Upper" />
-        <Setter Property="Foreground" Value="{StaticResource SystemAccentColorBrush}" />
-        <Setter Property="CaretBrush" Value="{StaticResource SystemAccentColorBrush}" />
-        <Setter Property="SelectionBrush" Value="{StaticResource SystemAccentColorBrush}" />
-        <Setter Property="BorderBrush" Value="{StaticResource SystemAccentColorBrush}" />
+        <Setter Property="Foreground" Value="{DynamicResource SystemAccentColorBrush}" />
+        <Setter Property="CaretBrush" Value="{DynamicResource SystemAccentColorBrush}" />
+        <Setter Property="SelectionBrush" Value="{DynamicResource SystemAccentColorBrush}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource SystemAccentColorBrush}" />
         <Setter Property="BorderThickness" Value="0,0,0,1" />
         <Setter Property="Margin" Value="0,0,0,8" />
         <Setter Property="Background" Value="{x:Null}" />

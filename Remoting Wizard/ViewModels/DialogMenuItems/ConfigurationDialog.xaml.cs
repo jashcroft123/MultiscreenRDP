@@ -39,5 +39,10 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
             ColourSchemeComboBox.ItemsSource = Enum.GetValues(typeof(ColourSchemeEnum)).Cast<ColourSchemeEnum>();
         }
 
+        private void ColorPicker_SelectedColorChanged(object sender, RoutedPropertyChangedEventArgs<Color?> e)
+        {
+            var VM = (ConfigurationDialogViewModel)this.DataContext;
+            VM.AccentColourChangedCommand.Execute();
+        }
     }
 }

@@ -1,13 +1,11 @@
 ﻿<UserControl x:Class="Remoting_Wizard.ViewModels.DialogMenuItems.ConfigurePCs"
              prism:ViewModelLocator.AutoWireViewModel="True"
-             Width="700"
-             Height="500"
              prism:Dialog.WindowStyle="{DynamicResource DialogStyleTheme}"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Remoting_Wizard.ViewModels.DialogMenuItems"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+             Height="500" Width="700" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <UserControl.Resources>
         <ResourceDictionary>

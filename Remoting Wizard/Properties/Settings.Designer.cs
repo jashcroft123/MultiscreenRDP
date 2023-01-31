@@ -46,5 +46,17 @@ namespace Remoting_Wizard.Properties {
                 this["AfterConnectionAction"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#ff9a35")]
+        public string AccentColour {
+            get {
+                return ((string)(this["AccentColour"]));
+            }
+            set {
+                this["AccentColour"] = value;
+            }
+        }
     }
 }

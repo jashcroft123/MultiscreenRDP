@@ -1,12 +1,15 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Services.Dialogs;
+using Remoting_Wizard.Class;
 using Remoting_Wizard.Configuration;
+using Remoting_Wizard.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace Remoting_Wizard.ViewModels.DialogMenuItems
 {
@@ -24,7 +27,7 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
 
         #region Delegate Commands
         public DelegateCommand SaveSettingsCommand { get; private set; }
-
+        public DelegateCommand AccentColourChangedCommand { get; private set; }
         #endregion
 
         #region Public Properties
@@ -32,28 +35,20 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
         #endregion
 
         #region Private Properties
+        private ApplicationColours _Colours;
         #endregion
 
-        public ConfigurationDialogViewModel(ConfigurationSettings settings)
+        public ConfigurationDialogViewModel(ConfigurationSettings settings, ApplicationColours colours)
         {
+            _Colours = colours;
             Settings = settings;
             SaveSettingsCommand = new DelegateCommand(SaveSettings);
+            AccentColourChangedCommand = new DelegateCommand(AccentColourChanged);
         }
 
-        protected void CloseDialog(string parameter)
-        {
-            ButtonResult result = ButtonResult.None;
-
-            if (parameter?.ToLower() == "true")
-                result = ButtonResult.OK;
-            else if (parameter?.ToLower() == "false")
-                result = ButtonResult.Cancel;
-
-            RaiseRequestClose(new DialogResult(result));
-        }
 
         public event Action<IDialogResult> RequestClose;
-        public void RaiseRequestClose(IDialogResult dialogResult)
+        public void RaiseRequestClose(IDialogResult dialogResult = null)
         {
             RequestClose?.Invoke(dialogResult);
         }
@@ -65,7 +60,7 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
 
         public void OnDialogClosed()
         {
-
+            _Colours.SystemAccentColor = (Color)ColorConverter.ConvertFromString(Properties.Settings.Default.AccentColour);
         }
 
         public void OnDialogOpened(IDialogParameters parameters)
@@ -74,12 +69,31 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
         }
 
         #region Private Methods
-        private void SaveSettings()
+        private void AccentColourChanged()
         {
-            Properties.Settings.Default.ColourScheme = Settings.ColourScheme.ToString();
-            Properties.Settings.Default.Save();
+            _Colours.SystemAccentColor = (Color)ColorConverter.ConvertFromString(Settings.AccentColour);
         }
 
+        private void SaveSettings()
+        {
+            //set all the remote settings by reflection from the local settings
+            var localProps = Settings.GetType().GetProperties();
+
+            var remoteProps = Properties.Settings.Default.GetType().GetProperties().ToList();
+
+            foreach (var property in localProps)
+            {
+                var propVal = property.GetValue(Settings);
+                var propName = property.Name;
+
+                var propToSet = remoteProps.FirstOrDefault(x => x.Name == propName);
+
+                propToSet?.SetValue(Properties.Settings.Default, Convert.ChangeType(propVal, propToSet.PropertyType));
+            }
+
+            Properties.Settings.Default.Save();
+            RaiseRequestClose();
+        }
         #endregion
     }
 }
