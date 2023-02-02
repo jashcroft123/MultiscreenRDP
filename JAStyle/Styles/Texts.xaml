@@ -7,7 +7,9 @@
 
     <Style x:Key="JALabel" BasedOn="{StaticResource BaseStyle}" TargetType="Label">
         <Setter Property="HorizontalContentAlignment" Value="Left" />
-        <Setter Property="VerticalContentAlignment" Value="Top" />
+        <Setter Property="VerticalContentAlignment" Value="Bottom" />
+        <Setter Property="VerticalAlignment" Value="Bottom" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
         <Setter Property="Foreground" Value="{DynamicResource TextBrush}" />
 
         <Setter Property="Template">
@@ -60,6 +62,42 @@
                     <ControlTemplate.Triggers>
                         <Trigger Property="IsEnabled" Value="False">
                             <Setter Property="Background" Value="{x:Null}" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!--  ToolTip  -->
+    <Style x:Key="JAToolTip" TargetType="ToolTip">
+        <Setter Property="OverridesDefaultStyle" Value="true" />
+        <Setter Property="HasDropShadow" Value="True" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ToolTip">
+                    <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                            Height="{TemplateBinding Height}" Name="Border" Opacity="0.8"
+                            Padding="0" Width="{TemplateBinding Width}">
+                        <Border.Background>
+                            <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="{DynamicResource BackgroundDark1}" Offset="0.0" />
+                                        <GradientStop Color="{DynamicResource BackgroundLight3}" Offset="1.0" />
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <Grid>
+                            <Label Content="{TemplateBinding Content}" FontSize="{StaticResource XSmall}"
+                                   Foreground="{DynamicResource TextBrush}" Margin="15,5" Style="{StaticResource JALabel}" />
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HasDropShadow" Value="true">
+                            <Setter Property="CornerRadius" TargetName="Border" Value="4" />
+                            <Setter Property="SnapsToDevicePixels" TargetName="Border" Value="true" />
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

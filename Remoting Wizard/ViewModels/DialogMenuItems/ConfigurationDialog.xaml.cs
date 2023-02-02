@@ -26,17 +26,12 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
         {
             InitializeComponent();
             this.Loaded += MultiscreenRDP_Loaded;
-            ColourSchemeComboBox.SelectionChanged += ModeComboBox_SelectionChanged;
-        }
-
-        private void ModeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            //throw new NotImplementedException();
         }
 
         private void MultiscreenRDP_Loaded(object sender, RoutedEventArgs e)
         {
             ColourSchemeComboBox.ItemsSource = Enum.GetValues(typeof(ColourSchemeEnum)).Cast<ColourSchemeEnum>();
+            AfterConnectionComboBox.ItemsSource = Enum.GetValues(typeof(AfterConnectionActionEnum)).Cast<AfterConnectionActionEnum>();
         }
 
         private void ColorPicker_SelectedColorChanged(object sender, RoutedPropertyChangedEventArgs<Color?> e)

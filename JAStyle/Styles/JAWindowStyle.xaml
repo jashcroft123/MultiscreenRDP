@@ -8,6 +8,7 @@
         <ResourceDictionary Source="Texts.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
+    <!--#region Window-->
     <Style x:Key="JAWindowStyle" TargetType="local:JAWindow">
         <Setter Property="Background" Value="{DynamicResource BackgroundBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource BackgroundLight1Brush}" />
@@ -38,14 +39,15 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <!--#endregion-->
 
+    <!--#region Dialog Window-->
     <Style x:Key="DialogStyleTheme" TargetType="prism:DialogWindow">
         <Setter Property="Background" Value="{DynamicResource BackgroundBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource BackgroundLight1Brush}" />
         <Setter Property="AllowsTransparency" Value="False" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality" />
-        <Setter Property="WindowStyle" Value="SingleBorderWindow" />
         <Setter Property="Title" Value="{Binding Title}" />
         <Setter Property="Template">
             <Setter.Value>
@@ -70,4 +72,6 @@
             </Setter.Value>
         </Setter>
     </Style>
+    <!--#endregion-->
+
 </ResourceDictionary>

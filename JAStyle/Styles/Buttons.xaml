@@ -61,34 +61,9 @@
     <!--#endregion-->
 
     <!--  Toggle Button  -->
-    <ControlTemplate x:Key="Toggle" TargetType="{x:Type ToggleButton}">
-        <Border x:Name="border" Background="{TemplateBinding Background}"
-                BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
-                CornerRadius="4" SnapsToDevicePixels="true">
-            <ContentPresenter x:Name="contentPresenter" Focusable="False"
-                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                              Margin="{TemplateBinding Padding}" RecognizesAccessKey="True"
-                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
-                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
-        </Border>
-        <ControlTemplate.Triggers>
-            <Trigger Property="IsChecked" Value="true">
-                <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource SystemAccentColorBrush}" />
-            </Trigger>
 
-            <Trigger Property="IsMouseOver" Value="true">
-                <Setter Property="Background" TargetName="border" Value="{DynamicResource BackgroundLight3Brush}" />
-            </Trigger>
-
-            <Trigger Property="IsPressed" Value="true">
-                <Setter Property="Background" TargetName="border" Value="{DynamicResource BackgroundLight1Brush}" />
-            </Trigger>
-
-        </ControlTemplate.Triggers>
-    </ControlTemplate>
 
     <Style x:Key="JAToggleButton" BasedOn="{StaticResource BaseStyle}" TargetType="{x:Type ToggleButton}">
-        <Setter Property="SnapsToDevicePixels" Value="true" />
         <Setter Property="FontSize" Value="{StaticResource Medium}" />
         <Setter Property="Background" Value="{DynamicResource BackgroundLight2Brush}" />
         <Setter Property="Foreground" Value="{DynamicResource SystemAccentColorBrush}" />
@@ -97,18 +72,30 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type ToggleButton}">
-                    <Grid>
-                        <ToggleButton x:Name="Button" ClickMode="Release"
-                                      Command="{Binding Path=Command, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}"
-                                      CommandParameter="{Binding Path=CommandParameter, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}"
-                                      Content="{Binding Path=Content, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}"
-                                      Focusable="false" FontSize="{TemplateBinding FontSize}" Foreground="{TemplateBinding Foreground}"
-                                      Height="{Binding Path=Height, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}"
-                                      HorizontalAlignment="Center" HorizontalContentAlignment="Center"
-                                      IsChecked="{Binding Path=IsChecked, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}, UpdateSourceTrigger=PropertyChanged}"
-                                      Template="{StaticResource Toggle}" VerticalAlignment="Stretch" VerticalContentAlignment="Center"
-                                      Width="{Binding Path=Width, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ToggleButton}}}" />
-                    </Grid>
+                    <Border x:Name="border" Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="4" SnapsToDevicePixels="true">
+                        <ContentPresenter x:Name="contentPresenter" Focusable="False"
+                                          HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          Margin="{TemplateBinding Padding}" RecognizesAccessKey="True"
+                                          SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}" />
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="true">
+                            <Setter Property="BorderBrush" TargetName="border" Value="{DynamicResource SystemAccentColorBrush}" />
+                        </Trigger>
+
+                        <Trigger Property="IsMouseOver" Value="true">
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource BackgroundLight3Brush}" />
+                        </Trigger>
+
+                        <Trigger Property="IsPressed" Value="true">
+                            <Setter Property="Background" TargetName="border" Value="{DynamicResource BackgroundLight1Brush}" />
+                        </Trigger>
+
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

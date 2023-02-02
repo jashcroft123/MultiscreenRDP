@@ -103,7 +103,6 @@ C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remo
 C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.genruntimeconfig.cache
 C:\devops\CGPD\C#\C#RemotingWizard\Remoting Wizard\obj\Debug\net6.0-windows\ref\Remoting Wizard.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.csproj.AssemblyReference.cache
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Archive\RemotingWizard.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\MainWindow.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\CustomTitleBar.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\DialogMenuItems\ConfigurationDialog.g.cs
@@ -111,7 +110,6 @@ C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\Dia
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\ViewModels\MultiscreenRDP.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\App.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_Content.g.cs
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_MarkupCompile.cache
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard_MarkupCompile.lref
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\MainWindow.baml
@@ -139,7 +137,6 @@ C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Unity.Abstract
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\Unity.Container.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\JAStyles.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\JAStyles.pdb
-C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Archive\RemotingWizard.baml
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.g.resources
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.GeneratedMSBuildEditorConfig.editorconfig
 C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\Remoting Wizard.AssemblyInfoInputs.cache
@@ -166,3 +163,4 @@ C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\ro\Xceed.Wpf.A
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\devops\MultiscreenRDP\Remoting Wizard\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

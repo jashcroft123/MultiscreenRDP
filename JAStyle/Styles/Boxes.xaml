@@ -77,6 +77,7 @@
         <Setter Property="Width" Value="Auto" />
         <Setter Property="MinWidth" Value="200" />
         <Setter Property="HorizontalAlignment" Value="Center" />
+        <Setter Property="VerticalAlignment" Value="Bottom" />
         <Setter Property="FontSize" Value="{StaticResource XLarge}" />
         <Setter Property="ScrollViewer.CanContentScroll" Value="True" />
         <Setter Property="ItemContainerStyle">

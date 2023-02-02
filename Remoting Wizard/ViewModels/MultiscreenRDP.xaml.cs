@@ -24,8 +24,8 @@ namespace Remoting_Wizard.ViewModels
         public MultiscreenRDP()
         {
             InitializeComponent();
-            this.Loaded += MultiscreenRDP_Loaded;
-            ModeComboBox.SelectionChanged += ModeComboBox_SelectionChanged;
+            //this.Loaded += MultiscreenRDP_Loaded;
+            //ModeComboBox.SelectionChanged += ModeComboBox_SelectionChanged;
         }
 
         private void ModeComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -33,9 +33,9 @@ namespace Remoting_Wizard.ViewModels
             //throw new NotImplementedException();
         }
 
-        private void MultiscreenRDP_Loaded(object sender, RoutedEventArgs e)
-        {
-            ModeComboBox.ItemsSource = Enum.GetValues(typeof(Modes)).Cast<Modes>();
-        }
+        //private void MultiscreenRDP_Loaded(object sender, RoutedEventArgs e)
+        //{
+        //    ModeComboBox.ItemsSource = Enum.GetValues(typeof(Modes)).Cast<Modes>();
+        //}
     }
 }

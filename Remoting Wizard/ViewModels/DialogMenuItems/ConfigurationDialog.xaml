@@ -1,7 +1,9 @@
 ﻿<UserControl x:Class="Remoting_Wizard.ViewModels.DialogMenuItems.ConfigurationDialog"
              prism:ViewModelLocator.AutoWireViewModel="True"
              prism:Dialog.WindowStyle="{DynamicResource DialogStyleTheme}"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:enum="clr-namespace:Remoting_Wizard.Configuration"
              xmlns:local="clr-namespace:Remoting_Wizard.ViewModels.DialogMenuItems"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -13,30 +15,52 @@
             <Style BasedOn="{StaticResource JALabel}" TargetType="Label" />
             <Style BasedOn="{StaticResource JAButton}" TargetType="Button" />
             <Style BasedOn="{StaticResource JAComboBox}" TargetType="ComboBox" />
+            <Style BasedOn="{StaticResource JATabControl}" TargetType="TabControl" />
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid x:Name="Main" HorizontalAlignment="Center" VerticalAlignment="Top">
+    <Grid x:Name="Main" HorizontalAlignment="Center" Margin="50"
+          VerticalAlignment="Top">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
+            <RowDefinition Height="100" />
         </Grid.RowDefinitions>
 
-        <StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Colour Theme" Foreground="HotPink" />
-                <ComboBox x:Name="ColourSchemeComboBox" SelectedValue="{Binding Settings.ColourScheme}" />
-            </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250" />
+                <ColumnDefinition Width="250" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
 
-            <StackPanel Orientation="Horizontal">
-                <Label Content="Accent Colour" Foreground="HotPink" />
-                <xctk:ColorPicker Height="50" SelectedColor="{Binding Settings.AccentColour}" SelectedColorChanged="ColorPicker_SelectedColorChanged" Width="50" />
-            </StackPanel>
+            <Label Content="Colour Theme" FontSize="{StaticResource Large}"
+                   Foreground="{DynamicResource SystemAccentColorBrush}" />
+            <ComboBox x:Name="ColourSchemeComboBox" FontSize="{StaticResource Large}" Grid.Column="1"
+                      Grid.Row="0" SelectedValue="{Binding Settings.ColourScheme}" />
 
+            <Label Content="Accent Colour" FontSize="{StaticResource Large}"
+                   Foreground="{DynamicResource SystemAccentColorBrush}" Grid.Column="0" Grid.Row="1" />
+            <xctk:ColorPicker Background="{DynamicResource BackgroundBrush}" BorderBrush="{DynamicResource BackgroundLight2Brush}"
+                              BorderThickness="3" ColorMode="ColorCanvas"
+                              DropDownBackground="{DynamicResource BackgroundLight2Brush}"
+                              DropDownBorderBrush="{DynamicResource BackgroundLight4Brush}"
+                              Foreground="{DynamicResource TextBright1Brush}" Grid.Column="1" Grid.Row="1"
+                              SelectedColor="{Binding Settings.AccentColour}"
+                              SelectedColorChanged="ColorPicker_SelectedColorChanged" ShowRecentColors="True"
+                              ShowTabHeaders="False" Width="70" />
 
+            <Label Content="After Connection" FontSize="{StaticResource Large}"
+                   Foreground="{DynamicResource SystemAccentColorBrush}" Grid.Column="0" Grid.Row="2" />
+            <ComboBox x:Name="AfterConnectionComboBox" FontSize="{StaticResource Large}" Grid.Column="1"
+                      Grid.Row="2" SelectedItem="{Binding AfterConnectionActionEnum}" />
+        </Grid>
 
-
-
-            <Button Command="{Binding SaveSettingsCommand}" Content="Save" />
-        </StackPanel>
+        <Button Command="{Binding SaveSettingsCommand}" Content="Save" FontSize="{StaticResource Large}"
+                Grid.ColumnSpan="2" Grid.Row="1" Height="50"
+                Width="100" />
     </Grid>
 </UserControl>

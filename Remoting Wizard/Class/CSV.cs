@@ -13,8 +13,6 @@ namespace Remoting_Wizard.Class
     {
         private static readonly string _FilePath = @$"{Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData)}\Remoting Wizard\PCs.csv";
 
-
-
         public static List<PC> ReadCSV()
         {
             if (!Directory.Exists(Path.GetDirectoryName(_FilePath)))

@@ -110,16 +110,19 @@ namespace Remoting_Wizard.Class
                 EnumDisplayMonitors(NullHandleRef, IntPtr.Zero, proc, IntPtr.Zero);
 
                 //shift monitors so the top right is 0,0
-                var monitors = cBack.Monitors;
+                var monitors = new ObservableCollection<Monitor>(cBack.Monitors.OrderBy(x => x.Bounds.Left));
                 var farLeft = monitors.Min(x => x.Bounds.Left);
                 var veryBottom = monitors.Min(x => x.Bounds.Top); //top and bottom are flipped due to how rect's are constructed
 
-                foreach (Monitor monitor in monitors)
+                for (int i = 0; i < monitors.Count; i++)
                 {
+                    var monitor = monitors[i];
                     //Bounds is a struct so by val not ref. Therefore copy change then replace
                     var adjustedBounds = monitor.Bounds;
-                    adjustedBounds.Offset(-farLeft, -veryBottom);
+                    adjustedBounds.Offset(-farLeft + (30 * i), -veryBottom);
                     monitor.Bounds = adjustedBounds;
+
+
                 }
 
                 return monitors;

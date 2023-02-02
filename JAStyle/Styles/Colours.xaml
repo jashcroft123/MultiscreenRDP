@@ -49,6 +49,10 @@
     <SolidColorBrush x:Key="SystemAccentColorDark3Brush"
                      Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark3Brush}, Converter={StaticResource StringToColorConverter}}" />
 
+
+    <SolidColorBrush x:Key="AccentHighLightBrush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.AccentHighLightBrush}, Converter={StaticResource StringToColorConverter}}" />
+
     <!--  Fill Colours  -->
     <SolidColorBrush x:Key="HighlightBrush" Color="White" />
 

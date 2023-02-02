@@ -5,7 +5,7 @@
              xmlns:local="clr-namespace:Remoting_Wizard.ViewModels.DialogMenuItems"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             Height="500" Width="700" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <UserControl.Resources>
         <ResourceDictionary>
@@ -29,7 +29,7 @@
             <DataGrid AlternationCount="2" AutoGenerateColumns="False" CanUserAddRows="False"
                       CanUserReorderColumns="False" CanUserResizeColumns="True" ColumnHeaderHeight="50"
                       HeadersVisibility="Column" HorizontalScrollBarVisibility="Hidden"
-                      ItemsSource="{Binding ConfigPCs.PCs}" Width="750">
+                      ItemsSource="{Binding ConfigPCs.PCs}" Width="1000">
                 <DataGrid.Columns>
                     <DataGridTextColumn Binding="{Binding Alias}" CanUserResize="True" Header="Alias"
                                         Width="*" />
@@ -44,7 +44,8 @@
                     Width="100" />
         </StackPanel>
 
-        <StackPanel Grid.Row="2" HorizontalAlignment="Right" Orientation="Horizontal">
+        <StackPanel Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,30,30"
+                    Orientation="Horizontal">
             <Button Command="{Binding SaveCommand}" Content="Save" FontSize="{StaticResource Small}"
                     Height="40" HorizontalAlignment="Center" Margin="5,10"
                     Width="75" />

@@ -29,6 +29,8 @@ namespace JAStyles.Styles
         public const string SystemAccentColorDark2Brush = "#995b1e";
         public const string SystemAccentColorDark3Brush = "#653c14";
 
+        public const string AccentHighLightBrush = "#11653c14";
+
 
 
         private string _ChangeBrush;

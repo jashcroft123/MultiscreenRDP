@@ -1,6 +1,6 @@
 ﻿<UserControl x:Class="Remoting_Wizard.ViewModels.MultiscreenRDP" prism:ViewModelLocator.AutoWireViewModel="True"
-             d:DesignHeight="450" d:DesignWidth="800" mc:Ignorable="d"
              xmlns:System="clr-namespace:System;assembly=mscorlib"
+             xmlns:cvtr="clr-namespace:Remoting_Wizard.Converters"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
              xmlns:local="clr-namespace:Remoting_Wizard.ViewModels"
@@ -14,116 +14,140 @@
             <Style BasedOn="{StaticResource JAComboBox}" TargetType="ComboBox" />
             <Style BasedOn="{StaticResource JAButton}" TargetType="Button" />
             <Style BasedOn="{StaticResource JAToggleButton}" TargetType="ToggleButton" />
+            <Style BasedOn="{StaticResource JAToolTip}" TargetType="ToolTip" />
+            <Style BasedOn="{StaticResource JAMenu}" TargetType="Menu" />
+            <Style BasedOn="{StaticResource JAMenuItem}" TargetType="MenuItem" />
+
+            <cvtr:MinCountToVisibilityConverter x:Key="MinCountToVisibilityConverter" />
+
             <System:Double x:Key="ScreenSizeToCanvasScale">0.1</System:Double>
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid x:Name="Main" HorizontalAlignment="Center" ShowGridLines="True"
-          VerticalAlignment="Top">
+    <Grid x:Name="Main">
         <Grid.RowDefinitions>
-            <RowDefinition Height="34" />
+            <RowDefinition Height="40" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Menu Grid.Row="0" Height="34">
-            <MenuItem>
+        <Menu Grid.Row="0">
+            <MenuItem Margin="5">
                 <MenuItem.Header x:Uid="Hamburger Menu">
-                    <Canvas Height="29" VerticalAlignment="Center" Width="20">
-                        <Line Stroke="{StaticResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
-                              X2="20" Y1="5" Y2="5" />
-                        <Line Stroke="{StaticResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
-                              X2="20" Y1="12" Y2="12" />
-                        <Line Stroke="{StaticResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
-                              X2="20" Y1="19" Y2="19" />
+                    <Canvas Height="40" VerticalAlignment="Center" Width="20">
+                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
+                              X2="20" Y1="15" Y2="15" />
+                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
+                              X2="20" Y1="21" Y2="21" />
+                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
+                              X2="20" Y1="27" Y2="27" />
                     </Canvas>
                 </MenuItem.Header>
-                <MenuItem Command="{Binding OpenPCConfigCommand}" Header="Setup PCs" />
-                <MenuItem Command="{Binding PreferencesCommand}" Header="Preferences" />
+                <MenuItem Command="{Binding OpenPCConfigCommand}" Header="Setup PCs"
+                          ToolTip="Setup PCs that can be connected to" />
+                <MenuItem Command="{Binding PreferencesCommand}" Header="Preferences" ToolTip="Set application preferences" />
             </MenuItem>
         </Menu>
 
-        <StackPanel Grid.Row="1">
-            <ComboBox Name="ModeComboBox" SelectedIndex="0" />
-
-            <StackPanel Orientation="Horizontal">
-                <Label Content="PC:" Foreground="{DynamicResource SystemAccentColorBrush}" HorizontalAlignment="Right"
-                       HorizontalContentAlignment="Right" Margin="0,0,10,5" Width="150" />
-
-                <ComboBox x:Name="ComboBoxPCs" FontSize="24" ItemsSource="{Binding ConfigPCs.DistinctAliases}"
-                          MinWidth="260" SelectedIndex="0" SelectedItem="{Binding ConfigPCs.SelectedAlias, Mode=TwoWay}" />
-            </StackPanel>
-
-            <!--<StackPanel Orientation="Horizontal"
-                        Visibility="{Binding ConfigPCs.UserNames.Count, Converter={StaticResource MinCountToVisibilityConverter}, ConverterParameter=1}">
-                <Label Content="User Name:" HorizontalAlignment="Right" HorizontalContentAlignment="Right"
-                       Margin="0,0,10,5" Width="150" />
-
-                <ComboBox x:Name="ComboBoxUsernames" FontSize="24" ItemsSource="{Binding ConfigPCs.UserNames}"
-                          MinWidth="260" SelectedIndex="0" SelectedItem="{Binding ConfigPCs.SelectedUserName, Mode=TwoWay}" />
-            </StackPanel>-->
-
-            <Border BorderBrush="Gray" BorderThickness="2.5" CornerRadius="10"
-                    Height="Auto" Margin="10" Width="Auto">
-                <Grid Margin="5">
+        <Viewbox Grid.Row="1" MaxHeight="600">
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid x:Name="SelectConnection" Height="90" HorizontalAlignment="Center">
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="50" />
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="50" />
+                        <ColumnDefinition Width="200" />
+                        <ColumnDefinition Width="200" />
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="2*" />
-                        <RowDefinition Height="10*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
+                    <!--<StackPanel>
+                <Label Content="PC:" FontSize="{StaticResource Large}" HorizontalAlignment="Right"
+                       HorizontalContentAlignment="Right" Margin="0,0,10,5" Width="150" />
+                <ComboBox x:Name="ModeComboBox" FontSize="{StaticResource Large}" SelectedIndex="0" />
+            </StackPanel>-->
 
-                    <Label Content="Select Screens" FontSize="{StaticResource XLarge}" Grid.Column="1"
-                           Grid.Row="0" HorizontalAlignment="Center" />
+                    <Label Content="PC:" FontSize="{StaticResource Large}" Grid.Column="0"
+                           Grid.Row="0" HorizontalAlignment="Right" HorizontalContentAlignment="Right"
+                           Margin="0,0,10,0" />
+                    <ComboBox x:Name="ComboBoxPCs" FontSize="{StaticResource Large}" Grid.Column="1"
+                              Grid.Row="0" ItemsSource="{Binding ConfigPCs.DistinctAliases}" SelectedIndex="0"
+                              SelectedItem="{Binding ConfigPCs.SelectedAlias, Mode=TwoWay}" />
 
-                    <Button x:Name="Refresh" Background="Transparent" BorderThickness="0"
-                            Command="{Binding RefreshMontiorsCommand}" Content="⟳" Grid.Column="2"
-                            Grid.Row="0" Height="35" HorizontalAlignment="Right"
-                            Style="{StaticResource JAMenuButton}" Width="35" />
-                    <Viewbox Grid.Column="1" Grid.Row="1" Margin="25"
-                             MaxHeight="200" MaxWidth="400">
-                        <ItemsControl x:Name="CanvasMonitorButtons" Background="Transparent" BorderThickness="0"
-                                      HorizontalAlignment="Center" ItemsSource="{Binding Monitors, UpdateSourceTrigger=PropertyChanged}"
-                                      VerticalAlignment="Center">
-                            <ItemsControl.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <Canvas Height="{Binding DataContext.Monitors.CollectionHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ItemsControl}}, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}"
-                                            Width="{Binding DataContext.Monitors.CollectionWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ItemsControl}}, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}" />
-                                </ItemsPanelTemplate>
-                            </ItemsControl.ItemsPanel>
-
-                            <ItemsControl.ItemContainerStyle>
-                                <Style TargetType="ContentPresenter">
-                                    <Setter Property="Canvas.Left" Value="{Binding Bounds.Left, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}" />
-                                    <Setter Property="Canvas.Top" Value="{Binding Bounds.Top, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}" />
-                                </Style>
-                            </ItemsControl.ItemContainerStyle>
-
-                            <ItemsControl.ItemTemplate>
-                                <DataTemplate>
-                                    <ToggleButton Content="{Binding Name}"
-                                                  Foreground="{Binding SelectedPrimary, Converter={StaticResource BooleanToColourConverter}}"
-                                                  Height="{Binding Bounds.Size.Height, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}"
-                                                  IsChecked="{Binding Selected, Mode=TwoWay}" VerticalAlignment="Top"
-                                                  Width="{Binding Bounds.Size.Width, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}">
-                                        <i:Interaction.Triggers>
-                                            <i:EventTrigger EventName="MouseRightButtonUp">
-                                                <i:InvokeCommandAction Command="{Binding DataContext.Monitors.RightClickCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ItemsControl}}}"
-                                                                       CommandParameter="{Binding Name}" />
-                                            </i:EventTrigger>
-                                        </i:Interaction.Triggers>
-                                    </ToggleButton>
-                                </DataTemplate>
-                            </ItemsControl.ItemTemplate>
-                        </ItemsControl>
-                    </Viewbox>
+                    <Label Content="User Name:" FontSize="{StaticResource Large}" Grid.Column="0"
+                           Grid.Row="1" HorizontalAlignment="Right" HorizontalContentAlignment="Right"
+                           Margin="0,0,10,0"
+                           Visibility="{Binding ConfigPCs.UserNames.Count, Converter={StaticResource MinCountToVisibilityConverter}, ConverterParameter=1}" />
+                    <ComboBox x:Name="ComboBoxUsernames" FontSize="{StaticResource Large}" Grid.Column="1"
+                              Grid.Row="1" ItemsSource="{Binding ConfigPCs.UserNames}" SelectedIndex="0"
+                              SelectedItem="{Binding ConfigPCs.SelectedUserName, Mode=TwoWay}"
+                              Visibility="{Binding ConfigPCs.UserNames.Count, Converter={StaticResource MinCountToVisibilityConverter}, ConverterParameter=1}" />
                 </Grid>
-            </Border>
 
-            <Button Command="{Binding RemoteConnectCommand}" Content="Connect" FontSize="{StaticResource Large}"
-                    Height="75" Margin="50" Width="275" />
-        </StackPanel>
+                <Border BorderBrush="Gray" BorderThickness="2.5" CornerRadius="10"
+                        Height="Auto" Margin="10" Width="Auto">
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="50" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="2*" />
+                            <RowDefinition Height="10*" />
+                        </Grid.RowDefinitions>
+
+                        <Label Content="Select Screens" FontSize="{StaticResource XLarge}" Grid.Column="1"
+                               Grid.Row="0" HorizontalAlignment="Center" />
+
+                        <Button x:Name="Refresh" Background="Transparent" BorderThickness="0"
+                                Command="{Binding RefreshMontiorsCommand}" Content="⟳" Grid.Column="2"
+                                Grid.Row="0" Height="35" HorizontalAlignment="Right"
+                                Style="{StaticResource JAMenuButton}" Width="35" />
+
+                        <Viewbox Grid.Column="1" Grid.Row="1" Margin="25"
+                                 MaxHeight="200" MaxWidth="400">
+                            <ItemsControl x:Name="CanvasMonitorButtons" Background="Transparent" BorderThickness="0"
+                                          HorizontalAlignment="Center" ItemsSource="{Binding Monitors, UpdateSourceTrigger=PropertyChanged}"
+                                          VerticalAlignment="Center">
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <Canvas Height="{Binding DataContext.Monitors.CollectionHeight, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ItemsControl}}, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}"
+                                                Width="{Binding DataContext.Monitors.CollectionWidth, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ItemsControl}}, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}" />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+
+                                <ItemsControl.ItemContainerStyle>
+                                    <Style TargetType="ContentPresenter">
+                                        <Setter Property="Canvas.Left" Value="{Binding Bounds.Left, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}" />
+                                        <Setter Property="Canvas.Top" Value="{Binding Bounds.Top, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}" />
+                                    </Style>
+                                </ItemsControl.ItemContainerStyle>
+
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid>
+                                            <ToggleButton Content="{Binding Name}"
+                                                          Foreground="{Binding SelectedPrimary, Converter={StaticResource BooleanToColourConverter}}"
+                                                          Height="{Binding Bounds.Size.Height, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}"
+                                                          IsChecked="{Binding Selected, Mode=TwoWay}" VerticalAlignment="Top"
+                                                          Width="{Binding Bounds.Size.Width, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}">
+                                                <i:Interaction.Triggers>
+                                                    <i:EventTrigger EventName="MouseRightButtonUp">
+                                                        <i:InvokeCommandAction Command="{Binding DataContext.Monitors.RightClickCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ItemsControl}}}"
+                                                                               CommandParameter="{Binding Name}" />
+                                                    </i:EventTrigger>
+                                                </i:Interaction.Triggers>
+                                            </ToggleButton>
+                                        </Grid>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </Viewbox>
+                    </Grid>
+                </Border>
+
+                <Button Command="{Binding RemoteConnectCommand}" Content="Connect" FontSize="{StaticResource Large}"
+                        Height="75" Margin="50" Width="275" />
+            </StackPanel>
+        </Viewbox>
     </Grid>
 </UserControl>

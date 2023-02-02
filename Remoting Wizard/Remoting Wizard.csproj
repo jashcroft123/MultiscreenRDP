@@ -39,15 +39,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Archive\AddPCPopUp.xaml.cs" />
-    <Compile Remove="Archive\AddPCPopUpViewModel.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Remove="Archive\AddPCPopUp.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <EmbeddedResource Include="App.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>

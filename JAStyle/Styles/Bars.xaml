@@ -3,21 +3,17 @@
 
     <!--#region Menu Bar-->
     <Style x:Key="JAMenu" TargetType="{x:Type Menu}">
-        <Setter Property="Background" Value="Transparent" />
+        <Setter Property="Background" Value="{DynamicResource BackgroundLight1Brush}" />
     </Style>
 
-    <SolidColorBrush x:Key="Menu.Static.Foreground" Color="White" />
-    <SolidColorBrush x:Key="Menu.Static.Background" Color="Black" />
+    <SolidColorBrush x:Key="Menu.Static.Foreground" Color="{DynamicResource SystemAccentColourLight1}" />
+    <SolidColorBrush x:Key="Menu.Static.Background" Color="{DynamicResource BackgroundLight3}" />
     <SolidColorBrush x:Key="Menu.Static.Border" Color="Transparent" />
+
     <Style x:Key="JAMenuItem" TargetType="{x:Type MenuItem}">
-        <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
-        <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}" />
-        <Setter Property="Background" Value="Black" />
-        <Setter Property="BorderBrush" Value="Transparent" />
-        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="{DynamicResource BackgroundLight3Brush}" />
+        <Setter Property="Foreground" Value="{DynamicResource SystemAccentColorBrush}" />
         <Setter Property="BorderThickness" Value="0" />
-        <Setter Property="ScrollViewer.PanningMode" Value="Both" />
-        <Setter Property="Stylus.IsFlicksEnabled" Value="False" />
         <Setter Property="Template" Value="{DynamicResource MenuItemControlTemplate1}" />
         <Style.Triggers>
             <Trigger Property="Role" Value="TopLevelHeader">
@@ -38,10 +34,7 @@
                 <Setter Property="Template" Value="{DynamicResource {ComponentResourceKey ResourceId=SubmenuHeaderTemplateKey, TypeInTargetAssembly={x:Type MenuItem}}}" />
             </Trigger>
             <Trigger Property="IsMouseOver" Value="true">
-                <Setter Property="Background" Value="Pink" />
-            </Trigger>
-            <Trigger Property="IsKeyboardFocusWithin" Value="true">
-                <Setter Property="Background" Value="HotPink" />
+                <Setter Property="Background" Value="{DynamicResource AccentHighLightBrush}" />
             </Trigger>
         </Style.Triggers>
     </Style>

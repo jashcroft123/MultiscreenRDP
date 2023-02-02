@@ -23,6 +23,17 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
             set { SetProperty(ref _Settings, value); }
         }
 
+        private AfterConnectionActionEnum _AfterConnectionActionEnum;
+        public AfterConnectionActionEnum AfterConnectionActionEnum
+        {
+            get { return _AfterConnectionActionEnum; }
+            set
+            {
+                SetProperty(ref _AfterConnectionActionEnum, value);
+                Settings.AfterConnectionAction = value;
+            }
+        }
+
         #endregion
 
         #region Delegate Commands

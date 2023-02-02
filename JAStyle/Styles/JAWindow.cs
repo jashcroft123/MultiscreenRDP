@@ -14,6 +14,7 @@ namespace JAStyles.Styles
         public JAWindow()
         {
             this.StateChanged += MainWindow_StateChanged;
+            this.WindowStyle = WindowStyle.SingleBorderWindow;
             this.Loaded += JAWindow_Loaded;
         }
 
