@@ -15,8 +15,6 @@
             <Style BasedOn="{StaticResource JAButton}" TargetType="Button" />
             <Style BasedOn="{StaticResource JAToggleButton}" TargetType="ToggleButton" />
             <Style BasedOn="{StaticResource JAToolTip}" TargetType="ToolTip" />
-            <Style BasedOn="{StaticResource JAMenu}" TargetType="Menu" />
-            <Style BasedOn="{StaticResource JAMenuItem}" TargetType="MenuItem" />
 
             <cvtr:MinCountToVisibilityConverter x:Key="MinCountToVisibilityConverter" />
 
@@ -25,29 +23,6 @@
     </UserControl.Resources>
 
     <Grid x:Name="Main">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="40" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
-
-        <Menu Grid.Row="0">
-            <MenuItem Margin="5">
-                <MenuItem.Header x:Uid="Hamburger Menu">
-                    <Canvas Height="40" VerticalAlignment="Center" Width="20">
-                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
-                              X2="20" Y1="15" Y2="15" />
-                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
-                              X2="20" Y1="21" Y2="21" />
-                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
-                              X2="20" Y1="27" Y2="27" />
-                    </Canvas>
-                </MenuItem.Header>
-                <MenuItem Command="{Binding OpenPCConfigCommand}" Header="Setup PCs"
-                          ToolTip="Setup PCs that can be connected to" />
-                <MenuItem Command="{Binding PreferencesCommand}" Header="Preferences" ToolTip="Set application preferences" />
-            </MenuItem>
-        </Menu>
-
         <Viewbox Grid.Row="1" MaxHeight="600">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Grid x:Name="SelectConnection" Height="90" HorizontalAlignment="Center">
@@ -98,10 +73,10 @@
                         <Label Content="Select Screens" FontSize="{StaticResource XLarge}" Grid.Column="1"
                                Grid.Row="0" HorizontalAlignment="Center" />
 
-                        <Button x:Name="Refresh" Background="Transparent" BorderThickness="0"
+                        <!--<Button x:Name="Refresh" Background="Transparent" BorderThickness="0"
                                 Command="{Binding RefreshMontiorsCommand}" Content="⟳" Grid.Column="2"
                                 Grid.Row="0" Height="35" HorizontalAlignment="Right"
-                                Style="{StaticResource JAMenuButton}" Width="35" />
+                                Style="{StaticResource JAMenuButton}" Width="35" />-->
 
                         <Viewbox Grid.Column="1" Grid.Row="1" Margin="25"
                                  MaxHeight="200" MaxWidth="400">
@@ -125,18 +100,26 @@
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
                                         <Grid>
-                                            <ToggleButton Content="{Binding Name}"
-                                                          Foreground="{Binding SelectedPrimary, Converter={StaticResource BooleanToColourConverter}}"
-                                                          Height="{Binding Bounds.Size.Height, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}"
-                                                          IsChecked="{Binding Selected, Mode=TwoWay}" VerticalAlignment="Top"
-                                                          Width="{Binding Bounds.Size.Width, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}">
-                                                <i:Interaction.Triggers>
-                                                    <i:EventTrigger EventName="MouseRightButtonUp">
-                                                        <i:InvokeCommandAction Command="{Binding DataContext.Monitors.RightClickCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ItemsControl}}}"
-                                                                               CommandParameter="{Binding Name}" />
-                                                    </i:EventTrigger>
-                                                </i:Interaction.Triggers>
-                                            </ToggleButton>
+                                            <Border>
+                                                <Border.Effect>
+                                                    <DropShadowEffect x:Name="shadow" BlurRadius="30"
+                                                                      Color="{Binding Source={StaticResource SystemAccentColorBrush}, Path=Color}"
+                                                                      Opacity="{Binding SelectedPrimary}" ShadowDepth="0" />
+                                                </Border.Effect>
+
+                                                <ToggleButton Content="{Binding Name}"
+                                                              Height="{Binding Bounds.Size.Height, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}"
+                                                              IsChecked="{Binding Selected, Mode=TwoWay}" VerticalAlignment="Top"
+                                                              Width="{Binding Bounds.Size.Width, Converter={StaticResource IntToScaledIntConverter}, ConverterParameter={StaticResource ScreenSizeToCanvasScale}}">
+
+                                                    <i:Interaction.Triggers>
+                                                        <i:EventTrigger EventName="MouseRightButtonUp">
+                                                            <i:InvokeCommandAction Command="{Binding DataContext.Monitors.RightClickCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ItemsControl}}}"
+                                                                                   CommandParameter="{Binding Name}" />
+                                                        </i:EventTrigger>
+                                                    </i:Interaction.Triggers>
+                                                </ToggleButton>
+                                            </Border>
                                         </Grid>
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>

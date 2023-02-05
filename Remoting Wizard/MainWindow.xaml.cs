@@ -1,6 +1,10 @@
 ﻿using JAStyles.Styles;
 using Prism.Regions;
-
+using System;
+using System.Diagnostics;
+using System.Runtime.InteropServices;
+using System.Windows;
+using System.Windows.Interop;
 
 namespace Remoting_Wizard
 {
@@ -23,6 +27,5 @@ namespace Remoting_Wizard
             RegionManager = regionManager;
             InitializeComponent();
         }
-
-    }
+   }
 }

@@ -1,14 +1,23 @@
 ﻿<UserControl x:Class="Remoting_Wizard.ViewModels.DialogMenuItems.ConfigurationDialog"
              prism:ViewModelLocator.AutoWireViewModel="True"
-             prism:Dialog.WindowStyle="{DynamicResource DialogStyleTheme}"
              xmlns:System="clr-namespace:System;assembly=mscorlib"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:enum="clr-namespace:Remoting_Wizard.Configuration"
              xmlns:local="clr-namespace:Remoting_Wizard.ViewModels.DialogMenuItems"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/" xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <prism:Dialog.WindowStyle>
+        <Style BasedOn="{StaticResource DialogStyleTheme}" TargetType="Window">
+            <Setter Property="Height" Value="650" />
+            <Setter Property="Width" Value="550" />
+            <Setter Property="WindowStyle" Value="ToolWindow" />
+            <Setter Property="ResizeMode" Value="NoResize" />
+        </Style>
+    </prism:Dialog.WindowStyle>
 
     <UserControl.Resources>
         <ResourceDictionary>
@@ -16,51 +25,65 @@
             <Style BasedOn="{StaticResource JAButton}" TargetType="Button" />
             <Style BasedOn="{StaticResource JAComboBox}" TargetType="ComboBox" />
             <Style BasedOn="{StaticResource JATabControl}" TargetType="TabControl" />
+
+            <system:Double x:Key="windowFontSize">18</system:Double>
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid x:Name="Main" HorizontalAlignment="Center" Margin="50"
-          VerticalAlignment="Top">
+    <Grid x:Name="LayoutRoot" VerticalAlignment="Top">
         <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="100" />
+            <RowDefinition Height="550" />
+            <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
+        <DockPanel Background="{DynamicResource BackgroundLight1Brush}" Height="540" Margin="10,10,10,0"
+                   VerticalAlignment="Top">
+            <Grid x:Name="Main" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
 
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="250" />
-                <ColumnDefinition Width="250" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-                <RowDefinition Height="50" />
-            </Grid.RowDefinitions>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150" />
+                        <ColumnDefinition Width="200" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                        <RowDefinition Height="50" />
+                    </Grid.RowDefinitions>
 
-            <Label Content="Colour Theme" FontSize="{StaticResource Large}"
-                   Foreground="{DynamicResource SystemAccentColorBrush}" />
-            <ComboBox x:Name="ColourSchemeComboBox" FontSize="{StaticResource Large}" Grid.Column="1"
-                      Grid.Row="0" SelectedValue="{Binding Settings.ColourScheme}" />
+                    <Label Content="Colour Theme" FontSize="{StaticResource windowFontSize}" />
+                    <ComboBox x:Name="ColourSchemeComboBox" FontSize="{StaticResource windowFontSize}" Grid.Column="1"
+                              Grid.Row="0" SelectedValue="{Binding Settings.ColourScheme}" />
 
-            <Label Content="Accent Colour" FontSize="{StaticResource Large}"
-                   Foreground="{DynamicResource SystemAccentColorBrush}" Grid.Column="0" Grid.Row="1" />
-            <xctk:ColorPicker Background="{DynamicResource BackgroundBrush}" BorderBrush="{DynamicResource BackgroundLight2Brush}"
-                              BorderThickness="3" ColorMode="ColorCanvas"
-                              DropDownBackground="{DynamicResource BackgroundLight2Brush}"
-                              DropDownBorderBrush="{DynamicResource BackgroundLight4Brush}"
-                              Foreground="{DynamicResource TextBright1Brush}" Grid.Column="1" Grid.Row="1"
-                              SelectedColor="{Binding Settings.AccentColour}"
-                              SelectedColorChanged="ColorPicker_SelectedColorChanged" ShowRecentColors="True"
-                              ShowTabHeaders="False" Width="70" />
+                    <Label Content="Accent Colour" FontSize="{StaticResource windowFontSize}" Grid.Column="0"
+                           Grid.Row="1" />
+                    <xctk:ColorPicker Background="{DynamicResource BackgroundBrush}" BorderBrush="{DynamicResource BackgroundLight2Brush}"
+                                      BorderThickness="3" ColorMode="ColorCanvas"
+                                      DropDownBackground="{DynamicResource BackgroundLight2Brush}"
+                                      DropDownBorderBrush="{DynamicResource BackgroundLight4Brush}"
+                                      Foreground="{DynamicResource TextBright1Brush}" Grid.Column="1" Grid.Row="1"
+                                      HorizontalAlignment="Right" SelectedColor="{Binding Settings.AccentColour}"
+                                      SelectedColorChanged="ColorPicker_SelectedColorChanged" ShowRecentColors="True"
+                                      ShowTabHeaders="False" VerticalAlignment="Center" Width="70" />
 
-            <Label Content="After Connection" FontSize="{StaticResource Large}"
-                   Foreground="{DynamicResource SystemAccentColorBrush}" Grid.Column="0" Grid.Row="2" />
-            <ComboBox x:Name="AfterConnectionComboBox" FontSize="{StaticResource Large}" Grid.Column="1"
-                      Grid.Row="2" SelectedItem="{Binding AfterConnectionActionEnum}" />
-        </Grid>
+                    <Label Content="After Connection" FontSize="{StaticResource windowFontSize}" Grid.Column="0"
+                           Grid.Row="2" />
+                    <ComboBox x:Name="AfterConnectionComboBox" FontSize="{StaticResource windowFontSize}" Grid.Column="1"
+                              Grid.Row="2" SelectedItem="{Binding Settings.AfterConnectionAction}" />
+                </Grid>
+            </Grid>
+        </DockPanel>
 
-        <Button Command="{Binding SaveSettingsCommand}" Content="Save" FontSize="{StaticResource Large}"
-                Grid.ColumnSpan="2" Grid.Row="1" Height="50"
-                Width="100" />
+        <StackPanel Grid.Row="1" HorizontalAlignment="Right" Margin="0,12.5,10,5"
+                    Orientation="Horizontal">
+            <Button Command="{Binding SaveSettingsCommand}" Content="Save" FontSize="{StaticResource Small}"
+                    Height="35" HorizontalAlignment="Center" Margin="0,0,10,0"
+                    Width="75" />
+            <Button Command="{Binding CloseCommand}" Content="Cancel" FontSize="{StaticResource Small}"
+                    Height="35" HorizontalAlignment="Center" Width="75" />
+        </StackPanel>
     </Grid>
 </UserControl>

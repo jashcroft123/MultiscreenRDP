@@ -1,11 +1,19 @@
 ﻿<UserControl x:Class="Remoting_Wizard.ViewModels.DialogMenuItems.ConfigurePCs"
              prism:ViewModelLocator.AutoWireViewModel="True"
-             prism:Dialog.WindowStyle="{DynamicResource DialogStyleTheme}"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:Remoting_Wizard.ViewModels.DialogMenuItems"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <prism:Dialog.WindowStyle>
+        <Style BasedOn="{StaticResource DialogStyleTheme}" TargetType="Window">
+            <Setter Property="Height" Value="650" />
+            <Setter Property="Width" Value="550" />
+            <Setter Property="WindowStyle" Value="ToolWindow" />
+            <Setter Property="ResizeMode" Value="NoResize" />
+        </Style>
+    </prism:Dialog.WindowStyle>
 
     <UserControl.Resources>
         <ResourceDictionary>
@@ -15,43 +23,47 @@
     </UserControl.Resources>
 
 
-    <Grid x:Name="LayoutRoot" Margin="5">
+    <Grid x:Name="LayoutRoot" VerticalAlignment="Top">
         <Grid.RowDefinitions>
-            <RowDefinition Height="31" />
-            <RowDefinition />
+            <RowDefinition Height="550" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <ContentControl prism:RegionManager.RegionName="TitleBar" x:Name="TitleBar" Grid.Row="0"
-                        HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Top" />
+        <!--<ContentControl prism:RegionManager.RegionName="TitleBar" x:Name="TitleBar" Grid.Row="0"
+                        HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Top" />-->
 
-        <StackPanel Grid.Row="1">
-            <DataGrid AlternationCount="2" AutoGenerateColumns="False" CanUserAddRows="False"
-                      CanUserReorderColumns="False" CanUserResizeColumns="True" ColumnHeaderHeight="50"
-                      HeadersVisibility="Column" HorizontalScrollBarVisibility="Hidden"
-                      ItemsSource="{Binding ConfigPCs.PCs}" Width="1000">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Binding="{Binding Alias}" CanUserResize="True" Header="Alias"
-                                        Width="*" />
-                    <DataGridTextColumn Binding="{Binding Name}" CanUserResize="True" Header="Name"
-                                        Width="2*" />
-                    <DataGridTextColumn Binding="{Binding UserID}" CanUserResize="False" Header="Username"
-                                        Width="*" />
-                </DataGrid.Columns>
-            </DataGrid>
+        <StackPanel>
+            <DockPanel Background="{DynamicResource BackgroundLight1Brush}" Height="540" Margin="10,10,10,0"
+                       VerticalAlignment="Top">
+                <DataGrid AlternationCount="2" AutoGenerateColumns="False" CanUserAddRows="False"
+                          CanUserReorderColumns="False" CanUserResizeColumns="True" ColumnHeaderHeight="50"
+                          DockPanel.Dock="Top" FontSize="18" HeadersVisibility="Column"
+                          HorizontalScrollBarVisibility="Hidden" ItemsSource="{Binding ConfigPCs.PCs}" Margin="0,10,0,0"
+                          MaxHeight="470" Width="500">
 
-            <Button Command="{Binding AddRowCommand}" Content="Add" Margin="0,10,0,0"
-                    Width="100" />
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Binding="{Binding Alias}" CanUserResize="True" Header="Alias"
+                                            Width="*" />
+                        <DataGridTextColumn Binding="{Binding Name}" CanUserResize="True" Header="Name"
+                                            Width="2*" />
+                        <DataGridTextColumn Binding="{Binding UserID}" Header="Username" Width="*" />
+                    </DataGrid.Columns>
+                </DataGrid>
+
+                <Button Command="{Binding AddRowCommand}" Content="Add" DockPanel.Dock="Bottom"
+                        Margin="0,0,0,10" VerticalAlignment="Bottom" Width="100" />
+            </DockPanel>
         </StackPanel>
 
-        <StackPanel Grid.Row="2" HorizontalAlignment="Right" Margin="0,0,30,30"
+
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Right" Margin="0,12.5,10,5"
                     Orientation="Horizontal">
             <Button Command="{Binding SaveCommand}" Content="Save" FontSize="{StaticResource Small}"
-                    Height="40" HorizontalAlignment="Center" Margin="5,10"
+                    Height="35" HorizontalAlignment="Center" Margin="0,0,10,0"
                     Width="75" />
             <Button Command="{Binding CloseCommand}" Content="Cancel" FontSize="{StaticResource Small}"
-                    Height="40" HorizontalAlignment="Center" Margin="5,10"
-                    Width="75" />
+                    Height="35" HorizontalAlignment="Center" Width="75" />
         </StackPanel>
     </Grid>
 </UserControl>

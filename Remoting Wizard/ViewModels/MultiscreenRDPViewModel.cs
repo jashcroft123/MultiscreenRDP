@@ -1,8 +1,10 @@
-﻿using Prism.Commands;
+﻿using Microsoft.Win32;
+using Prism.Commands;
 using Prism.Mvvm;
 using Prism.Services.Dialogs;
 using Remoting_Wizard.Class;
 using Remoting_Wizard.Configuration;
+using Remoting_Wizard.Properties;
 using System;
 using System.Configuration;
 using System.Diagnostics;
@@ -30,10 +32,7 @@ namespace Remoting_Wizard.ViewModels
 
         #region Delegate Commands
         public DelegateCommand RemoteConnectCommand { get; private set; }
-        public DelegateCommand OpenPCConfigCommand { get; private set; }
-        public DelegateCommand PreferencesCommand { get; private set; }
         public DelegateCommand RefreshMontiorsCommand { get; private set; }
-
         #endregion
 
         #region Public Properties
@@ -53,10 +52,11 @@ namespace Remoting_Wizard.ViewModels
             _DialogService = dialogService;
             _ConfigurationSettings = configurationSettings;
 
-            OpenPCConfigCommand = new DelegateCommand(OpenPCConfig);
+
             RemoteConnectCommand = new DelegateCommand(async () => await RemoteConnect());
-            PreferencesCommand = new DelegateCommand(Preferences);
             RefreshMontiorsCommand = new DelegateCommand(RefreshMontiors);
+
+            SystemEvents.DisplaySettingsChanged += SystemEvents_DisplaySettingsChanged;
         }
 
         #region Private Methods
@@ -83,8 +83,9 @@ namespace Remoting_Wizard.ViewModels
 
             File.WriteAllText($@"{rDPPath}\Connection.RDP", s);
             await RunCMDCommand($"/C mstsc \"{rDPPath}\\Connection.RDP\"");
-
-            switch (_ConfigurationSettings.AfterConnectionAction)
+            
+            var action = (AfterConnectionActionEnum)Enum.Parse(typeof(AfterConnectionActionEnum), Settings.Default.AfterConnectionAction);
+            switch (action)
             {
                 case AfterConnectionActionEnum.Minimise:
                     Application.Current.MainWindow.WindowState = WindowState.Minimized;
@@ -94,7 +95,6 @@ namespace Remoting_Wizard.ViewModels
                     break;
             }
         }
-
         private async Task RunCMDCommand(string Args)
         {
             System.Diagnostics.Process p = new System.Diagnostics.Process();
@@ -113,16 +113,11 @@ namespace Remoting_Wizard.ViewModels
             p.StandardInput.Close();
         }
 
-        private void OpenPCConfig()
-        {
-            _DialogService.ShowDialog("ConfigurePCs");
-            ConfigPCs.PCs = new(CSV.ReadCSV());
-        }
-        private void Preferences()
-        {
-            _DialogService.ShowDialog("ConfigurationDialog");
-        }
         private void RefreshMontiors()
+        {
+            Monitors = new Monitors();
+        }
+        private void SystemEvents_DisplaySettingsChanged(object? sender, EventArgs e)
         {
             Monitors = new Monitors();
         }

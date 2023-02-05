@@ -22,7 +22,6 @@ namespace Remoting_Wizard.ViewModels
             set { SetProperty(ref _WindowMaximised, value); }
         }
 
-
         private string _BackgroundColour;
         public string BackgroundColour
         {
@@ -54,6 +53,7 @@ namespace Remoting_Wizard.ViewModels
             RestoreUpDownCommand = new DelegateCommand(RestoreUpDown);
             MinimiseCommand = new DelegateCommand(Minimise);
 
+            WindowSizeChange();
             Application.Current.MainWindow.StateChanged += MainWindow_StateChanged;
         }
 

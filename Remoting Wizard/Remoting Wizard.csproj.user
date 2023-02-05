@@ -24,6 +24,9 @@
     <Compile Update="ViewModels\MultiscreenRDP.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="ViewModels\TitleBarMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="MainWindow.xaml">
@@ -39,6 +42,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="ViewModels\MultiscreenRDP.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ViewModels\TitleBarMenu.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

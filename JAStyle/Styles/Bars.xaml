@@ -3,7 +3,7 @@
 
     <!--#region Menu Bar-->
     <Style x:Key="JAMenu" TargetType="{x:Type Menu}">
-        <Setter Property="Background" Value="{DynamicResource BackgroundLight1Brush}" />
+        <Setter Property="Background" Value="Transparent" />
     </Style>
 
     <SolidColorBrush x:Key="Menu.Static.Foreground" Color="{DynamicResource SystemAccentColourLight1}" />
@@ -142,7 +142,7 @@
                 <RowDefinition Height="0.00001*" />
                 <RowDefinition MaxHeight="18" />
             </Grid.RowDefinitions>
-            <Border Background="{x:Null}" BorderBrush="{DynamicResource BackgroundLight1Brush}" BorderThickness="1"
+            <Border Background="{x:Null}" BorderBrush="{DynamicResource BackgroundLight3Brush}" BorderThickness="1"
                     CornerRadius="2" Grid.RowSpan="3" />
             <RepeatButton Command="ScrollBar.LineUpCommand" Content="M 0 4 L 8 4 L 4 0 Z" Grid.Row="0"
                           Height="18" Style="{StaticResource ScrollBarLineButton}" />
@@ -151,7 +151,7 @@
                     <RepeatButton Command="ScrollBar.PageUpCommand" Style="{StaticResource ScrollBarPageButton}" />
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
-                    <Thumb Background="{DynamicResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
+                    <Thumb Background="{DynamicResource BackgroundLight3Brush}" BorderBrush="{StaticResource TransparentBrush}"
                            Margin="1,0,1,0" Opacity="0.6" Style="{StaticResource ScrollBarThumb}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
@@ -171,7 +171,7 @@
                 <ColumnDefinition Width="0.00001*" />
                 <ColumnDefinition MaxWidth="18" />
             </Grid.ColumnDefinitions>
-            <Border Background="{x:Null}" BorderBrush="{DynamicResource BackgroundLight1Brush}" BorderThickness="1"
+            <Border Background="{x:Null}" BorderBrush="{DynamicResource BackgroundLight2Brush}" BorderThickness="1"
                     CornerRadius="2" Grid.ColumnSpan="3" />
             <RepeatButton Command="ScrollBar.LineLeftCommand" Content="M 4 0 L 4 8 L 0 4 Z" Grid.Column="0"
                           Style="{StaticResource ScrollBarLineButton}" Width="18" />
@@ -180,7 +180,7 @@
                     <RepeatButton Command="ScrollBar.PageLeftCommand" Style="{StaticResource ScrollBarPageButton}" />
                 </Track.DecreaseRepeatButton>
                 <Track.Thumb>
-                    <Thumb Background="{DynamicResource BackgroundLight1Brush}" BorderBrush="{StaticResource TransparentBrush}"
+                    <Thumb Background="{DynamicResource BackgroundLight2Brush}" BorderBrush="{StaticResource TransparentBrush}"
                            Margin="0,1,0,1" Style="{StaticResource ScrollBarThumb}" />
                 </Track.Thumb>
                 <Track.IncreaseRepeatButton>
@@ -199,12 +199,12 @@
         <Style.Triggers>
             <Trigger Property="Orientation" Value="Horizontal">
                 <Setter Property="Width" Value="Auto" />
-                <Setter Property="Height" Value="15" />
+                <Setter Property="Height" Value="20" />
                 <Setter Property="Template" Value="{StaticResource HorizontalScrollBar}" />
             </Trigger>
 
             <Trigger Property="Orientation" Value="Vertical">
-                <Setter Property="Width" Value="15" />
+                <Setter Property="Width" Value="20" />
                 <Setter Property="Height" Value="Auto" />
                 <Setter Property="Template" Value="{StaticResource VerticalScrollBar}" />
             </Trigger>

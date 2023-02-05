@@ -49,7 +49,6 @@ namespace Remoting_Wizard
         protected override void Initialize()
         {
             base.Initialize();
-            Application.Current.MainWindow.WindowState = WindowState.Maximized;
 
             Container.Resolve<ApplicationColours>();
 
@@ -63,9 +62,10 @@ namespace Remoting_Wizard
             var regionManager = Container.Resolve<IRegionManager>();
             var mainContent = Container.Resolve<MultiscreenRDP>();
             var titleBar = Container.Resolve<CustomTitleBar>();
+            var titleBarMenu = Container.Resolve<TitleBarMenu>();
             _ = regionManager.AddToRegion("MainRegion", mainContent)
-                             .AddToRegion("TitleBar", titleBar);
-            MainWindow.WindowState = WindowState.Normal;
+                             .AddToRegion("TitleBar", titleBar)
+                             .AddToRegion("TitleBarContentLeft", titleBarMenu);
         }
 
         static void ReadAllSettings(ConfigurationSettings settings)

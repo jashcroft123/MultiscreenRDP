@@ -2,12 +2,7 @@
                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="Texts.xaml" />
-        <ResourceDictionary Source="ItemControls.xaml" />
-        <ResourceDictionary Source="Boxes.xaml" />
-        <ResourceDictionary Source="Buttons.xaml" />
-        <ResourceDictionary Source="Bars.xaml" />
-        <ResourceDictionary Source="JAWindowStyle.xaml" />
         <ResourceDictionary Source="pack://application:,,,/JAStyles;component/Converters/Converters.xaml" />
+        <ResourceDictionary Source="MergedStyles.xaml" />
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

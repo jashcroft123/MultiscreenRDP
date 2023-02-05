@@ -70,6 +70,7 @@
 
     <!--#region Colours-->
     <!--  Backgrounds  -->
+    <Color x:Key="BackgroundLight5">#808080</Color>
     <Color x:Key="BackgroundLight4">#484848</Color>
     <Color x:Key="BackgroundLight3">#3C3C3C</Color>
     <Color x:Key="BackgroundLight2">#333333</Color>

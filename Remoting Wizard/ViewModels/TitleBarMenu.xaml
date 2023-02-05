@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="Remoting_Wizard.ViewModels.TitleBarMenu" prism:ViewModelLocator.AutoWireViewModel="True"
+             d:DesignHeight="450" d:DesignWidth="800" mc:Ignorable="d"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Remoting_Wizard.ViewModels"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:prism="http://prismlibrary.com/" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <Style BasedOn="{StaticResource JAMenu}" TargetType="Menu" />
+            <Style BasedOn="{StaticResource JAMenuItem}" TargetType="MenuItem" />
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid x:Name="Main" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0" WindowChrome.IsHitTestVisibleInChrome="True">
+            <MenuItem Margin="5">
+                <MenuItem.Header x:Uid="Hamburger Menu">
+                    <Canvas Height="40" VerticalAlignment="Center" Width="20">
+                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
+                              X2="20" Y1="15" Y2="15" />
+                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
+                              X2="20" Y1="21" Y2="21" />
+                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
+                              X2="20" Y1="27" Y2="27" />
+                    </Canvas>
+                </MenuItem.Header>
+                <MenuItem Command="{Binding OpenPCConfigCommand}" Header="Setup PCs"
+                          ToolTip="Setup PCs that can be connected to" />
+                <MenuItem Command="{Binding PreferencesCommand}" Header="Preferences" ToolTip="Set application preferences" />
+            </MenuItem>
+        </Menu>
+
+    </Grid>
+</UserControl>

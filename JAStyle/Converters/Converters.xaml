@@ -6,4 +6,5 @@
     <cnvt:InverseBooleanToVisibiltyConverter x:Key="InverseBooleanToVisibiltyConverter" />
     <cnvt:IntToScaledIntConverter x:Key="IntToScaledIntConverter" />
     <cnvt:BooleanToColourConverter x:Key="BooleanToColourConverter" />
+    <cnvt:SolidColourBrushToColourConverter x:Key="SolidColourBrushToColourConverter" />
 </ResourceDictionary>

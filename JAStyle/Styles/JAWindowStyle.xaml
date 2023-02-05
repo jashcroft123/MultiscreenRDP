@@ -42,13 +42,17 @@
     <!--#endregion-->
 
     <!--#region Dialog Window-->
-    <Style x:Key="DialogStyleTheme" TargetType="prism:DialogWindow">
+    <Style x:Key="DialogStyleTheme" TargetType="Window">
         <Setter Property="Background" Value="{DynamicResource BackgroundBrush}" />
         <Setter Property="BorderBrush" Value="{DynamicResource BackgroundLight1Brush}" />
         <Setter Property="AllowsTransparency" Value="False" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="RenderOptions.BitmapScalingMode" Value="HighQuality" />
-        <Setter Property="Title" Value="{Binding Title}" />
+        <Setter Property="ResizeMode" Value="CanResizeWithGrip" />
+        <Setter Property="ShowInTaskbar" Value="False" />
+        <Setter Property="SizeToContent" Value="Manual" />
+        <Setter Property="Height" Value="300" />
+        <Setter Property="Width" Value="300" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="prism:DialogWindow">

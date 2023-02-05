@@ -13,42 +13,51 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-        <Button Command="{Binding MinimiseCommand}" Height="31" VerticalAlignment="Top"
-                Width="44" WindowChrome.IsHitTestVisibleInChrome="True">
-            <Canvas Height="27" Width="10">
-                <Line Stroke="{DynamicResource SystemAccentColorBrush}" X1="0" X2="10"
-                      Y1="14" Y2="14" />
-            </Canvas>
-        </Button>
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Left" HorizontalAlignment="Right" Orientation="Horizontal">
+            <ContentControl prism:RegionManager.RegionName="TitleBarContentLeft" x:Name="TitleBarRegion" Grid.Row="0"
+                            HorizontalAlignment="Stretch" Margin="0" VerticalAlignment="Top" />
+        </StackPanel>
 
-        <Button Command="{Binding RestoreUpDownCommand}" Height="31" Margin="2,0"
-                VerticalAlignment="Top" Width="44" WindowChrome.IsHitTestVisibleInChrome="True">
-            <StackPanel>
-                <Canvas Height="7"
-                        Visibility="{Binding WindowMaximised, Converter={StaticResource BooleanToVisibiltyConverter}}"
-                        Width="10">
-                    <Rectangle Height="8" Margin="2,0,0,0" Stroke="{DynamicResource SystemAccentColorBrush}"
-                               Width="8" />
-                    <Rectangle Fill="{DynamicResource BackgroundBrush}" Height="8" Margin="0,2,0,0"
-                               Stroke="{DynamicResource SystemAccentColorBrush}" Width="8" />
-                </Canvas>
-                <Canvas Height="7"
-                        Visibility="{Binding WindowMaximised, Converter={StaticResource InverseBooleanToVisibiltyConverter}}"
-                        Width="10">
-                    <Rectangle Height="10" Stroke="{DynamicResource SystemAccentColorBrush}" Width="10" />
-                </Canvas>
-            </StackPanel>
-        </Button>
 
-        <Button Command="{Binding CloseCommand}" Height="31" VerticalAlignment="Top"
-                Width="44" WindowChrome.IsHitTestVisibleInChrome="True">
-            <Canvas Height="7" Width="10">
-                <Line Stroke="{DynamicResource SystemAccentColorBrush}" X1="0" X2="10"
-                      Y1="0" Y2="10" />
-                <Line Stroke="{DynamicResource SystemAccentColorBrush}" X1="0" X2="10"
-                      Y1="10" Y2="0" />
-            </Canvas>
-        </Button>
-    </StackPanel>
+        <StackPanel DockPanel.Dock="Right" HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button Command="{Binding MinimiseCommand}" Height="31" VerticalAlignment="Top"
+                    Width="44" WindowChrome.IsHitTestVisibleInChrome="True">
+                <Canvas Height="27" Width="10">
+                    <Line Stroke="{DynamicResource SystemAccentColorBrush}" X1="0" X2="10"
+                          Y1="14" Y2="14" />
+                </Canvas>
+            </Button>
+
+            <Button Command="{Binding RestoreUpDownCommand}" Height="31" Margin="2,0"
+                    VerticalAlignment="Top" Width="44" WindowChrome.IsHitTestVisibleInChrome="True">
+                <StackPanel>
+                    <Canvas Height="7"
+                            Visibility="{Binding WindowMaximised, Converter={StaticResource BooleanToVisibiltyConverter}}"
+                            Width="10">
+                        <Rectangle Height="8" Margin="2,0,0,0" Stroke="{DynamicResource SystemAccentColorBrush}"
+                                   Width="8" />
+                        <Rectangle Fill="{DynamicResource BackgroundBrush}" Height="8" Margin="0,2,0,0"
+                                   Stroke="{DynamicResource SystemAccentColorBrush}" Width="8" />
+                    </Canvas>
+                    <Canvas Height="7"
+                            Visibility="{Binding WindowMaximised, Converter={StaticResource InverseBooleanToVisibiltyConverter}}"
+                            Width="10">
+                        <Rectangle Height="10" Stroke="{DynamicResource SystemAccentColorBrush}" Width="10" />
+                    </Canvas>
+                </StackPanel>
+            </Button>
+
+            <Button Command="{Binding CloseCommand}" Height="31" VerticalAlignment="Top"
+                    Width="44" WindowChrome.IsHitTestVisibleInChrome="True">
+                <Canvas Height="7" Width="10">
+                    <Line Stroke="{DynamicResource SystemAccentColorBrush}" X1="0" X2="10"
+                          Y1="0" Y2="10" />
+                    <Line Stroke="{DynamicResource SystemAccentColorBrush}" X1="0" X2="10"
+                          Y1="10" Y2="0" />
+                </Canvas>
+            </Button>
+        </StackPanel>
+
+    </DockPanel>
 </UserControl>

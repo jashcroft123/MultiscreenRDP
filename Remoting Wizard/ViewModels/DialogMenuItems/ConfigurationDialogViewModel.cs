@@ -22,23 +22,12 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
             get { return _Settings; }
             set { SetProperty(ref _Settings, value); }
         }
-
-        private AfterConnectionActionEnum _AfterConnectionActionEnum;
-        public AfterConnectionActionEnum AfterConnectionActionEnum
-        {
-            get { return _AfterConnectionActionEnum; }
-            set
-            {
-                SetProperty(ref _AfterConnectionActionEnum, value);
-                Settings.AfterConnectionAction = value;
-            }
-        }
-
         #endregion
 
         #region Delegate Commands
         public DelegateCommand SaveSettingsCommand { get; private set; }
         public DelegateCommand AccentColourChangedCommand { get; private set; }
+        public DelegateCommand CloseCommand { get; private set; }
         #endregion
 
         #region Public Properties
@@ -55,9 +44,11 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
             Settings = settings;
             SaveSettingsCommand = new DelegateCommand(SaveSettings);
             AccentColourChangedCommand = new DelegateCommand(AccentColourChanged);
+            CloseCommand = new DelegateCommand(() => RaiseRequestClose());
         }
 
 
+        #region Public Methods
         public event Action<IDialogResult> RequestClose;
         public void RaiseRequestClose(IDialogResult dialogResult = null)
         {
@@ -78,6 +69,7 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
         {
 
         }
+        #endregion
 
         #region Private Methods
         private void AccentColourChanged()
@@ -101,7 +93,6 @@ namespace Remoting_Wizard.ViewModels.DialogMenuItems
 
                 propToSet?.SetValue(Properties.Settings.Default, Convert.ChangeType(propVal, propToSet.PropertyType));
             }
-
             Properties.Settings.Default.Save();
             RaiseRequestClose();
         }

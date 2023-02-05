@@ -52,7 +52,6 @@ namespace Remoting_Wizard.Class
         public System.Windows.Rect Bounds { get; private set; }
         public System.Windows.Rect WorkingArea { get; private set; }
 
-
         #region Bindable Properties
         private bool _SelectedPrimary;
         public bool SelectedPrimary
@@ -65,7 +64,14 @@ namespace Remoting_Wizard.Class
         public bool Selected
         {
             get { return _Selected; }
-            set { SetProperty(ref _Selected, value); }
+            set 
+            { 
+                SetProperty(ref _Selected, value); 
+                if (!value)
+                {
+                    SelectedPrimary = false;
+                }
+            }
         }
         #endregion
 

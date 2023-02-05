@@ -15,11 +15,11 @@ namespace JAStyles.Styles
         public const string BackgroundLight3Brush = "#3C3C3C";
         public const string BackgroundLight2Brush = "#333333";
         public const string BackgroundLight1Brush = "#2A2A2A";
-        public const string BackgroundBrush = "#212121";
-        public const string BackgroundDark1Brush = "#1C1C1C";
-        public const string BackgroundDark2Brush = "#131313";
-        public const string BackgroundDark3Brush = "#0F0F0F";
-        public const string BackgroundDark4Brush = "#000000";
+        public const string BackgroundBrush =       "#212121";
+        public const string BackgroundDark1Brush =  "#1C1C1C";
+        public const string BackgroundDark2Brush =  "#131313";
+        public const string BackgroundDark3Brush =  "#0F0F0F";
+        public const string BackgroundDark4Brush =  "#000000";
 
         public const string SystemAccentColorLight3Brush = "#ffc030";
         public const string SystemAccentColorLight2Brush = "#ffb331";
