@@ -1109,3 +1109,4 @@ C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizar
 C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
 C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\JAStyles.dll
 C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\JAStyles.pdb
+C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\Remoting Wizard\Resources\Icons\Icon.ico

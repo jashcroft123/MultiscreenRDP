@@ -205,6 +205,7 @@
 "C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\PackageLayout\Remoting Wizard\System.CodeDom.dll"			"Remoting Wizard\System.CodeDom.dll"
 "C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\PackageLayout\Remoting Wizard\System.Buffers.dll"			"Remoting Wizard\System.Buffers.dll"
 "C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\PackageLayout\Remoting Wizard\System.AppContext.dll"			"Remoting Wizard\System.AppContext.dll"
+"C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\PackageLayout\Remoting Wizard\Resources\Icons\Icon.ico"			"Remoting Wizard\Resources\Icons\Icon.ico"
 "C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\PackageLayout\Remoting Wizard\Remoting Wizard.runtimeconfig.json"			"Remoting Wizard\Remoting Wizard.runtimeconfig.json"
 "C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\PackageLayout\Remoting Wizard\Remoting Wizard.exe"			"Remoting Wizard\Remoting Wizard.exe"
 "C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\PackageLayout\Remoting Wizard\Remoting Wizard.dll"			"Remoting Wizard\Remoting Wizard.dll"

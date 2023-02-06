@@ -32,15 +32,7 @@ namespace JAStyles.Styles
         public const string AccentHighLightBrush = "#11653c14";
 
 
-
-        private string _ChangeBrush;
-
-        public string ChangeBrush
-        {
-            get { return _ChangeBrush; }
-            set { SetProperty(ref _ChangeBrush, value); }
-        }
-
+        public const string DisableColorBrush = "#808080";
 
         /// <summary>
         /// Pass green

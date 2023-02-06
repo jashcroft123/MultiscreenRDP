@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="e3f27202-d180-4e51-9603-ec3c57fe71e2" Publisher="CN=Renishaw plc, O=Renishaw plc, L=Wotton-under-Edge, C=GB" Version="2.2.1.0" ProcessorArchitecture="neutral" />
+  <Identity Name="e3f27202-d180-4e51-9603-ec3c57fe71e2" Publisher="CN=Renishaw plc, O=Renishaw plc, L=Wotton-under-Edge, C=GB" Version="3.0.2.0" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>Remoting Wizard</DisplayName>
     <PublisherDisplayName>ja151016</PublisherDisplayName>

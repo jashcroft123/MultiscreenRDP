@@ -50,6 +50,10 @@
                      Color="{Binding Source={x:Static local:DarkThemeColours.SystemAccentColorDark3Brush}, Converter={StaticResource StringToColorConverter}}" />
 
 
+    <SolidColorBrush x:Key="DisableColorBrush"
+                     Color="{Binding Source={x:Static local:DarkThemeColours.DisableColorBrush}, Converter={StaticResource StringToColorConverter}}" />
+
+
     <SolidColorBrush x:Key="AccentHighLightBrush"
                      Color="{Binding Source={x:Static local:DarkThemeColours.AccentHighLightBrush}, Converter={StaticResource StringToColorConverter}}" />
 
@@ -101,16 +105,6 @@
 
     <Color x:Key="SelectColourBorder">#dba874</Color>
 
-    <!--  Fill Colours  -->
-    <!--
-    <Color x:Key="PassGreen">#8EE43F</Color>
-    <Color x:Key="FailRed">#FF626D</Color>
-    <Color x:Key="Blue">#33BBFF</Color>
-    <Color x:Key="LightBlue">#7AD9F5</Color>
 
-    -->
-    <!--  Transparent  -->
-    <!--
-    <Color x:Key="Transparent">Transparent</Color>-->
-    <!--#endregion-->
+    <Color x:Key="DisableColor">#808080</Color>
 </ResourceDictionary>

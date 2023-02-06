@@ -53,6 +53,7 @@ C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\resources.pri
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Data\PCs.csv
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Data\RemoteConnectionTemplate.txt
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\App.config
+C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Resources\Icons\Icon.ico
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.exe
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.dll
 C:\devops\MultiscreenRDP\Remoting Wizard\bin\Release\net6.0-windows\win-x86\msixpublish\Remoting Wizard.deps.json

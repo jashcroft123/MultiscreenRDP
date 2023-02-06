@@ -1,6 +1,6 @@
-MainPackage=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_2.2.1.0_AnyCPU.msix
-SymbolPackage=C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\Symbols\RemotingWizardPackage_2.2.1.0_AnyCPU.appxsym
-ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_2.2.1.0_scale-100.msix
-ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_2.2.1.0_scale-125.msix
-ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_2.2.1.0_scale-150.msix
-ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_2.2.1.0_scale-400.msix
+MainPackage=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_3.0.2.0_AnyCPU.msix
+SymbolPackage=C:\devops\MultiscreenRDP\RemotingWizardPackage\obj\Release\Symbols\RemotingWizardPackage_3.0.2.0_AnyCPU.appxsym
+ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_3.0.2.0_scale-100.msix
+ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_3.0.2.0_scale-125.msix
+ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_3.0.2.0_scale-150.msix
+ResourcePack=C:\devops\MultiscreenRDP\RemotingWizardPackage\bin\AnyCPU\Release\RemotingWizardPackage_3.0.2.0_scale-400.msix

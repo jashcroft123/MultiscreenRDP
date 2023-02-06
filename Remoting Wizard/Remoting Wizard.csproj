@@ -6,11 +6,14 @@
     <RootNamespace>Remoting_Wizard</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
-	<VersionPrefix>2.2.0</VersionPrefix>
+	<VersionPrefix>3.0.0</VersionPrefix>
+	  <!--<ApplicationIcon>Resources\Icons\Icon.ico</ApplicationIcon>-->
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="App.config" />
+    <None Remove="Resources\Icons\Close.png" />
+    <None Remove="Resources\Icons\Icon.ico" />
     <None Remove="Resources\Images\Close.png" />
     <None Remove="Resources\Images\RestoreDown.png" />
   </ItemGroup>
@@ -40,6 +43,9 @@
 
   <ItemGroup>
     <EmbeddedResource Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Icons\Icon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

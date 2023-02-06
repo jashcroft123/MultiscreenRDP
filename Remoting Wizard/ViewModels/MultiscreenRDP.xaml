@@ -40,20 +40,20 @@
                 <ComboBox x:Name="ModeComboBox" FontSize="{StaticResource Large}" SelectedIndex="0" />
             </StackPanel>-->
 
-                    <Label Content="PC:" FontSize="{StaticResource Large}" Grid.Column="0"
+                    <Label Content="PC:" FontSize="{StaticResource Medium}" Grid.Column="0"
                            Grid.Row="0" HorizontalAlignment="Right" HorizontalContentAlignment="Right"
-                           Margin="0,0,10,0" />
-                    <ComboBox x:Name="ComboBoxPCs" FontSize="{StaticResource Large}" Grid.Column="1"
+                           Margin="0,0,10,0" VerticalAlignment="Center" />
+                    <ComboBox x:Name="ComboBoxPCs" FontSize="{StaticResource Medium}" Grid.Column="1"
                               Grid.Row="0" ItemsSource="{Binding ConfigPCs.DistinctAliases}" SelectedIndex="0"
-                              SelectedItem="{Binding ConfigPCs.SelectedAlias, Mode=TwoWay}" />
+                              SelectedItem="{Binding ConfigPCs.SelectedAlias, Mode=TwoWay}" VerticalAlignment="Center" />
 
-                    <Label Content="User Name:" FontSize="{StaticResource Large}" Grid.Column="0"
+                    <Label Content="User Name:" FontSize="{StaticResource Medium}" Grid.Column="0"
                            Grid.Row="1" HorizontalAlignment="Right" HorizontalContentAlignment="Right"
-                           Margin="0,0,10,0"
+                           Margin="0,0,10,0" VerticalAlignment="Center"
                            Visibility="{Binding ConfigPCs.UserNames.Count, Converter={StaticResource MinCountToVisibilityConverter}, ConverterParameter=1}" />
-                    <ComboBox x:Name="ComboBoxUsernames" FontSize="{StaticResource Large}" Grid.Column="1"
+                    <ComboBox x:Name="ComboBoxUsernames" FontSize="{StaticResource Medium}" Grid.Column="1"
                               Grid.Row="1" ItemsSource="{Binding ConfigPCs.UserNames}" SelectedIndex="0"
-                              SelectedItem="{Binding ConfigPCs.SelectedUserName, Mode=TwoWay}"
+                              SelectedItem="{Binding ConfigPCs.SelectedUserName, Mode=TwoWay}" VerticalAlignment="Center"
                               Visibility="{Binding ConfigPCs.UserNames.Count, Converter={StaticResource MinCountToVisibilityConverter}, ConverterParameter=1}" />
                 </Grid>
 

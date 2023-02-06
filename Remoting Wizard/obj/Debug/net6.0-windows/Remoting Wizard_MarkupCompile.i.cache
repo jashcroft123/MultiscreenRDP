@@ -1,5 +1,5 @@
 ﻿Remoting Wizard
-2.2.0.0
+3.0.0.0
 
 winexe
 C#
@@ -16,5 +16,5 @@ C:\devops\MultiscreenRDP\Remoting Wizard\App.xaml
 207926278761
 MainWindow.xaml;ViewModels\CustomTitleBar.xaml;ViewModels\DialogMenuItems\ConfigurationDialog.xaml;ViewModels\DialogMenuItems\ConfigurePCs.xaml;ViewModels\MultiscreenRDP.xaml;ViewModels\TitleBarMenu.xaml;
 
-True
+False
 

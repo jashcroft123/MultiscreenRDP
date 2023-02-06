@@ -148,6 +148,7 @@ Remoting Wizard\Remoting Wizard.deps.json
 Remoting Wizard\Remoting Wizard.dll
 Remoting Wizard\Remoting Wizard.exe
 Remoting Wizard\Remoting Wizard.runtimeconfig.json
+Remoting Wizard\Resources\Icons\Icon.ico
 Remoting Wizard\System.AppContext.dll
 Remoting Wizard\System.Buffers.dll
 Remoting Wizard\System.CodeDom.dll

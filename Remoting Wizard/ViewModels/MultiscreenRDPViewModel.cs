@@ -10,6 +10,7 @@ using System.Configuration;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows;
@@ -64,24 +65,26 @@ namespace Remoting_Wizard.ViewModels
         {
             var selectedPC = ConfigPCs.Selected;
             var selectedScreens = Monitors.Where(x => x.Selected).ToList();
+            selectedScreens = selectedScreens.OrderBy(x => x.SelectedPrimary != true).ToList();
             //default rdp connection
             string joinedIDs = string.Join(",", selectedScreens.Select(x => x.Name));
-            string s = $"full address:s:{selectedPC.Name} " +
-                        $"username: s: {selectedPC.UserID} " +
-                        "session bpp:i:32 " +
-                        " rdgiskdcproxy:i:0 " +
-                        "kdcproxyname:s: " +
-                        "drivestoredirect:s: " +
-                        "screen mode id:i:2 " +
-                        $"use multimon:i:{Convert.ToInt32(selectedScreens.Count > 1)} " +
-                        $"selectedmonitors:s:{joinedIDs} ";
+            StringBuilder rdpSB = new();
+            rdpSB.AppendLine($"full address:s:{selectedPC.Name}");
+            rdpSB.AppendLine($"username: s: {selectedPC.UserID}");
+            rdpSB.AppendLine("session bpp:i:32");
+            rdpSB.AppendLine("rdgiskdcproxy:i:0");
+            rdpSB.AppendLine("kdcproxyname:s:");
+            rdpSB.AppendLine("drivestoredirect:s:");
+            rdpSB.AppendLine("screen mode id:i:2");
+            rdpSB.AppendLine($"use multimon:i:{Convert.ToInt32(selectedScreens.Count > 1)}");
+            rdpSB.AppendLine($"selectedmonitors:s:{joinedIDs}");
 
             //Save RDP and connect
             string rDPPath = $@"{Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData)}\Remoting Wizard";
 
             if (!Directory.Exists(Path.GetDirectoryName(rDPPath))) Directory.CreateDirectory(Path.GetDirectoryName(rDPPath));
 
-            File.WriteAllText($@"{rDPPath}\Connection.RDP", s);
+            File.WriteAllText($@"{rDPPath}\Connection.RDP", rdpSB.ToString());
             await RunCMDCommand($"/C mstsc \"{rDPPath}\\Connection.RDP\"");
             
             var action = (AfterConnectionActionEnum)Enum.Parse(typeof(AfterConnectionActionEnum), Settings.Default.AfterConnectionAction);

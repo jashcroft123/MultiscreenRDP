@@ -8,8 +8,9 @@
 
     <UserControl.Resources>
         <ResourceDictionary>
+            <!--<Style BasedOn="{StaticResource JAMenu}" TargetType="Menu" />-->
             <Style BasedOn="{StaticResource JAMenu}" TargetType="Menu" />
-            <Style BasedOn="{StaticResource JAMenuItem}" TargetType="MenuItem" />
+            <!--<Style BasedOn="{StaticResource JAMenuItem}" TargetType="MenuItem" />-->
         </ResourceDictionary>
     </UserControl.Resources>
 
@@ -19,20 +20,22 @@
         </Grid.RowDefinitions>
 
         <Menu Grid.Row="0" WindowChrome.IsHitTestVisibleInChrome="True">
-            <MenuItem Margin="5">
+            <MenuItem Margin="0">
                 <MenuItem.Header x:Uid="Hamburger Menu">
-                    <Canvas Height="40" VerticalAlignment="Center" Width="20">
-                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
-                              X2="20" Y1="15" Y2="15" />
-                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
-                              X2="20" Y1="21" Y2="21" />
-                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="0"
-                              X2="20" Y1="27" Y2="27" />
+                    <Canvas Background="Transparent" Height="40" VerticalAlignment="Center"
+                            Width="40">
+                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="10"
+                              X2="30" Y1="15" Y2="15" />
+                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="10"
+                              X2="30" Y1="21" Y2="21" />
+                        <Line Stroke="{DynamicResource SystemAccentColorBrush}" StrokeThickness="2.5" X1="10"
+                              X2="30" Y1="27" Y2="27" />
                     </Canvas>
                 </MenuItem.Header>
-                <MenuItem Command="{Binding OpenPCConfigCommand}" Header="Setup PCs"
+                <MenuItem Command="{Binding OpenPCConfigCommand}" FontSize="{DynamicResource Small}" Header="Setup PCs"
                           ToolTip="Setup PCs that can be connected to" />
-                <MenuItem Command="{Binding PreferencesCommand}" Header="Preferences" ToolTip="Set application preferences" />
+                <MenuItem Command="{Binding PreferencesCommand}" FontSize="{DynamicResource Small}" Header="Preferences"
+                          ToolTip="Set application preferences" />
             </MenuItem>
         </Menu>
 

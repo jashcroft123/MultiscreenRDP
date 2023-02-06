@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 C:\devops\MultiscreenRDP\Remoting Wizard\App.xaml
-6160179063
+6869871530
 2-763388151
-301100202214
+32-1726192349
 207-1437507663
-Archive\RemotingWizard.xaml;MainWindow.xaml;ViewModels\CustomTitleBar.xaml;ViewModels\DialogMenuItems\ConfigurationDialog.xaml;ViewModels\DialogMenuItems\ConfigurePCs.xaml;ViewModels\MultiscreenRDP.xaml;
+MainWindow.xaml;ViewModels\CustomTitleBar.xaml;ViewModels\DialogMenuItems\ConfigurationDialog.xaml;ViewModels\DialogMenuItems\ConfigurePCs.xaml;ViewModels\MultiscreenRDP.xaml;ViewModels\TitleBarMenu.xaml;
 
 False
 
