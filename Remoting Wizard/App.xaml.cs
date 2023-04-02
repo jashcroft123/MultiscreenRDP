@@ -8,9 +8,11 @@ using Remoting_Wizard.Properties;
 using Remoting_Wizard.ViewModels;
 using Remoting_Wizard.ViewModels.DialogMenuItems;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Threading;
 using System.Windows;
@@ -67,6 +69,7 @@ namespace Remoting_Wizard
                              .AddToRegion("TitleBar", titleBar)
                              .AddToRegion("TitleBarContentLeft", titleBarMenu);
         }
+
 
         static void ReadAllSettings(ConfigurationSettings settings)
         {

@@ -1,6 +1,5 @@
 ﻿using JAStyles.Styles;
 using Prism.Mvvm;
-using Remoting_Wizard.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +8,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Media;
 
-namespace Remoting_Wizard.Class
+namespace JAWPF
 {
     public class ApplicationColours : BindableBase
     {
@@ -74,56 +73,16 @@ namespace Remoting_Wizard.Class
         #endregion
 
         #region Private Properties
-
+        private ResourceDictionary _ColourResources { get; set; }
         #endregion
 
 
-        public ApplicationColours(ConfigurationSettings configurationSettings)
+        public ApplicationColours()
         {
-            configurationSettings.PropertyChanged += ConfigurationSettings_PropertyChanged;
             this.PropertyChanged += ApplicationColours_PropertyChanged;
+
+            _ColourResources = FindMergedDictionaryRecursive("Colours", Application.Current.Resources);
         }
-
-        private void ConfigurationSettings_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
-            var val = (ConfigurationSettings)sender;
-
-            if (e.PropertyName == nameof(ConfigurationSettings.AccentColour))
-            {
-                SystemAccentColor = (Color)ColorConverter.ConvertFromString(val.AccentColour);
-            }
-        }
-
-        private void ApplicationColours_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
-        {
-            if (e.PropertyName == nameof(SystemAccentColor))
-            {
-                UpdateAccentColors();
-            }
-        }
-
-        private void UpdateAccentColors()
-        {
-            Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorBrush"] = new SolidColorBrush(SystemAccentColor);
-
-            AccentHighLightBrush = ChangeTransparency(SystemAccentColor, 0.5);
-            Application.Current.Resources.MergedDictionaries[0]["AccentHighLightBrush"] = new SolidColorBrush(AccentHighLightBrush);
-
-            SystemAccentColorLight1 = ChangeLightness(SystemAccentColor, 0.8);
-            Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorLight1Brush"] = new SolidColorBrush(SystemAccentColorLight1);
-            SystemAccentColorLight2 = ChangeLightness(SystemAccentColor, 0.6);
-            Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorLight2Brush"] = new SolidColorBrush(SystemAccentColorLight2);
-            SystemAccentColorLight3 = ChangeLightness(SystemAccentColor, 0.4);
-            Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorLight2Brush"] = new SolidColorBrush(SystemAccentColorLight3);
-
-            SystemAccentColorDark1 = ChangeLightness(SystemAccentColor, 1.2);
-            Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorLight1Brush"] = new SolidColorBrush(SystemAccentColorDark1);
-            SystemAccentColorDark2 = ChangeLightness(SystemAccentColor, 1.4);
-            Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorLight2Brush"] = new SolidColorBrush(SystemAccentColorDark2);
-            SystemAccentColorDark3 = ChangeLightness(SystemAccentColor, 1.6);
-            Application.Current.Resources.MergedDictionaries[0]["SystemAccentColorLight2Brush"] = new SolidColorBrush(SystemAccentColorDark3);
-        }
-
 
         /// <summary>
         /// basic implemetation to increase or decrease the RGB value to change the lightness 
@@ -147,6 +106,60 @@ namespace Remoting_Wizard.Class
         {
             return Color.FromArgb((byte)(color.A * coef), (byte)(color.R), (byte)(color.G),
                 (byte)(color.B));
+        }
+
+        private static ResourceDictionary FindMergedDictionaryRecursive(string dictionaryName, ResourceDictionary startingDictionary)
+        {
+            // Check the starting dictionary for the named dictionary
+            ResourceDictionary namedDictionary = startingDictionary.MergedDictionaries.FirstOrDefault(md => md.Source.OriginalString.Contains(dictionaryName));
+            if (namedDictionary != null)
+            {
+                return namedDictionary;
+            }
+
+            // If the named dictionary wasn't found in the starting dictionary, recursively search its merged dictionaries
+            foreach (ResourceDictionary mergedDictionary in startingDictionary.MergedDictionaries)
+            {
+                ResourceDictionary recursiveResult = FindMergedDictionaryRecursive(dictionaryName, mergedDictionary);
+                if (recursiveResult != null)
+                {
+                    return recursiveResult;
+                }
+            }
+
+            // If the named dictionary wasn't found in any of the merged dictionaries, return null
+            return null;
+        }
+
+
+        private void ApplicationColours_PropertyChanged(object? sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == nameof(SystemAccentColor))
+            {
+                UpdateAccentColors();
+            }
+        }
+
+        private void UpdateAccentColors()
+        {
+            _ColourResources["SystemAccentColorBrush"] = new SolidColorBrush(SystemAccentColor);
+
+            AccentHighLightBrush = ChangeTransparency(SystemAccentColor, 0.5);
+            _ColourResources["AccentHighLightBrush"] = new SolidColorBrush(AccentHighLightBrush);
+
+            SystemAccentColorLight1 = ChangeLightness(SystemAccentColor, 0.8);
+            _ColourResources["SystemAccentColorLight1Brush"] = new SolidColorBrush(SystemAccentColorLight1);
+            SystemAccentColorLight2 = ChangeLightness(SystemAccentColor, 0.6);
+            _ColourResources["SystemAccentColorLight2Brush"] = new SolidColorBrush(SystemAccentColorLight2);
+            SystemAccentColorLight3 = ChangeLightness(SystemAccentColor, 0.4);
+            _ColourResources["SystemAccentColorLight3Brush"] = new SolidColorBrush(SystemAccentColorLight3);
+
+            SystemAccentColorDark1 = ChangeLightness(SystemAccentColor, 1.2);
+            _ColourResources["SystemAccentColorDark1Brush"] = new SolidColorBrush(SystemAccentColorDark1);
+            SystemAccentColorDark2 = ChangeLightness(SystemAccentColor, 1.4);
+            _ColourResources["SystemAccentColorDark2Brush"] = new SolidColorBrush(SystemAccentColorDark2);
+            SystemAccentColorDark3 = ChangeLightness(SystemAccentColor, 1.6);
+            _ColourResources["SystemAccentColorDark3Brush"] = new SolidColorBrush(SystemAccentColorDark3);
         }
     }
 }

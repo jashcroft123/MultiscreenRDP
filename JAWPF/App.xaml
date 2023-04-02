@@ -1,0 +1,14 @@
+﻿<prism:PrismApplication x:Class="JAWPF.App" xmlns:local="clr-namespace:JAWPF" xmlns:prism="http://prismlibrary.com/"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!--  Colour has to be merged in App.xaml to ensure it is loaded first  -->
+                <ResourceDictionary Source="pack://application:,,,/JAStyles;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/JAStyles;component/Styles/JAStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</prism:PrismApplication>
